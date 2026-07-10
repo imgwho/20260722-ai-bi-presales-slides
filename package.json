@@ -1,0 +1,17 @@
+{
+  "name": "20260710-ai-bi-slides",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "slidev": "npx @slidev/cli slidev/slides.md --open",
+    "marp": "npx @marp-team/marp-cli marp/ai-bi.md --preview",
+    "remark": "npx http-server remarkjs -p 4173 -o index.html",
+    "reveal": "npx http-server revealjs -p 4174 -o index.html"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "latest",
+    "@slidev/cli": "latest",
+    "http-server": "latest"
+  }
+}
