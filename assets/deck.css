@@ -198,7 +198,7 @@ th {
 .toolbar {
   position: fixed;
   left: 16px;
-  bottom: 16px;
+  bottom: 32px;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -273,6 +273,6 @@ button:hover {
 
   .toolbar {
     left: 12px;
-    bottom: 10px;
+    bottom: 24px;
   }
 }

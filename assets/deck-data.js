@@ -46,10 +46,10 @@ window.AIBISlides = [
     html: `<h1>Tableau 落地步骤</h1><ol><li>提取模板：准备企业标准色彩、字体和基础布局的 <code>.twb</code></li><li>AI 生成配置：输出字段映射、图表类型、计算字段公式 JSON</li><li>脚本动态拼装：用 <code>cwtwb</code> 修改模板 XML</li><li>上线分发：结合 <code>tableauPushDing</code> 无头截图并推送到钉钉、企业微信</li></ol>`
   },
   {
-    html: `<h1>Power BI 智能体路线</h1><h2>PBIP + TMDL + PBIR + MCP</h2><ul><li><strong>PBIP</strong>：将 <code>.pbix</code> 拆成纯文本项目目录</li><li><strong>TMDL</strong>：语义模型的纯文本表示，DAX 公式可直接读写</li><li><strong>PBIR</strong>：视图层标准 JSON，便于 AI 修改布局</li><li><strong>MCP</strong>：AI 编码智能体读写本地 Power BI 或 PBIP 项目</li></ul>`
+    html: `<h1>Power BI 智能体配置方法</h1><h2>PowerBI Authoring Skills + Modeling MCP</h2><ul><li><strong>安装 Skills</strong>：从 <code>microsoft/skills-for-fabric</code> 下载 PowerBI Authoring Skills，放入 Codex 可识别目录，例如 <code>.agents/skills</code> 或 <code>~/.agents/skills</code></li><li><strong>安装 MCP</strong>：配置 PowerBI Modeling MCP，让 AI 能读取模型、创建度量值、运行 DAX 查询和导出元数据</li><li><strong>安装依赖</strong>：准备 Node.js 20+，并安装 <code>@microsoft/powerbi-report-authoring-cli</code> 与 <code>@microsoft/powerbi-desktop-bridge-cli</code></li><li><strong>验证环境</strong>：运行 <code>powerbi-report-author --version</code> 和 <code>powerbi-desktop --version</code></li></ul>`
   },
   {
-    html: `<h1>Power BI 落地步骤</h1><ol><li>将 <code>.pbix</code> 另存为 <code>.pbip</code> 并纳入 Git</li><li>注册 Power BI Modeling MCP Server 或导入 Skills for Fabric</li><li>用 Prompt 生成度量值、同比、环比和命名规范</li><li>AI 扫描 <code>.tmdl</code>，修改 DAX 与元数据并热重载</li><li>用 <code>pbip-validator</code> 校验，再通过 <code>fabric-cicd</code> 部署到 Fabric</li></ol>`
+    html: `<h1>Power BI 落地步骤</h1><ol><li><strong>方式 A：基于已打开模型</strong>：先打开 Power BI Desktop 并导入数据，保持文件打开，让 AI 读取当前模型并设计报表</li><li><strong>方式 B：基于 PBIP 项目</strong>：将现有报表导出为 PBIP；编辑或美化现有报表时，PBIP 文件应保持关闭，避免影响读写</li><li><strong>Prompt 发起需求</strong>：说明页数、分析主题、布局风格和覆盖场景，例如“基于已导出的 PBIP 项目，创建深色科技风报表”</li><li><strong>先审设计文档</strong>：AI 会产出 <code>_brief/report-spec.md</code>，确认页面结构、主题风格和分析路径后再回复 approve</li><li><strong>生成与验收</strong>：AI 产出 PBIP 报表后，打开刷新数据；需要独立交付时，再另存为 <code>.pbix</code></li></ol>`
   },
   {
     html: `<h1>BI 扩展：小红书</h1><ul><li><strong>个人定位</strong>：数据分析专家、BI 自动化效率专家</li><li><strong>视觉展示</strong>：HTML 仪表盘截图、Tableau / Power BI 经典业务模板</li><li><strong>实操分享</strong>：AI+BI 自动化提效案例</li><li><strong>转化路径</strong>：引流至微信私域，承接报表定制、技术咨询、简历指导</li></ul>`

@@ -160,24 +160,24 @@ style: |
 
 ---
 
-# Power BI 智能体路线
+# Power BI 智能体配置方法
 
-## PBIP + TMDL + PBIR + MCP
+## PowerBI Authoring Skills + Modeling MCP
 
-- **PBIP**：将 `.pbix` 拆成纯文本项目目录
-- **TMDL**：语义模型的纯文本表示
-- **PBIR**：视图层标准 JSON
-- **MCP**：AI 智能体读写本地 Power BI 或 PBIP 项目
+- **安装 Skills**：从 `microsoft/skills-for-fabric` 下载 PowerBI Authoring Skills，放入 `.agents/skills` 或 `~/.agents/skills`
+- **安装 MCP**：配置 PowerBI Modeling MCP，让 AI 读取模型、创建度量值、运行 DAX 查询和导出元数据
+- **安装依赖**：准备 Node.js 20+，安装 `@microsoft/powerbi-report-authoring-cli` 与 `@microsoft/powerbi-desktop-bridge-cli`
+- **验证环境**：运行 `powerbi-report-author --version` 和 `powerbi-desktop --version`
 
 ---
 
 # Power BI 落地步骤
 
-1. 将 `.pbix` 另存为 `.pbip` 并纳入 Git
-2. 注册 Power BI Modeling MCP Server 或 Skills for Fabric
-3. 用 Prompt 生成度量值、同比、环比和命名规范
-4. AI 修改 `.tmdl` 并热重载
-5. 通过 `pbip-validator` 校验，用 `fabric-cicd` 部署
+1. 方式 A：基于已打开模型，先打开 Power BI Desktop 并导入数据，让 AI 读取当前模型并设计报表
+2. 方式 B：基于 PBIP 项目，将现有报表导出为 PBIP；编辑或美化时保持 PBIP 文件关闭
+3. Prompt 发起需求：说明页数、分析主题、布局风格和覆盖场景
+4. 先审设计文档：AI 产出 `_brief/report-spec.md`，确认后回复 approve
+5. 生成与验收：打开 AI 产出的 PBIP 刷新数据，需要交付时另存为 `.pbix`
 
 ---
 
