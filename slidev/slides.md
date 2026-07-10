@@ -147,21 +147,24 @@ mdc: true
 
 ---
 
-# 12. Tableau 自动化路线
+# 12. Tableau 自动化配置方法
 
-## cwprep + cwtwb
+## imgwho/cwprep + imgwho/cwtwb
 
-- cwprep：逆向解析 Tableau Prep `.tfl`，将 GUI 清洗步骤转成结构化脚本
-- cwtwb：解析 `.twb` XML，动态组装图表、维度、度量值与布局
+- 安装工具：`pip install cwprep cwtwb`
+- 配置 MCP：在客户端注册 `uvx cwprep` 和 `uvx cwtwb`
+- 本地自检：运行 `cwprep doctor`、`cwprep status`、`cwtwb doctor`、`cwtwb status --json`
+- 分工边界：cwprep 生成 `.tfl/.tflx` 清洗流；cwtwb 生成、编辑、校验 `.twb/.twbx` 工作簿
 
 ---
 
 # 13. Tableau 落地步骤
 
-1. 提取企业标准 `.twb` 模板
-2. AI 生成字段映射、图表类型、计算字段公式 JSON
-3. 脚本读取配置，用 `cwtwb` 修改 XML
-4. 结合 `tableauPushDing` 无头截图并推送到业务终端
+1. 准备数据清洗流：用 cwprep 读取 API、计算语法、最佳实践，设计 flow definition
+2. 生成 Prep 文件：先 `validate_flow_definition`，再用 `generate_tfl` 输出 `.tfl/.tflx`
+3. 准备工作簿模板：用 cwtwb `create_workbook` 或 `open_workbook`，设置数据源
+4. 组装报表：`list_fields`、`add_worksheet`、`configure_chart`、`add_dashboard`、`save_workbook`
+5. 校验与分发：用 `cwtwb validate` 或云端 REST 校验，再接 `tableauPushDing` 截图推送
 
 ---
 
