@@ -283,6 +283,10 @@ figure img {
   background: #fff;
 }
 
+.phone-case figure img {
+  max-height: 68vh;
+}
+
 figcaption {
   margin-top: 10px;
   color: #64748b;

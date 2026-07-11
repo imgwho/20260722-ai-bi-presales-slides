@@ -22,6 +22,9 @@ window.AIBISlides = [
     html: `<p class="kicker">第一部分</p><h1>缺少闭环：看完之后什么都不会发生</h1><ul><li>看完数据没有下一步动作</li><li>没有责任人</li><li>没有阈值</li><li>没有预警</li><li>没有行动建议</li></ul><p class="quote">没有闭环的 BI，本质上就是“一堆图”。</p>`
   },
   {
+    html: `<p class="kicker">反面案例</p><h1>不好的仪表板：指标很多，但判断很少</h1><div class="case-layout"><figure><img src="../Images/不好的仪表板.png" alt="指标过多的不好的仪表板案例"><figcaption>反面案例：KPI 全部铺开，阅读成本极高</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>问题不在于图表数量少，而在于没有优先级：每个 KPI 都像同等重要。</li><li>时间轴、筛选器和十几行指标同时出现，用户需要自己判断哪里异常。</li><li>缺少“先看什么、异常是什么、下一步做什么”的路径，因此很难驱动行动。</li></ul></div></div><p class="quote">坏 BI 的典型特征：信息很满，但决策很空。</p>`
+  },
+  {
     html: `<p class="kicker">第二部分</p><h1>从“图表”到“场景化看板”</h1><p><strong>核心：图表不再是数据的形状，而是问题的答案。</strong></p><ul><li>先写业务问题，再画图</li><li>每张图都对应一个明确的问题</li><li>看板结构围绕“场景”而不是“图表类型”</li></ul><p class="quote">场景化让 BI 从展示走向理解。</p>`
   },
   {
@@ -73,7 +76,13 @@ window.AIBISlides = [
     html: `<h1>BI 扩展：小红书</h1><ul><li><strong>个人定位</strong>：数据分析专家、BI 自动化效率专家</li><li><strong>视觉展示</strong>：HTML 仪表盘截图、Tableau / Power BI 经典业务模板</li><li><strong>实操分享</strong>：AI+BI 自动化提效案例</li><li><strong>转化路径</strong>：引流至微信私域，承接报表定制、技术咨询、简历指导</li></ul>`
   },
   {
+    html: `<h1>小红书案例：搜索需求已经存在</h1><div class="case-layout phone-case"><figure><img src="../Images/小红书代做.jpg" alt="小红书搜索 powerbi 代做的截图"><figcaption>小红书搜索：powerbi 代做</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>用户搜索词已经很明确：powerbi 代做、财务报表、会计、期末作业。</li><li>这里适合做内容引流：展示案例、讲清价格区间、明确能交付什么。</li><li>标题和封面要覆盖具体需求词，而不是泛泛写“数据分析很重要”。</li><li>转化动作应导向私信咨询、需求表单或微信私域。</li></ul></div></div>`
+  },
+  {
     html: `<h1>BI 扩展：闲鱼</h1><ul><li><strong>成品模板</strong>：企业通用销售 / 财务数据仪表盘模板</li><li><strong>定制服务</strong>：Tableau / Power BI 看板、Python 清洗脚本、Excel 自动报表</li><li><strong>关键词优化</strong>：数据分析、BI代做、报表定制、大屏设计、DAX编写</li><li><strong>高效交付</strong>：复用 <code>cwprep</code> 和 <code>cwtwb</code> 模板库，提高单小时利润率</li></ul>`
+  },
+  {
+    html: `<h1>闲鱼案例：低价入口，高价转化</h1><div class="case-layout phone-case"><figure><img src="../Images/闲鱼代做.jpg" alt="闲鱼搜索 BI 代做的截图"><figcaption>闲鱼搜索：bi 代做</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>闲鱼上的低价通常是引流入口，不是最终成交价。</li><li>商品标题要覆盖 Power BI、报表代做、财务分析、远程指导、DAX 编写等长尾词。</li><li>交付上可以拆成模板、远程指导、定制开发、自动化脚本四档。</li><li>AI+BI 的价值在于压缩交付时间，提高单小时利润，而不是参与低价内卷。</li></ul></div></div>`
   },
   {
     center: true,

@@ -6,11 +6,11 @@
     if (index === 0) return "封面";
     if (index === 1) return "目录";
     if (index >= 2 && index <= 6) return "第一部分 · 为什么 BI 变成一堆图";
-    if (index >= 7 && index <= 13) return "第二部分 · 从图表走向产品";
-    if (index === 14) return "第三部分 · 方案对比";
-    if (index >= 15 && index <= 16) return "第四部分 · AI+BI 重构思路";
-    if (index >= 17 && index <= 22) return "第五部分 · Codex 打通 BI";
-    if (index >= 23 && index <= 24) return "第六部分 · 副业与接单";
+    if (index >= 7 && index <= 14) return "第二部分 · 从图表走向产品";
+    if (index === 15) return "第三部分 · 方案对比";
+    if (index >= 16 && index <= 17) return "第四部分 · AI+BI 重构思路";
+    if (index >= 18 && index <= 23) return "第五部分 · Codex 打通 BI";
+    if (index >= 24 && index <= 27) return "第六部分 · 副业与接单";
     return "结论";
   }
 
