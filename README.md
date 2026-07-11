@@ -15,8 +15,19 @@
 2. BI 开发：如何从图表走向产品
 3. Html、多维表、传统 BI 对比
 4. 重构 BI：AI+BI 的思路
-5. 案例：Codex 一键打通 BI
+5. 案例：Codex 一键打通 BI，包括 Tableau 与 Power BI 实操视频演示
 6. BI 扩展：副业与接单
+
+## 视频演示
+
+`Videos/` 目录中的 mp4 会被网页幻灯片直接引用：
+
+- Tableau：配置 MCP、询问 MCP 能力、生成成功
+- Power BI：配置 MCP / Skills / npm、生成成功
+
+视频页支持浏览器原生播放控制，并提供 `0.75x`、`1x`、`1.25x`、`1.5x`、`2x` 倍速切换。
+
+`Videos.7z` 是本地压缩包，已通过 `.gitignore` 排除，不会提交到仓库。
 
 ## 本地预览
 

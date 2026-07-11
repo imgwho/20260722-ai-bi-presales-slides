@@ -9,8 +9,8 @@
     if (index >= 7 && index <= 9) return "第二部分 · 从图表走向产品";
     if (index === 10) return "第三部分 · 方案对比";
     if (index >= 11 && index <= 12) return "第四部分 · AI+BI 重构思路";
-    if (index >= 13 && index <= 16) return "第五部分 · Codex 打通 BI";
-    if (index >= 17 && index <= 18) return "第六部分 · 副业与接单";
+    if (index >= 13 && index <= 18) return "第五部分 · Codex 打通 BI";
+    if (index >= 19 && index <= 20) return "第六部分 · 副业与接单";
     return "结论";
   }
 
@@ -20,6 +20,7 @@
     section.innerHTML = `<div class="section-mark">${sectionForIndex(index)}</div>${item.html}`;
     section.setAttribute("aria-label", `${title} 第 ${index + 1} 页`);
     applyProgressiveSteps(section);
+    setupVideoControls(section);
     deck.appendChild(section);
     return section;
   });
@@ -55,6 +56,37 @@
     section.querySelectorAll("h2").forEach(node => {
       node.classList.add("step-item");
       node.dataset.step = "1";
+    });
+
+    section.querySelectorAll(".video-demo").forEach(node => {
+      node.classList.add("step-item");
+      node.dataset.step = "1";
+    });
+  }
+
+  function setupVideoControls(section) {
+    section.querySelectorAll(".video-demo").forEach(demo => {
+      const video = demo.querySelector("video");
+      const choices = Array.from(demo.querySelectorAll(".video-choice"));
+      const speedButtons = Array.from(demo.querySelectorAll("[data-speed]"));
+
+      choices.forEach(button => {
+        button.addEventListener("click", () => {
+          const currentRate = video.playbackRate;
+          video.pause();
+          video.src = button.dataset.video;
+          video.playbackRate = currentRate;
+          choices.forEach(item => item.classList.toggle("is-selected", item === button));
+          video.load();
+        });
+      });
+
+      speedButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          video.playbackRate = Number(button.dataset.speed);
+          speedButtons.forEach(item => item.classList.toggle("is-selected", item === button));
+        });
+      });
     });
   }
 

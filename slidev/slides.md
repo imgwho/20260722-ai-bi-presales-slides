@@ -168,7 +168,17 @@ mdc: true
 
 ---
 
-# 14. Power BI 智能体配置方法
+# 14. Tableau 实操演示
+
+- `Videos/1tableau 配置mcp_compressed.mp4`
+- `Videos/2tableau 询问mcp能力_compressed.mp4`
+- `Videos/3tableau生成成功_compressed.mp4`
+
+线上 HTML 版本提供可切换视频与倍速播放控件。
+
+---
+
+# 15. Power BI 智能体配置方法
 
 ## PowerBI Authoring Skills + Modeling MCP
 
@@ -179,7 +189,7 @@ mdc: true
 
 ---
 
-# 15. Power BI 落地步骤
+# 16. Power BI 落地步骤
 
 1. 方式 A：基于已打开模型，先打开 Power BI Desktop 并导入数据，让 AI 读取当前模型并设计报表
 2. 方式 B：基于 PBIP 项目，将现有报表导出为 PBIP；编辑或美化时保持 PBIP 文件关闭
@@ -189,7 +199,16 @@ mdc: true
 
 ---
 
-# 16. BI 扩展：小红书
+# 17. Power BI 实操演示
+
+- `Videos/1powerbi 配置mcp skill npm_compressed.mp4`
+- `Videos/2powerbi生成成功_compressed.mp4`
+
+线上 HTML 版本提供可切换视频与倍速播放控件。
+
+---
+
+# 18. BI 扩展：小红书
 
 - 定位：数据分析专家、BI 自动化效率专家
 - 展示：HTML 仪表盘截图、Tableau / Power BI 模板
@@ -198,7 +217,7 @@ mdc: true
 
 ---
 
-# 17. BI 扩展：闲鱼
+# 19. BI 扩展：闲鱼
 
 - 成品模板：销售、财务、行业标准看板
 - 定制服务：Tableau / Power BI、Python 清洗脚本、Excel 自动报表

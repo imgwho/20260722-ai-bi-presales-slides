@@ -163,6 +163,16 @@ style: |
 
 ---
 
+# Tableau 实操演示
+
+- `Videos/1tableau 配置mcp_compressed.mp4`
+- `Videos/2tableau 询问mcp能力_compressed.mp4`
+- `Videos/3tableau生成成功_compressed.mp4`
+
+线上 HTML 版本提供可切换视频与倍速播放控件。
+
+---
+
 # Power BI 智能体配置方法
 
 ## PowerBI Authoring Skills + Modeling MCP
@@ -181,6 +191,15 @@ style: |
 3. Prompt 发起需求：说明页数、分析主题、布局风格和覆盖场景
 4. 先审设计文档：AI 产出 `_brief/report-spec.md`，确认后回复 approve
 5. 生成与验收：打开 AI 产出的 PBIP 刷新数据，需要交付时另存为 `.pbix`
+
+---
+
+# Power BI 实操演示
+
+- `Videos/1powerbi 配置mcp skill npm_compressed.mp4`
+- `Videos/2powerbi生成成功_compressed.mp4`
+
+线上 HTML 版本提供可切换视频与倍速播放控件。
 
 ---
 
