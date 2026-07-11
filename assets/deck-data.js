@@ -31,6 +31,18 @@ window.AIBISlides = [
     html: `<p class="kicker">第二部分</p><h1>从“决策工具”到“数据产品”</h1><p><strong>核心：让 BI 能被复用、被售卖、被迭代。</strong></p><ul><li>明确的用户角色</li><li>清晰的价值主张</li><li>完整的功能结构</li><li>权限体系、配置体系、数据源管理</li></ul><p class="quote">数据产品让 BI 从行动走向规模化价值。</p>`
   },
   {
+    html: `<p class="kicker">案例：仪表盘优化</p><h1>优化前：明细表不是数据产品</h1><div class="case-layout"><figure><img src="../Images/优化前.png" alt="优化前的订单明细仪表盘截图"><figcaption>优化前：Order Details from Superstore</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>它只是在展示订单明细，用户知道“有什么数据”，但不知道“该看什么”。</li><li>探索路径依赖导出到其他工具，BI 没有承接分析动作。</li><li>这一页适合用来回应前面的问题：为什么很多 BI 最终只是一堆图或一张大表。</li></ul></div></div>`
+  },
+  {
+    html: `<p class="kicker">案例：仪表盘优化</p><h1>第一步：补上下文和结构</h1><div class="case-layout"><figure><img src="../Images/优化中1.png" alt="优化中第一步，增加上下文和结构"><figcaption>第一步：固定尺寸、标题说明、侧边筛选器</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>先解决“这个看板给谁用、用来干什么”的问题。</li><li>标题和副标题定义业务语境，固定尺寸保证交付体验稳定。</li><li>筛选器移到侧边栏，减少主画布干扰，为后续分析区域腾出空间。</li></ul></div></div>`
+  },
+  {
+    html: `<p class="kicker">案例：仪表盘优化</p><h1>第二步：把筛选变成分析入口</h1><div class="case-grid"><figure><img src="../Images/优化中2.png" alt="优化中第二步，增加可视化"><figcaption>增加趋势和维度图表</figcaption></figure><figure><img src="../Images/优化中3.png" alt="优化中第三步，增加高亮和交互"><figcaption>增加高亮、散点图和交互探索</figcaption></figure></div><div class="case-notes compact"><h2>讲解注释</h2><ul><li>把原本静态筛选器改成可点击图表，让用户通过图表完成筛选和定位。</li><li>趋势图负责发现时间变化，散点图负责发现异常和关系，表格高亮负责承接明细判断。</li><li>这一步体现“场景化看板”到“决策工具”的转变。</li></ul></div>`
+  },
+  {
+    html: `<p class="kicker">案例：仪表盘优化</p><h1>最后：补文档、入口和闭环</h1><div class="case-layout"><figure><img src="../Images/优化后.png" alt="优化后的订单明细探索仪表盘截图"><figcaption>优化后：增加说明浮层和使用引导</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>说明浮层降低新用户上手成本，让 BI 具备 onboarding 能力。</li><li>可以进一步加入问题反馈、工单链接或改进需求入口。</li><li>这不是单纯美化，而是把看板补成可持续迭代的数据产品。</li></ul></div></div><p class="quote">好的 BI 不是把数据摆出来，而是把用户带到下一步动作。</p>`
+  },
+  {
     html: `<h1>Html、多维表、传统 BI 对比</h1><table><thead><tr><th>评估维度</th><th>HTML 自研方案</th><th>多维表</th><th>传统 BI</th></tr></thead><tbody><tr><td>定制化能力</td><td>极高，可自由编写 UI 与交互</td><td>较低，受限平台组件</td><td>较高，受限内置图表</td></tr><tr><td>AI 生成友好度</td><td>极高，代码结构标准</td><td>一般，依赖 API</td><td>较低，专有格式复杂</td></tr><tr><td>数据量支持</td><td>取决于后端与前端调优</td><td>较小，通常有行数上限</td><td>极高，支持亿级聚合</td></tr><tr><td>维护成本</td><td>高，需前端能力</td><td>极低，开箱即用</td><td>中等，需要 BI 人员</td></tr><tr><td>适用场景</td><td>移动卡片、高管看板</td><td>轻量协作、进销存</td><td>企业数仓、复杂指标</td></tr></tbody></table>`
   },
   {
