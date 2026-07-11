@@ -1,8 +1,11 @@
+html,
 body {
+  height: 100%;
   margin: 0;
   background: #f8fafc;
   color: #172033;
   font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+  overflow: hidden;
 }
 
 .deck {
@@ -16,7 +19,7 @@ body {
   position: relative;
   display: none;
   width: 100vw;
-  min-height: 100vh;
+  height: 100vh;
   background:
     radial-gradient(circle at 92% 88%, rgba(20, 184, 166, .16) 0 14%, transparent 15%),
     linear-gradient(135deg, rgba(240, 253, 250, .95), rgba(248, 250, 252, .98) 48%, rgba(239, 246, 255, .96)),
@@ -276,7 +279,7 @@ figure {
 figure img {
   display: block;
   width: 100%;
-  max-height: 60vh;
+  max-height: 56vh;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 18px 42px rgba(15, 23, 42, .14);
@@ -284,7 +287,7 @@ figure img {
 }
 
 .phone-case figure img {
-  max-height: 68vh;
+  max-height: 62vh;
 }
 
 figcaption {
@@ -357,12 +360,19 @@ button:hover {
 }
 
 @media (max-width: 820px) {
+  html,
+  body {
+    height: auto;
+    overflow: auto;
+  }
+
   .deck {
     padding: 0;
   }
 
   .slide {
     width: 100vw;
+    height: auto;
     min-height: 100vh;
     padding: 64px 24px 82px;
     overflow: auto;
