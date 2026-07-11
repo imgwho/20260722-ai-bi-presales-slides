@@ -227,7 +227,8 @@ mdc: true
 
 ## imgwho/cwprep + imgwho/cwtwb
 
-- 项目地址：[imgwho/cwprep](https://github.com/imgwho/cwprep)、[imgwho/cwtwb](https://github.com/imgwho/cwtwb)
+- cwprep：https://github.com/imgwho/cwprep
+- cwtwb：https://github.com/imgwho/cwtwb
 - 安装工具：`pip install cwprep cwtwb`
 - 配置 MCP：在客户端注册 `uvx cwprep` 和 `uvx cwtwb`
 - 本地自检：运行 `cwprep doctor`、`cwprep status`、`cwtwb doctor`、`cwtwb status --json`
@@ -259,8 +260,8 @@ mdc: true
 
 ## PowerBI Authoring Skills + Modeling MCP
 
-- MCP 地址：[microsoft/powerbi-modeling-mcp](https://github.com/microsoft/powerbi-modeling-mcp)
-- Skill 地址：[powerbi-report-authoring/SKILL.md](https://github.com/microsoft/skills-for-fabric/blob/main/plugins/powerbi-authoring/skills/powerbi-report-authoring/SKILL.md)
+- MCP：https://github.com/microsoft/powerbi-modeling-mcp
+- Skill：https://github.com/microsoft/skills-for-fabric/blob/main/plugins/powerbi-authoring/skills/powerbi-report-authoring/SKILL.md
 - 安装 Skills：下载 PowerBI Authoring Skills，放入 `.agents/skills` 或 `~/.agents/skills`
 - 安装 MCP：配置 PowerBI Modeling MCP，让 AI 读取模型、创建度量值、运行 DAX 查询和导出元数据
 - 安装依赖：准备 Node.js 20+，安装 `@microsoft/powerbi-report-authoring-cli` 与 `@microsoft/powerbi-desktop-bridge-cli`

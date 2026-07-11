@@ -359,6 +359,14 @@ figcaption {
   line-height: 1.34;
 }
 
+.config-list li {
+  word-break: break-word;
+}
+
+.config-list a {
+  font-size: .88em;
+}
+
 .step-item {
   opacity: 0;
   transform: translateY(14px);
