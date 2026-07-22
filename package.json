@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "reveal": "npx http-server revealjs -p 4174 -o index.html"
+    "reveal": "npx http-server revealjs -p 4174 -o index.html",
+    "bold": "npx http-server bold-poster -p 4175 -o index.html"
   },
   "devDependencies": {
     "http-server": "latest"
