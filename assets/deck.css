@@ -34,42 +34,6 @@ body {
   inset: auto -80px -120px auto;
   width: 360px;
   height: 360px;
-html,
-body {
-  height: 100%;
-  margin: 0;
-  background: #f8fafc;
-  color: #172033;
-  font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
-  overflow: hidden;
-}
-
-.deck {
-  min-height: 100vh;
-  display: block;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.slide {
-  position: relative;
-  display: none;
-  width: 100vw;
-  height: 100vh;
-  background: #f8fafc;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 8vh 9vw 11vh;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.slide::before {
-  content: "";
-  position: absolute;
-  inset: auto -80px -120px auto;
-  width: 360px;
-  height: 360px;
   border-radius: 999px;
   background: #f0fdfa;
 }
@@ -222,73 +186,6 @@ th {
   border-left: 6px solid #0f766e;
   background: #f0fdfa;
   font-weight: 700;
-}
-
-.video-demo {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 290px;
-  gap: 26px;
-  align-items: stretch;
-  min-height: 58vh;
-}
-
-.video-frame {
-  display: grid;
-  place-items: center;
-  min-width: 0;
-  border: 1px solid #cbd5e1;
-  border-radius: 10px;
-  background: #07111f;
-  overflow: hidden;
-}
-
-.video-frame video {
-  width: 100%;
-  height: 100%;
-  max-height: 64vh;
-  object-fit: contain;
-  background: #07111f;
-}
-
-.video-panel {
-  padding: 18px;
-  border-radius: 10px;
-  background: #fff;
-  border: 1px solid #cbd5e1;
-}
-
-.video-panel h2 {
-  margin-top: 0;
-}
-
-.video-choice,
-.speed-controls button {
-  width: 100%;
-  margin: 0 0 10px;
-  border: 1px solid #cbd5e1;
-  background: #f8fafc;
-  color: #0f172a;
-  text-align: left;
-}
-
-.speed-controls {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-}
-
-.speed-controls button {
-  margin: 0;
-  text-align: center;
-}
-
-.video-choice.is-selected,
-.speed-controls button.is-selected {
-  background: #0f766e;
-  color: #f8fafc;
-  border-color: #0f766e;
 }
 
 .case-layout {
@@ -489,14 +386,8 @@ figcaption {
 .case-notes.horizontal span { padding: 8px 12px; border-radius: 999px; background: #ecfeff; color: #0f766e; font-size: 14px; font-weight: 800; }
 
 .step-item {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity .34s ease, transform .34s ease;
-}
-
-.step-item.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .toolbar {
@@ -582,24 +473,6 @@ button:hover {
     white-space: nowrap;
   }
 
-  .video-demo {
-    grid-template-columns: 1fr;
-    gap: 14px;
-    min-height: auto;
-  }
-
-  .video-frame {
-    min-height: 220px;
-  }
-
-  .video-frame video {
-    max-height: 42vh;
-  }
-
-  .video-panel {
-    padding: 14px;
-  }
-
   .case-layout,
   .case-grid {
     grid-template-columns: 1fr;
@@ -626,14 +499,6 @@ button:hover {
 
   .case-notes li {
     font-size: 16px;
-  }
-
-  .speed-controls {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-  }
-
-  .speed-controls button {
-    padding: 8px 6px;
   }
 
   .toolbar {
