@@ -1,91 +1,77 @@
 window.AIBISlides = [
   {
+    section: "封面",
     center: true,
-    html: `<p class="kicker">AI + BI Best Practices</p><h1>资深BI工程师：AI+BI的最佳实践</h1><p>从“一堆图”到可行动的数据产品</p>`
+    html: `<p class="kicker">BUSINESS · BI · AI</p><h1>把业务问题，变成<br><span class="accent">可落地的数据智能方案</span></h1><p class="lead">郭文华｜业务型售前顾问 · BI / 数据智能方向</p><div class="hero-tags"><span>8 年数据与数字化</span><span>制造 / 消费 / 保险</span><span>AI 原生工作方式</span></div>`
   },
   {
-    html: `<h1>目录</h1><ol><li>为什么很多 BI 最终变成“一堆图”</li><li>BI 开发：如何从图表走向产品</li><li>Html、多维表、传统 BI 对比</li><li>重构 BI：AI+BI 的思路</li><li>案例：Codex 一键打通 BI</li><li>BI 扩展：副业与接单</li></ol>`
+    section: "定位",
+    html: `<p class="kicker">我的定位</p><h1>业务、数据与 AI 的连接者</h1><div class="metric-grid"><article><strong>8 年</strong><span>BI、数据分析与企业数字化</span></article><article><strong>端到端</strong><span>交流、澄清、方案、PoC、汇报、推进</span></article><article><strong>多行业</strong><span>制造、消费、保险、地产与金融</span></article><article><strong>AI 原生</strong><span>把新能力转成可验证业务场景</span></article></div><p class="quote">不从产品功能开始，而从客户要解决的经营问题开始。</p>`
   },
   {
-    html: `<p class="kicker">第一部分</p><h1>需求从一开始就停在“展示层”</h1><ul><li>典型需求：做个看板、做个大屏、做个仪表盘</li><li>这些词都指向“展示”，而不是“业务目标”</li><li>BI 项目从立项那一刻起就被框死在“可视化”层</li></ul><p class="quote">结果：图很漂亮，但业务不知道该怎么用。</p>`
+    section: "方法",
+    html: `<p class="kicker">能力闭环</p><h1>从一句模糊需求，到一套可交付方案</h1><div class="flow"><div><b>01</b><strong>经营问题</strong><span>目标、流程、角色、痛点</span></div><i>→</i><div><b>02</b><strong>需求澄清</strong><span>场景、规则、边界</span></div><i>→</i><div><b>03</b><strong>方案设计</strong><span>指标、数据、原型</span></div><i>→</i><div><b>04</b><strong>价值呈现</strong><span>演示、验证、共识</span></div><i>→</i><div><b>05</b><strong>推进落地</strong><span>计划、协同、验收</span></div></div><div class="ai-ribbon"><strong>AI 加速层</strong><span>访谈整理 · 规则提取 · 澄清问题 · 原型生成 · 文档迭代 · 方案校验</span></div>`
   },
   {
-    html: `<p class="kicker">第一部分</p><h1>指标是堆出来的，不是设计出来的</h1><ul><li>数据库里有什么字段就展示什么</li><li>趋势图、饼图、柱状图堆满一屏</li><li>缺少指标体系：核心指标、解释指标、行动指标</li></ul><p class="quote">没有指标体系，图表只能是数据截图的高级版。</p>`
+    section: "AI+BI",
+    html: `<p class="kicker">开源项目 01</p><h1>cwtwb：让 AI 工程化构建 Tableau</h1><div class="product-layout"><div><p class="product-lead">从自然语言或代码，生成可检查、可复现、可验证的 <code>.twb / .twbx</code> 工作簿。</p><div class="feature-grid"><span>Python SDK</span><span>CLI</span><span>MCP Server</span><span>图表与仪表板</span><span>XSD 校验</span><span>Cloud / Server 验证</span></div><a class="repo-link" href="https://github.com/aidatacooper/cwtwb" target="_blank" rel="noreferrer">github.com/aidatacooper/cwtwb ↗</a></div><aside class="code-card"><em>Prompt</em><p>“基于销售数据，构建含趋势、结构与异常定位的管理驾驶舱。”</p><hr><em>Artifact</em><p><strong>Workbook + Validation Evidence</strong></p></aside></div>`
   },
   {
-    html: `<p class="kicker">第一部分</p><h1>没有“决策场景”，只有“浏览场景”</h1><div class="cols"><div><h2>浏览场景</h2><p>看看数据怎么样。</p></div><div><h2>决策场景</h2><p>今天要做什么动作？预算调哪里？哪个产品要下架？</p></div></div><p class="quote">没有决策场景，BI 就无法驱动行动，只能成为数据橱窗。</p>`
+    section: "AI+BI",
+    html: `<p class="kicker">开源项目 02</p><h1>cwprep：让 AI 构建可复现的数据准备流程</h1><div class="product-layout"><div><p class="product-lead">通过声明式定义生成 Tableau Prep <code>.tfl / .tflx</code>，覆盖连接、清洗、关联、计算、聚合与 SQL 翻译。</p><div class="feature-grid"><span>多数据源</span><span>Join / Union</span><span>清洗与计算</span><span>Pivot</span><span>打包交付</span><span>SQL Translation</span></div><a class="repo-link" href="https://github.com/aidatacooper/cwprep" target="_blank" rel="noreferrer">github.com/aidatacooper/cwprep ↗</a></div><aside class="code-card"><em>Definition First</em><p>设计流程 → 校验定义 → 生成文件 → 检查 SQL → Tableau Prep 打开</p></aside></div>`
   },
   {
-    html: `<p class="kicker">第一部分</p><h1>BI 被当成“汇报工具”</h1><div class="cols"><div><h2>汇报</h2><ul><li>要好看</li><li>要炫</li><li>要动效</li></ul></div><div><h2>运营</h2><ul><li>要定位问题</li><li>要指导动作</li><li>要融入流程</li></ul></div></div><p class="quote">汇报型 BI = 好看但不长久<br>运营型 BI = 好用才会被持续使用</p>`
-  },
-  {
-    html: `<p class="kicker">第一部分</p><h1>缺少闭环：看完之后什么都不会发生</h1><ul><li>看完数据没有下一步动作</li><li>没有责任人</li><li>没有阈值</li><li>没有预警</li><li>没有行动建议</li></ul><p class="quote">没有闭环的 BI，本质上就是“一堆图”。</p>`
-  },
-  {
-    html: `<p class="kicker">反面案例</p><h1>不好的仪表板：指标很多，但判断很少</h1><div class="case-layout"><figure><img src="../Images/不好的仪表板.png" alt="指标过多的不好的仪表板案例"><figcaption>反面案例：KPI 全部铺开，阅读成本极高</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>问题不在于图表数量少，而在于没有优先级：每个 KPI 都像同等重要。</li><li>时间轴、筛选器和十几行指标同时出现，用户需要自己判断哪里异常。</li><li>缺少“先看什么、异常是什么、下一步做什么”的路径，因此很难驱动行动。</li></ul></div></div><p class="quote">坏 BI 的典型特征：信息很满，但决策很空。</p>`
-  },
-  {
-    html: `<p class="kicker">第二部分</p><h1>从“图表”到“场景化看板”</h1><p><strong>核心：图表不再是数据的形状，而是问题的答案。</strong></p><ul><li>先写业务问题，再画图</li><li>每张图都对应一个明确的问题</li><li>看板结构围绕“场景”而不是“图表类型”</li></ul><p class="quote">场景化让 BI 从展示走向理解。</p>`
-  },
-  {
-    html: `<p class="kicker">第二部分</p><h1>从“看板”到“决策工具”</h1><p><strong>核心：BI 不只是告诉你发生了什么，还要推动你做什么。</strong></p><ul><li><strong>阈值</strong>：好/坏的分界线</li><li><strong>预警</strong>：自动发现异常</li><li><strong>动作入口</strong>：预算调整、配置修改、任务派发</li></ul><p class="quote">决策工具让 BI 从理解走向行动。</p>`
-  },
-  {
-    html: `<p class="kicker">第二部分</p><h1>从“决策工具”到“数据产品”</h1><p><strong>核心：让 BI 能被复用、被售卖、被迭代。</strong></p><ul><li>明确的用户角色</li><li>清晰的价值主张</li><li>完整的功能结构</li><li>权限体系、配置体系、数据源管理</li></ul><p class="quote">数据产品让 BI 从行动走向规模化价值。</p>`
-  },
-  {
-    html: `<p class="kicker">案例：仪表盘优化</p><h1>优化前：明细表不是数据产品</h1><div class="case-layout"><figure><img src="../Images/优化前.png" alt="优化前的订单明细仪表盘截图"><figcaption>优化前：Order Details from Superstore</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>它只是在展示订单明细，用户知道“有什么数据”，但不知道“该看什么”。</li><li>探索路径依赖导出到其他工具，BI 没有承接分析动作。</li><li>这一页适合用来回应前面的问题：为什么很多 BI 最终只是一堆图或一张大表。</li></ul></div></div>`
-  },
-  {
-    html: `<p class="kicker">案例：仪表盘优化</p><h1>第一步：补上下文和结构</h1><div class="case-layout"><figure><img src="../Images/优化中1.png" alt="优化中第一步，增加上下文和结构"><figcaption>第一步：固定尺寸、标题说明、侧边筛选器</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>先解决“这个看板给谁用、用来干什么”的问题。</li><li>标题和副标题定义业务语境，固定尺寸保证交付体验稳定。</li><li>筛选器移到侧边栏，减少主画布干扰，为后续分析区域腾出空间。</li></ul></div></div>`
-  },
-  {
-    html: `<p class="kicker">案例：仪表盘优化</p><h1>第二步：把筛选变成分析入口</h1><div class="case-grid"><figure><img src="../Images/优化中2.png" alt="优化中第二步，增加可视化"><figcaption>增加趋势和维度图表</figcaption></figure><figure><img src="../Images/优化中3.png" alt="优化中第三步，增加高亮和交互"><figcaption>增加高亮、散点图和交互探索</figcaption></figure></div><div class="case-notes compact"><h2>讲解注释</h2><ul><li>把原本静态筛选器改成可点击图表，让用户通过图表完成筛选和定位。</li><li>趋势图负责发现时间变化，散点图负责发现异常和关系，表格高亮负责承接明细判断。</li><li>这一步体现“场景化看板”到“决策工具”的转变。</li></ul></div>`
-  },
-  {
-    html: `<p class="kicker">案例：仪表盘优化</p><h1>最后：补文档、入口和闭环</h1><div class="case-layout"><figure><img src="../Images/优化后.png" alt="优化后的订单明细探索仪表盘截图"><figcaption>优化后：增加说明浮层和使用引导</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>说明浮层降低新用户上手成本，让 BI 具备 onboarding 能力。</li><li>可以进一步加入问题反馈、工单链接或改进需求入口。</li><li>这不是单纯美化，而是把看板补成可持续迭代的数据产品。</li></ul></div></div><p class="quote">好的 BI 不是把数据摆出来，而是把用户带到下一步动作。</p>`
-  },
-  {
-    html: `<h1>Html、多维表、传统 BI 对比</h1><table><thead><tr><th>评估维度</th><th>HTML 自研方案</th><th>多维表</th><th>传统 BI</th></tr></thead><tbody><tr><td>定制化能力</td><td>极高，可自由编写 UI 与交互</td><td>较低，受限平台组件</td><td>较高，受限内置图表</td></tr><tr><td>AI 生成友好度</td><td>极高，代码结构标准</td><td>一般，依赖 API</td><td>较低，专有格式复杂</td></tr><tr><td>数据量支持</td><td>取决于后端与前端调优</td><td>较小，通常有行数上限</td><td>极高，支持亿级聚合</td></tr><tr><td>维护成本</td><td>高，需前端能力</td><td>极低，开箱即用</td><td>中等，需要 BI 人员</td></tr><tr><td>适用场景</td><td>移动卡片、高管看板</td><td>轻量协作、进销存</td><td>企业数仓、复杂指标</td></tr></tbody></table>`
-  },
-  {
-    html: `<h1>重构 BI：从 GUI 走向声明式代码</h1><ul><li>废弃手动拖拽：AI 将业务需求转化为配置文件或代码脚本</li><li>数据准备自动化：代码定义清洗流，AI 映射字段、处理缺失值</li><li>报表组装工程化：解析 BI 工具 XML / JSON，用 Python 批量组装布局</li></ul>`
-  },
-  {
-    html: `<h1>AI Agent 在 BI 中的应用闭环</h1><ol><li><strong>需求理解与规划</strong>：解析指标、维度与图表类型</li><li><strong>自动化加工与生成</strong>：生成清洗流文件与报表模板</li><li><strong>部署与校验</strong>：上传报表并进行数据准确性校验</li></ol>`
-  },
-  {
-    html: `<h1>Tableau 自动化配置方法</h1><h2>imgwho/cwprep + imgwho/cwtwb</h2><ul class="config-list"><li><strong>cwprep</strong>：<a href="https://github.com/imgwho/cwprep" target="_blank" rel="noreferrer">https://github.com/imgwho/cwprep</a></li><li><strong>cwtwb</strong>：<a href="https://github.com/imgwho/cwtwb" target="_blank" rel="noreferrer">https://github.com/imgwho/cwtwb</a></li><li><strong>安装工具</strong>：执行 <code>pip install cwprep cwtwb</code>，需要示例或云端校验时可安装 <code>cwtwb[examples]</code>、<code>cwtwb[validate]</code></li><li><strong>配置 MCP</strong>：在 MCP 客户端中注册 <code>cwprep</code> 与 <code>cwtwb</code>，命令分别为 <code>uvx cwprep</code>、<code>uvx cwtwb</code></li><li><strong>本地自检</strong>：运行 <code>cwprep doctor</code>、<code>cwprep status</code>、<code>cwtwb doctor</code>、<code>cwtwb status --json</code></li></ul>`
-  },
-  {
-    html: `<h1>Tableau 落地步骤</h1><ol><li><strong>准备数据清洗流</strong>：用 cwprep 先读 <code>cwprep://docs/api-reference</code>、计算语法和最佳实践，设计 flow definition</li><li><strong>生成 Prep 文件</strong>：先 <code>validate_flow_definition</code> 校验，再用 <code>generate_tfl</code> 输出 <code>.tfl/.tflx</code>；需要审阅时可用 <code>translate_to_sql</code></li><li><strong>准备工作簿模板</strong>：用 cwtwb <code>create_workbook</code> 或 <code>open_workbook</code>，设置 CSV / Excel / Hyper / Server 数据源</li><li><strong>组装报表</strong>：调用 <code>list_fields</code>、<code>add_worksheet</code>、<code>configure_chart</code>、<code>add_dashboard</code>，最后 <code>save_workbook</code></li><li><strong>校验与分发</strong>：用 <code>cwtwb validate</code> 或云端 REST 校验，发布后可接 <code>tableauPushDing</code> 截图推送</li></ol>`
-  },
-  {
-    html: `<h1>Tableau 实操演示</h1><div class="video-demo"><div class="video-frame"><video controls preload="metadata" playsinline src="../Videos/1tableau 配置mcp_compressed.mp4"></video></div><div class="video-panel"><h2>演示片段</h2><button class="video-choice is-selected" data-video="../Videos/1tableau 配置mcp_compressed.mp4">配置 MCP</button><button class="video-choice" data-video="../Videos/2tableau 询问mcp能力_compressed.mp4">询问 MCP 能力</button><button class="video-choice" data-video="../Videos/3tableau生成成功_compressed.mp4">生成成功</button><h2>播放速度</h2><div class="speed-controls"><button data-speed="0.75">0.75x</button><button class="is-selected" data-speed="1">1x</button><button data-speed="1.25">1.25x</button><button data-speed="1.5">1.5x</button><button data-speed="2">2x</button></div></div></div>`
-  },
-  {
-    html: `<h1>Power BI 智能体配置方法</h1><h2>PowerBI Authoring Skills + Modeling MCP</h2><ul class="config-list"><li><strong>MCP</strong>：<a href="https://github.com/microsoft/powerbi-modeling-mcp" target="_blank" rel="noreferrer">https://github.com/microsoft/powerbi-modeling-mcp</a></li><li><strong>Skill</strong>：<a href="https://github.com/microsoft/skills-for-fabric/blob/main/plugins/powerbi-authoring/skills/powerbi-report-authoring/SKILL.md" target="_blank" rel="noreferrer">https://github.com/microsoft/skills-for-fabric/blob/main/plugins/powerbi-authoring/skills/powerbi-report-authoring/SKILL.md</a></li><li><strong>安装 Skills</strong>：下载 PowerBI Authoring Skills，放入 Codex 可识别目录，例如 <code>.agents/skills</code> 或 <code>~/.agents/skills</code></li><li><strong>安装 MCP</strong>：配置 PowerBI Modeling MCP，让 AI 能读取模型、创建度量值、运行 DAX 查询和导出元数据</li><li><strong>安装依赖</strong>：准备 Node.js 20+，并安装 <code>@microsoft/powerbi-report-authoring-cli</code> 与 <code>@microsoft/powerbi-desktop-bridge-cli</code></li><li><strong>验证环境</strong>：运行 <code>powerbi-report-author --version</code> 和 <code>powerbi-desktop --version</code></li></ul>`
-  },
-  {
-    html: `<h1>Power BI 落地步骤</h1><ol><li><strong>方式 A：基于已打开模型</strong>：先打开 Power BI Desktop 并导入数据，保持文件打开，让 AI 读取当前模型并设计报表</li><li><strong>方式 B：基于 PBIP 项目</strong>：将现有报表导出为 PBIP；编辑或美化现有报表时，PBIP 文件应保持关闭，避免影响读写</li><li><strong>Prompt 发起需求</strong>：说明页数、分析主题、布局风格和覆盖场景，例如“基于已导出的 PBIP 项目，创建深色科技风报表”</li><li><strong>先审设计文档</strong>：AI 会产出 <code>_brief/report-spec.md</code>，确认页面结构、主题风格和分析路径后再回复 approve</li><li><strong>生成与验收</strong>：AI 产出 PBIP 报表后，打开刷新数据；需要独立交付时，再另存为 <code>.pbix</code></li></ol>`
-  },
-  {
-    html: `<h1>Power BI 实操演示</h1><div class="video-demo"><div class="video-frame"><video controls preload="metadata" playsinline src="../Videos/1powerbi 配置mcp skill npm_compressed.mp4"></video></div><div class="video-panel"><h2>演示片段</h2><button class="video-choice is-selected" data-video="../Videos/1powerbi 配置mcp skill npm_compressed.mp4">配置 MCP / Skills / npm</button><button class="video-choice" data-video="../Videos/2powerbi生成成功_compressed.mp4">生成成功</button><h2>播放速度</h2><div class="speed-controls"><button data-speed="0.75">0.75x</button><button class="is-selected" data-speed="1">1x</button><button data-speed="1.25">1.25x</button><button data-speed="1.5">1.5x</button><button data-speed="2">2x</button></div></div></div>`
-  },
-  {
-    html: `<h1>BI 扩展：小红书</h1><ul><li><strong>个人定位</strong>：数据分析专家、BI 自动化效率专家</li><li><strong>视觉展示</strong>：HTML 仪表盘截图、Tableau / Power BI 经典业务模板</li><li><strong>实操分享</strong>：AI+BI 自动化提效案例</li><li><strong>转化路径</strong>：引流至微信私域，承接报表定制、技术咨询、简历指导</li></ul>`
-  },
-  {
-    html: `<h1>小红书案例：搜索需求已经存在</h1><div class="case-layout phone-case"><figure><img src="../Images/小红书代做.jpg" alt="小红书搜索 powerbi 代做的截图"><figcaption>小红书搜索：powerbi 代做</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>用户搜索词已经很明确：powerbi 代做、财务报表、会计、期末作业。</li><li>这里适合做内容引流：展示案例、讲清价格区间、明确能交付什么。</li><li>标题和封面要覆盖具体需求词，而不是泛泛写“数据分析很重要”。</li><li>转化动作应导向私信咨询、需求表单或微信私域。</li></ul></div></div>`
-  },
-  {
-    html: `<h1>BI 扩展：闲鱼</h1><ul><li><strong>成品模板</strong>：企业通用销售 / 财务数据仪表盘模板</li><li><strong>定制服务</strong>：Tableau / Power BI 看板、Python 清洗脚本、Excel 自动报表</li><li><strong>关键词优化</strong>：数据分析、BI代做、报表定制、大屏设计、DAX编写</li><li><strong>高效交付</strong>：复用 <code>cwprep</code> 和 <code>cwtwb</code> 模板库，提高单小时利润率</li></ul>`
-  },
-  {
-    html: `<h1>闲鱼案例：低价入口，高价转化</h1><div class="case-layout phone-case"><figure><img src="../Images/闲鱼代做.jpg" alt="闲鱼搜索 BI 代做的截图"><figcaption>闲鱼搜索：bi 代做</figcaption></figure><div class="case-notes"><h2>讲解注释</h2><ul><li>闲鱼上的低价通常是引流入口，不是最终成交价。</li><li>商品标题要覆盖 Power BI、报表代做、财务分析、远程指导、DAX 编写等长尾词。</li><li>交付上可以拆成模板、远程指导、定制开发、自动化脚本四档。</li><li>AI+BI 的价值在于压缩交付时间，提高单小时利润，而不是参与低价内卷。</li></ul></div></div>`
-  },
-  {
+    section: "AI+BI",
     center: true,
-    html: `<h1>结论</h1><p>AI+BI 的关键不是让 AI 帮你拖图表。</p><p>真正的变化是：把 BI 改造成可规划、可生成、可校验、可部署的数据产品工程。</p>`
+    html: `<p class="kicker">Open Source Proof</p><h1><span class="big-number">30,000+</span><br>累计下载</h1><p class="lead">cwtwb + cwprep，把 AI 从“回答问题”推进到“生成真实 BI 资产”</p><div class="proof-row"><span>Tableau 工程化</span><span>社区真实使用</span><span>Tableau 官方生态认可</span></div><p class="micro">累计下载为两款 PyPI 项目合计口径；以公开统计页面实时数据为准。</p>`
+  },
+  {
+    section: "AI+BI",
+    html: `<p class="kicker">完整链路</p><h1>数据准备与可视化，不再是两座孤岛</h1><div class="pipeline"><article><small>BUSINESS INPUT</small><strong>业务目标与数据</strong><span>指标、维度、规则、样表</span></article><i>→</i><article class="cyan"><small>CWPREP</small><strong>数据流程工程</strong><span>清洗 · 关联 · 计算 · 输出</span></article><i>→</i><article class="blue"><small>CWTWB</small><strong>工作簿工程</strong><span>图表 · 布局 · 交互 · 校验</span></article><i>→</i><article class="green"><small>DELIVERY</small><strong>可交付 BI 资产</strong><span>可检查 · 可复现 · 可发布</span></article></div><p class="quote">AI 的价值不是替我“拖图”，而是把 BI 改造成可规划、可生成、可校验的工程。</p>`
+  },
+  {
+    section: "AI产品",
+    html: `<p class="kicker">AI 业务项目</p><h1>从海量聊天中，提炼可复制的销售能力</h1><div class="problem-solution"><div><h2>业务问题</h2><ul><li>优秀销售经验停留在个人手中</li><li>海量企业微信聊天无法人工复盘</li><li>新客转化与客户维系缺少标准资产</li></ul></div><div><h2>产品答案</h2><ul><li>从真实成交与互动数据筛选样本</li><li>AI 提炼话术、风格与触发条件</li><li>生成可评分、可复用的话术与聊点库</li></ul></div></div><p class="quote">不是让模型凭空写话术，而是让 AI 从真实业务结果中学习。</p>`
+  },
+  {
+    section: "AI产品",
+    html: `<p class="kicker">销售话术分析系统</p><h1>数据 → 洞察 → 生成 → 评测</h1><div class="flow compact"><div><b>01</b><strong>真实数据</strong><span>订单、客户、员工、聊天</span></div><i>→</i><div><b>02</b><strong>样本筛选</strong><span>Top 销售与高价值客户</span></div><i>→</i><div><b>03</b><strong>AI 分析</strong><span>成交路径与沟通风格</span></div><i>→</i><div><b>04</b><strong>资产生成</strong><span>Hunting / Farming</span></div><i>→</i><div><b>05</b><strong>质量评测</strong><span>评分、去重、风险控制</span></div></div><div class="two-mode"><article><strong>HUNTING</strong><span>新客开发：首单成交路径、高转化话术</span></article><article><strong>FARMING</strong><span>客户维系：高互动聊点、SEED+P 话题裂变</span></article></div>`
+  },
+  {
+    section: "个人售前案例",
+    html: `<p class="kicker">华芝林 · 个人售前项目</p><h1>客户给我的，不是一份完整需求</h1><div class="chaos-grid"><span>管家婆发货数据</span><span>20+ 省区经营监控</span><span>70% 签约红线</span><span>合同与培训人数</span><span>应返 / 实返</span><span>省总 / 地总 / 业务</span><span>兼任与代收</span><span>一单多商品</span><span>企业微信入口</span></div><p class="quote">真正的售前工作，是把这些碎片重新组织成客户能够确认、团队能够交付的系统。</p>`
+  },
+  {
+    section: "个人售前案例",
+    html: `<p class="kicker">AI 原生售前方法</p><h1>我如何快速进入陌生业务场景</h1><div class="flow"><div><b>01</b><strong>材料输入</strong><span>访谈、Excel、流程、截图</span></div><i>→</i><div><b>02</b><strong>AI 结构化</strong><span>角色、对象、流程、规则</span></div><i>→</i><div><b>03</b><strong>冲突识别</strong><span>口径、例外、权限、状态</span></div><i>→</i><div><b>04</b><strong>原型验证</strong><span>页面、交互、数据路径</span></div><i>→</i><div><b>05</b><strong>方案收敛</strong><span>范围、计划、报价、验收</span></div></div><div class="ai-ribbon"><strong>我的判断仍然是核心</strong><span>AI 提高速度；业务访谈、取舍、边界与承诺由我负责。</span></div>`
+  },
+  {
+    section: "个人售前案例",
+    html: `<p class="kicker">需求澄清</p><h1>AI 帮我更快发现“没有被说出来的问题”</h1><div class="question-grid"><article><b>身份</b><span>一人兼任省总、地总、业务，数据如何展示？</span></article><article><b>核销</b><span>实返按订单逐笔，还是按打款批次汇总？</span></article><article><b>代收</b><span>口头约定且随时变化，关系如何动态配置？</span></article><article><b>唯一性</b><span>一个单据多个商品，如何避免重复导入？</span></article><article><b>历史</b><span>新 Excel 是否允许覆盖已核销、已修改数据？</span></article><article><b>边界</b><span>哪些必须一期交付，哪些属于二期升级？</span></article></div>`
+  },
+  {
+    section: "个人售前案例",
+    html: `<p class="kicker">流程与数据建模</p><h1>把返款业务拆成两个可追溯工作流</h1><div class="workflow-split"><article><small>WORKFLOW A</small><h2>应返</h2><p>订单明细 → 角色分配 → 应返金额 → 销售查询</p><span>回答：这笔钱为什么属于我？</span></article><article><small>WORKFLOW B</small><h2>实返</h2><p>财务汇总打款 → 实返 Excel → 批次核销 → 到账核对</p><span>回答：这次到账包含哪些订单？</span></article></div><div class="rule-bar"><span>联合主键：单据编号 + 商品</span><span>已核销数据锁定</span><span>代收关系动态配置</span><span>多身份视角切换</span></div>`
+  },
+  {
+    section: "个人售前案例",
+    html: `<p class="kicker">解决方案</p><h1>从数据源到管理动作的完整闭环</h1><div class="architecture"><div><small>数据源</small><span>管家婆</span><span>合同 / 培训</span><span>应返 / 实返 Excel</span></div><i>→</i><div><small>自动处理</small><span>增量导入</span><span>规则校验</span><span>历史保护</span></div><i>→</i><div><small>业务数据</small><span>订单</span><span>人员与角色</span><span>返款批次 / 核销</span></div><i>→</i><div><small>业务应用</small><span>销售移动端</span><span>财务管理端</span><span>经营看板</span></div><i>→</i><div><small>访问入口</small><span>Web</span><span>企业微信</span><span>分级权限</span></div></div>`
+  },
+  {
+    section: "个人售前案例",
+    html: `<p class="kicker">范围控制</p><h1>售前不是“什么都答应”，而是建立可交付边界</h1><div class="scope-grid"><article class="in"><h2>一期锁定</h2><ul><li>账号申请与审批</li><li>应返、实返与批次核销</li><li>兼任、代收与权限规则</li><li>增量导入与历史保护</li><li>财务双口径导出</li></ul></article><article class="out"><h2>二期规划</h2><ul><li>发票图片上传</li><li>管家婆数据库直连</li><li>自动下单与外部接口</li><li>更丰富的图形化分析</li><li>进一步流程自动化</li></ul></article></div><p class="quote">用原型确认理解，用边界保护交付，用阶段规划保留增长空间。</p>`
+  },
+  {
+    section: "行业案例",
+    html: `<p class="kicker">案例组合</p><h1>制造为主，消费与保险补充</h1><div class="case-matrix"><article><strong>一汽 / 一汽大众</strong><span>产销存、供应链、财务经营、HR、管理层会议 BI</span><em>制造 · 复杂业务</em></article><article><strong>立白 / 蒙牛 / 华芝林</strong><span>电商全链路、财务 PoC、销售与返款数智化</span><em>消费 · 零售</em></article><article><strong>友邦 / 安盛天平</strong><span>销售业绩、佣金、保费、经营监控与异常识别</span><em>保险 · 经营分析</em></article><article><strong>金科 / 广汽研究院</strong><span>招投标、产品边界、平台升级、多端与权限方案</span><em>复杂售前 · 推进</em></article></div>`
+  },
+  {
+    section: "岗位价值",
+    html: `<p class="kicker">我能带来的价值</p><h1>业务型售前 × AI 原生执行力</h1><div class="value-stack"><div><b>01</b><p><strong>更快进入业务</strong><span>快速理解陌生流程，抓住管理问题与关键规则</span></p></div><div><b>02</b><p><strong>更清楚地讲价值</strong><span>用指标、场景和决策路径，而不是功能清单沟通</span></p></div><div><b>03</b><p><strong>更快形成验证</strong><span>借助 AI 生成原型、样例和可运行的 BI 资产</span></p></div><div><b>04</b><p><strong>更稳地推进项目</strong><span>明确角色、范围、风险、交付物与关键节点</span></p></div></div>`
+  },
+  {
+    section: "结束",
+    center: true,
+    html: `<p class="kicker">LET'S BUILD VALUE WITH DATA</p><h1>把客户听不清的需求，<br>变成<span class="accent">看得见、能验证、可落地</span>的方案</h1><p class="lead">郭文华｜成都｜业务型售前顾问 · BI / 数据智能</p><div class="contact-row"><a href="tel:17313162175">173 1316 2175</a><a href="mailto:imgwho@qq.com">imgwho@qq.com</a><a href="https://github.com/aidatacooper" target="_blank" rel="noreferrer">github.com/aidatacooper</a></div>`
   }
 ];
