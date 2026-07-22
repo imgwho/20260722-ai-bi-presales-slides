@@ -11,7 +11,11 @@
     section.className = `slide${item.center ? " center" : ""}`;
     section.innerHTML = `<div class="section-mark">${sectionForIndex(index)}</div>${item.html}`;
     section.setAttribute("aria-label", `${title} 第 ${index + 1} 页`);
-    applyProgressiveSteps(section);
+    if (item.noSteps) {
+      section.classList.add("no-steps");
+    } else {
+      applyProgressiveSteps(section);
+    }
     setupVideoControls(section);
     deck.appendChild(section);
     return section;
@@ -115,6 +119,7 @@
       renderStep();
       return;
     }
+    if (current >= slides.length - 1) return;
     show(current + 1, 0);
   }
 
@@ -124,6 +129,7 @@
       renderStep();
       return;
     }
+    if (current <= 0) return;
     const prevIndex = Math.max(0, current - 1);
     show(prevIndex, maxStepForSlide(slides[prevIndex]));
   }
