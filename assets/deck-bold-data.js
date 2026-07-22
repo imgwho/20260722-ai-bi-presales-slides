@@ -168,14 +168,15 @@ window.AIBIBoldSlides = [
   },
   {
     section: "华芝林",
-    bgRed: true,
-    center: true,
     html: `
-      <div class="kicker" style="background:#FFFFFF; color:var(--red);">华芝林 · 个人售前项目</div>
-      <div class="chaos-grid">
+      <div class="kicker">华芝林 · 个人售前项目</div>
+      <div class="summary-header">客户给我的，不是一份完整需求</div>
+      <div class="chaos-grid" style="margin-bottom: 20px;">
         <span>管家婆发货数据</span><span>20+ 省区经营监控</span><span>70% 签约红线</span><span>合同与培训人数</span><span>应返 / 实返</span><span>省总 / 地总 / 业务</span><span>兼任与代收</span><span>一单多商品</span><span>企业微信入口</span>
       </div>
-      <div class="red-quote">“真正的售前工作，是把这些碎片重新组织成客户能够确认、团队能够交付的系统。”</div>
+      <div class="quote" style="margin-top: 16px;">
+        “真正的售前工作，是把这些碎片重新组织成<span class="accent">客户能够确认、团队能够交付</span>的系统。”
+      </div>
     `
   },
   {
