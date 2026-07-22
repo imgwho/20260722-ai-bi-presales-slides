@@ -16,12 +16,14 @@
   });
 
   const counter = document.querySelector("#counter");
+  const progressBar = document.querySelector(".progress-bar");
   let current = 0;
 
   function show(nextIndex) {
     current = Math.max(0, Math.min(slides.length - 1, nextIndex));
     slides.forEach((slide, index) => slide.classList.toggle("active", index === current));
-    counter.textContent = `${current + 1} / ${slides.length}`;
+    if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+    if (progressBar) progressBar.style.width = `${((current + 1) / slides.length) * 100}%`;
     document.title = `${title} - ${current + 1}`;
   }
 
@@ -35,8 +37,8 @@
     show(current - 1);
   }
 
-  document.querySelector("#prev").addEventListener("click", prev);
-  document.querySelector("#next").addEventListener("click", next);
+  document.querySelector("#prev")?.addEventListener("click", prev);
+  document.querySelector("#next")?.addEventListener("click", next);
   window.addEventListener("keydown", event => {
     if (event.key === "ArrowRight" || event.key === "PageDown" || event.key === " ") next();
     if (event.key === "ArrowLeft" || event.key === "PageUp") prev();
