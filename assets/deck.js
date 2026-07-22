@@ -6,25 +6,6 @@
     return window.AIBISlides[index].section || "案例";
   }
 
-  const slides = window.AIBISlides.map((item, index) => {
-    const section = document.createElement("section");
-    section.className = `slide${item.center ? " center" : ""}`;
-    section.innerHTML = `<div class="section-mark">${sectionForIndex(index)}</div>${item.html}`;
-    section.setAttribute("aria-label", `${title} 第 ${index + 1} 页`);
-    if (item.noSteps) {
-      section.classList.add("no-steps");
-    } else {
-      applyProgressiveSteps(section);
-    }
-    setupVideoControls(section);
-    deck.appendChild(section);
-    return section;
-  });
-
-  const counter = document.querySelector("#counter");
-  let current = 0;
-  let step = 0;
-
   function applyProgressiveSteps(section) {
     const titleNodes = Array.from(section.querySelectorAll(".kicker, h1"));
     titleNodes.forEach(node => {
@@ -53,38 +34,25 @@
       node.classList.add("step-item");
       node.dataset.step = "1";
     });
-
-    section.querySelectorAll(".video-demo").forEach(node => {
-      node.classList.add("step-item");
-      node.dataset.step = "1";
-    });
   }
 
-  function setupVideoControls(section) {
-    section.querySelectorAll(".video-demo").forEach(demo => {
-      const video = demo.querySelector("video");
-      const choices = Array.from(demo.querySelectorAll(".video-choice"));
-      const speedButtons = Array.from(demo.querySelectorAll("[data-speed]"));
+  const slides = window.AIBISlides.map((item, index) => {
+    const section = document.createElement("section");
+    section.className = `slide${item.center ? " center" : ""}`;
+    section.innerHTML = `<div class="section-mark">${sectionForIndex(index)}</div>${item.html}`;
+    section.setAttribute("aria-label", `${title} 第 ${index + 1} 页`);
+    if (item.noSteps) {
+      section.classList.add("no-steps");
+    } else {
+      applyProgressiveSteps(section);
+    }
+    deck.appendChild(section);
+    return section;
+  });
 
-      choices.forEach(button => {
-        button.addEventListener("click", () => {
-          const currentRate = video.playbackRate;
-          video.pause();
-          video.src = button.dataset.video;
-          video.playbackRate = currentRate;
-          choices.forEach(item => item.classList.toggle("is-selected", item === button));
-          video.load();
-        });
-      });
-
-      speedButtons.forEach(button => {
-        button.addEventListener("click", () => {
-          video.playbackRate = Number(button.dataset.speed);
-          speedButtons.forEach(item => item.classList.toggle("is-selected", item === button));
-        });
-      });
-    });
-  }
+  const counter = document.querySelector("#counter");
+  let current = 0;
+  let step = 0;
 
   function maxStepForSlide(slide) {
     const steps = Array.from(slide.querySelectorAll(".step-item")).map(node => Number(node.dataset.step || 0));
