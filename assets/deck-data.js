@@ -14,11 +14,11 @@ window.AIBISlides = [
   },
   {
     section: "AI+BI",
-    html: `<p class="kicker">开源项目 01</p><h1>cwtwb：让 AI 工程化构建 Tableau</h1><div class="product-layout"><div><p class="product-lead">从自然语言或代码，生成可检查、可复现、可验证的 <code>.twb / .twbx</code> 工作簿。</p><div class="feature-grid"><span>Python SDK</span><span>CLI</span><span>MCP Server</span><span>图表与仪表板</span><span>XSD 校验</span><span>Cloud / Server 验证</span></div><a class="repo-link" href="https://github.com/aidatacooper/cwtwb" target="_blank" rel="noreferrer">github.com/aidatacooper/cwtwb ↗</a></div><aside class="code-card"><em>Prompt</em><p>“基于销售数据，构建含趋势、结构与异常定位的管理驾驶舱。”</p><hr><em>Artifact</em><p><strong>Workbook + Validation Evidence</strong></p></aside></div>`
+    html: `<p class="kicker">开源项目 01</p><h1>cwtwb：让 AI 工程化构建 Tableau</h1><div class="evidence-layout"><figure><img src="../Images/evidence/cwtwb-hero.png" alt="AI 通过 cwtwb MCP 构建 Tableau 仪表板的真实界面"><figcaption>真实运行界面：AI 调用 MCP 工具生成布局、仪表板与交互</figcaption></figure><div><p class="product-lead">从自然语言或代码，生成可检查、可复现、可验证的 <code>.twb / .twbx</code>。</p><div class="feature-grid"><span>Python SDK</span><span>MCP Server</span><span>图表与仪表板</span><span>XSD 校验</span><span>Cloud 验证</span><span>可复现交付</span></div><a class="repo-link" href="https://github.com/aidatacooper/cwtwb" target="_blank" rel="noreferrer">查看开源项目 ↗</a></div></div>`
   },
   {
     section: "AI+BI",
-    html: `<p class="kicker">开源项目 02</p><h1>cwprep：让 AI 构建可复现的数据准备流程</h1><div class="product-layout"><div><p class="product-lead">通过声明式定义生成 Tableau Prep <code>.tfl / .tflx</code>，覆盖连接、清洗、关联、计算、聚合与 SQL 翻译。</p><div class="feature-grid"><span>多数据源</span><span>Join / Union</span><span>清洗与计算</span><span>Pivot</span><span>打包交付</span><span>SQL Translation</span></div><a class="repo-link" href="https://github.com/aidatacooper/cwprep" target="_blank" rel="noreferrer">github.com/aidatacooper/cwprep ↗</a></div><aside class="code-card"><em>Definition First</em><p>设计流程 → 校验定义 → 生成文件 → 检查 SQL → Tableau Prep 打开</p></aside></div>`
+    html: `<p class="kicker">开源项目 02</p><h1>cwprep：让 AI 构建可复现的数据准备流程</h1><div class="evidence-layout"><figure><img src="../Images/evidence/cwprep-hero.png" alt="cwprep 生成 Tableau Prep 流程的真实界面"><figcaption>真实运行界面：AI 设计并生成可在 Tableau Prep 中继续编辑的流程</figcaption></figure><div><p class="product-lead">声明式生成 <code>.tfl / .tflx</code>，覆盖连接、清洗、关联、计算、聚合与 SQL 翻译。</p><div class="feature-grid"><span>多数据源</span><span>Join / Union</span><span>清洗与计算</span><span>Pivot</span><span>打包交付</span><span>SQL Translation</span></div><a class="repo-link" href="https://github.com/aidatacooper/cwprep" target="_blank" rel="noreferrer">查看开源项目 ↗</a></div></div>`
   },
   {
     section: "AI+BI",
@@ -38,6 +38,14 @@ window.AIBISlides = [
     html: `<p class="kicker">销售话术分析系统</p><h1>数据 → 洞察 → 生成 → 评测</h1><div class="flow compact"><div><b>01</b><strong>真实数据</strong><span>订单、客户、员工、聊天</span></div><i>→</i><div><b>02</b><strong>样本筛选</strong><span>Top 销售与高价值客户</span></div><i>→</i><div><b>03</b><strong>AI 分析</strong><span>成交路径与沟通风格</span></div><i>→</i><div><b>04</b><strong>资产生成</strong><span>Hunting / Farming</span></div><i>→</i><div><b>05</b><strong>质量评测</strong><span>评分、去重、风险控制</span></div></div><div class="two-mode"><article><strong>HUNTING</strong><span>新客开发：首单成交路径、高转化话术</span></article><article><strong>FARMING</strong><span>客户维系：高互动聊点、SEED+P 话题裂变</span></article></div>`
   },
   {
+    section: "AI产品",
+    html: `<p class="kicker">真实产出片段</p><h1>聊点不是一句文案，而是一套可评测策略</h1><div class="snippet-layout"><article class="conversation-card"><small>话题：地域美食与旅游邀约｜自嘲式求助</small><p>“最近看到好多人推荐您老家的特色美食，我兴冲冲去尝了，结果感觉被‘照骗’了。想请教您这位地道美食家，最正宗的味道和吃法应该是怎样的？”</p><div class="followups"><span>① 共情：果然少了灵魂</span><span>② 请教：还有哪些隐藏宝藏</span><span>③ 延展：像本地人一样怎么玩</span></div></article><aside class="score-card"><strong>92</strong><span>AI 模拟评测</span><ul><li>人设 19 / 20</li><li>场景 14 / 15</li><li>情感 14 / 15</li><li>认同 19 / 20</li><li>驱动 14 / 15</li></ul></aside></div><p class="source-note">来自项目真实输出：final_divergent_topics.md｜基于真实互动素材提炼后再进行话题裂变</p>`
+  },
+  {
+    section: "AI产品",
+    html: `<p class="kicker">系统架构</p><h1>销售话术分析：可重复运行的数据产品流水线</h1><div class="system-map"><div><small>DATA</small><strong>4.4GB+ CSV</strong><span>订单 · 员工 · 客户 · 企业微信</span></div><i>→</i><div><small>DUCKDB</small><strong>业务筛选</strong><span>新客 · Top 销售 · 成交与互动</span></div><i>→</i><div><small>DEEPSEEK</small><strong>多阶段分析</strong><span>风格 · 话术 · 聊点裂变</span></div><i>→</i><div><small>QUALITY</small><strong>自动评测</strong><span>SEED+P · 风险 · 去重 · 排名</span></div><i>→</i><div><small>ASSETS</small><strong>组织资产</strong><span>JSON · Excel · Markdown</span></div></div><div class="tech-chips"><span>Hunting / Farming 双任务</span><span>配置驱动</span><span>完整日志</span><span>支持按月迭代</span></div>`
+  },
+  {
     section: "个人售前案例",
     html: `<p class="kicker">华芝林 · 个人售前项目</p><h1>客户给我的，不是一份完整需求</h1><div class="chaos-grid"><span>管家婆发货数据</span><span>20+ 省区经营监控</span><span>70% 签约红线</span><span>合同与培训人数</span><span>应返 / 实返</span><span>省总 / 地总 / 业务</span><span>兼任与代收</span><span>一单多商品</span><span>企业微信入口</span></div><p class="quote">真正的售前工作，是把这些碎片重新组织成客户能够确认、团队能够交付的系统。</p>`
   },
@@ -55,7 +63,15 @@ window.AIBISlides = [
   },
   {
     section: "个人售前案例",
-    html: `<p class="kicker">解决方案</p><h1>从数据源到管理动作的完整闭环</h1><div class="architecture"><div><small>数据源</small><span>管家婆</span><span>合同 / 培训</span><span>应返 / 实返 Excel</span></div><i>→</i><div><small>自动处理</small><span>增量导入</span><span>规则校验</span><span>历史保护</span></div><i>→</i><div><small>业务数据</small><span>订单</span><span>人员与角色</span><span>返款批次 / 核销</span></div><i>→</i><div><small>业务应用</small><span>销售移动端</span><span>财务管理端</span><span>经营看板</span></div><i>→</i><div><small>访问入口</small><span>Web</span><span>企业微信</span><span>分级权限</span></div></div>`
+    html: `<p class="kicker">原型证据</p><h1>用可点击原型，把口头规则变成共同语言</h1><div class="prototype-grid"><figure><img src="../Images/evidence/refund-image4.png" alt="财务数据核销工作台原型"><figcaption>财务核销工作台：应返、实返、状态与代收</figcaption></figure><figure><img src="../Images/evidence/refund-image5.png" alt="合并打款核销原型"><figcaption>按打款批次合并核销，并上传凭证</figcaption></figure><figure><img src="../Images/evidence/refund-image6.png" alt="账户审批与角色管理原型"><figcaption>账号审批、多角色与代收绑定</figcaption></figure></div>`
+  },
+  {
+    section: "个人售前案例",
+    html: `<p class="kicker">方案证据</p><h1>从数据源到企业微信的完整架构</h1><div class="evidence-layout solution-shot"><figure><img src="../Images/evidence/proposal-image1.png" alt="华芝林数智化方案架构图"><figcaption>方案原稿中的技术与业务链路</figcaption></figure><div class="case-notes"><h2>方案逻辑</h2><ul><li>保留员工原有 Excel 工作习惯</li><li>后台自动清洗、分类、汇总并长期沉淀</li><li>Tableau + 门户承接分析和权限</li><li>企业微信免密入口服务管理层</li></ul></div></div>`
+  },
+  {
+    section: "个人售前案例",
+    html: `<p class="kicker">看板原型证据</p><h1>经营指标不是展示，而是管理动作入口</h1><div class="evidence-layout dashboard-shot"><figure><img src="../Images/evidence/dashboard-image1.png" alt="华芝林全国销售与团队管理大盘原型"><figcaption>全国销售大盘：签约红线、省区排名、团队变化与培训投入</figcaption></figure><div class="case-notes"><h2>决策路径</h2><ul><li>先看销量、打款、赠品与核心产品占比</li><li>用 70% 签约医生红线识别偏差</li><li>定位未达标省区及同比、环比变化</li><li>结合团队增减与送训判断执行投入</li></ul></div></div>`
   },
   {
     section: "个人售前案例",
