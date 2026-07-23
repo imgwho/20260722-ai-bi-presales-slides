@@ -520,6 +520,17 @@ code {
   font-size: 18px;
 }
 
+.two-mode strong em {
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .72;
+}
+
 .chaos-grid {
   display: flex;
   flex-wrap: wrap;

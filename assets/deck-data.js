@@ -23,7 +23,7 @@ window.AIBISlides = [
         <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">30+</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">售前、POC及项目支持经历</span></article>
         <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">8大</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">行业覆盖<br><small style="font-size:12px; color:#64748b; font-weight:normal;">(汽车/制造/金融等)</small></span></article>
         <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">3个</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">开源项目<br><small style="font-size:12px; color:#64748b; font-weight:normal;">(AI × Tableau × 自动化)</small></span></article>
-        <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">5步</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">端到端售前<br><small style="font-size:12px; color:#64748b; font-weight:normal;">(需求—方案—POC—落地)</small></span></article>
+        <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">5步</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">端到端售前<br><small style="font-size:12px; color:#64748b; font-weight:normal;">需求—澄清—方案—验证—落地</small></span></article>
       </div>
       <div class="flow compact" style="margin-top: 20px;">
         <div><b>01</b><strong>经营问题</strong><span>目标、流程、角色、痛点</span></div><i>→</i>
@@ -101,7 +101,7 @@ window.AIBISlides = [
           <ul>
             <li>优秀销售经验停留在个人手中</li>
             <li>海量企业微信聊天无法人工复盘</li>
-            <li>新客转化与客户维系缺少标准资产</li>
+            <li>新客转化与客户经营缺少标准资产</li>
           </ul>
         </div>
         <div>
@@ -109,13 +109,13 @@ window.AIBISlides = [
           <ul>
             <li>从真实成交与互动数据筛选样本</li>
             <li>AI 提炼话术、风格与触发条件</li>
-            <li>生成可评分、可复用的话术与聊点库</li>
+            <li>生成可评分、可复用的话术与互动主题库</li>
           </ul>
         </div>
       </div>
       <div class="two-mode">
-        <article><strong>HUNTING</strong><span>新客开发：首单成交路径、客户异议、促成话术</span></article>
-        <article><strong>FARMING</strong><span>客户维系：高回复话题、互动信号、复盘素材</span></article>
+        <article><strong>新客开发 <em>Hunting</em></strong><span>首单成交路径、客户异议、促成话术</span></article>
+        <article><strong>客户经营 <em>Farming</em></strong><span>高互动主题、关系维护、复盘素材</span></article>
       </div>
     `
   },
@@ -129,7 +129,7 @@ window.AIBISlides = [
         <div><b>STAFF</b><strong>员工表</strong><span>销售、工号、团队</span></div><i>→</i>
         <div><b>BRIDGE</b><strong>微信映射</strong><span>会员 ID ↔ 客户微信 ID</span></div><i>→</i>
         <div><b>CHAT</b><strong>聊天记录</strong><span>销售消息、客户回复、轮次</span></div><i>→</i>
-        <div><b>AI ASSET</b><strong>AI 话术库</strong><span>成交话术 · 维系聊点</span></div>
+        <div><b>AI ASSET</b><strong>AI 话术库</strong><span>成交话术 · 客户互动主题</span></div>
       </div>
       <div class="value-stack">
         <div><b>01</b><p><strong>业务结果绑定</strong><span>先通过订单结果筛选真实成交样本，再回溯对话上下文</span></p></div>
@@ -146,7 +146,7 @@ window.AIBISlides = [
       <h1>输出的不是文案，而是可复盘的销售知识资产</h1>
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
         <article><strong>成交话术</strong><span>适合什么阶段、什么客户、解决什么异议</span><em>破冰 / 产品介绍 / 异议处理 / 促成交易</em></article>
-        <article><strong>客户维系聊点</strong><span>哪些生活、工作、兴趣话题更容易获得回复</span><em>互动分 / 回复轮次 / 风险等级</em></article>
+        <article><strong>客户互动主题</strong><span>识别更容易获得回复的生活、工作与兴趣主题</span><em>互动分 / 回复轮次 / 风险等级</em></article>
         <article><strong>培训与复盘</strong><span>沉淀优秀案例，支持新人培训和主管复盘</span><em>Excel / Markdown / JSON</em></article>
       </div>
       <div class="snippet-layout" style="margin-top: 18px;">
@@ -160,9 +160,9 @@ window.AIBISlides = [
           </div>
         </article>
         <aside class="score-card">
-          <strong>50</strong>
-          <span>成交话术</span>
-          <ul style="margin-top:10px;"><li>203 条维系聊点</li><li>SEED+P 评测</li><li>人工审核闭环</li></ul>
+          <strong>4层</strong>
+          <span>可信输出机制</span>
+          <ul style="margin-top:10px;"><li>真实成交样本驱动</li><li>全链路结果可追溯</li><li>多维评分与去重</li><li>人工审核闭环</li></ul>
         </aside>
       </div>
     `
@@ -202,6 +202,7 @@ window.AIBISlides = [
       <div class="rule-bar" style="margin-top: 18px;">
         <span>联合主键：单据编号 + 商品</span>
         <span>已核销数据锁定</span>
+        <span>自动判重与增量追加</span>
         <span>代收关系动态配置</span>
         <span>多身份视角切换</span>
         <span>一期锁定返款核销，二期规划直连与自动化</span>
@@ -238,7 +239,7 @@ window.AIBISlides = [
       <div class="case-notes horizontal">
         <span>规则清晰：应返与实返口径分开</span>
         <span>过程可追溯：订单、批次、到账相互核对</span>
-        <span>责任明确：按角色查看与操作</span>
+        <span>责任明确：代收关系可动态配置</span>
         <span>方案可实施：一期核销闭环，二期系统直连</span>
       </div>
     `
