@@ -6,43 +6,26 @@
 
 ## 🔗 在线预览链接 (GitHub Pages)
 
-- 🎬 **Reveal.js + Markdown 官方插件版**（基于 Reveal.js 官方引擎 + `RevealMarkdown` 插件，全量由 `slides.md` 驱动）：  
+- 📄 **Markdown 驱动版**（全量由单文件 `slides.md` 驱动，100% 复用 Reveal.js 经典视觉与 CSS 样式系统）：  
   👉 [https://imgwho.github.io/20260722-ai-bi-presales-slides/reveal-markdown/](https://imgwho.github.io/20260722-ai-bi-presales-slides/reveal-markdown/)
 
-- 🔴 **Markdown 驱动版**（卡片海报风格 + Markdown 引擎）：  
-  👉 [https://imgwho.github.io/20260722-ai-bi-presales-slides/markdown/](https://imgwho.github.io/20260722-ai-bi-presales-slides/markdown/)
-
-- 🔴 **Bold Poster 视觉强化版**（经典红黑高对比波普海报设计）：  
+- 🔴 **Bold Poster 视觉强化版**（红黑高对比波普海报设计）：  
   👉 [https://imgwho.github.io/20260722-ai-bi-presales-slides/bold-poster/](https://imgwho.github.io/20260722-ai-bi-presales-slides/bold-poster/)
 
-- 🟢 **Reveal 经典演示版**（Revealjs 自定义渲染）：  
+- 🟢 **Reveal 经典演示版**（静态 JS 驱动经典版）：  
   👉 [https://imgwho.github.io/20260722-ai-bi-presales-slides/revealjs/](https://imgwho.github.io/20260722-ai-bi-presales-slides/revealjs/)
 
 ---
 
-## 🚀 技术可行性说明：Reveal.js + Markdown 插件
+## 🚀 项目核心亮点与 Markdown 驱动架构
 
-Reveal.js 官方原生支持通过 `RevealMarkdown` 插件直接拉取并解析 Markdown 文件：
+1. **单 Markdown 文件全量管理 (`reveal-markdown/slides.md`)**：
+   - 所有的 16 页幻灯片内容全量保存在标准的 `slides.md` 文档中；
+   - 采用标准 Markdown 分隔符 `---` 区分幻灯片；
+   - 今后修改任何文案、案例或数据，只需直接编辑 `slides.md` 即可，无需修改任何 JavaScript/HTML 代码！
 
-```html
-<div class="reveal">
-  <div class="slides">
-    <section data-markdown="slides.md"
-             data-separator="^\r?\n---\r?\n$"
-             data-separator-vertical="^\r?\n--\r?\n$">
-    </section>
-  </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-<script>
-  Reveal.initialize({
-    plugins: [ RevealMarkdown ]
-  });
-</script>
-```
-
-这意味着：修改 `reveal-markdown/slides.md` 中的 Markdown 内容后，Reveal.js 会自动解析 `---` 分隔符，并原生呈现 Reveal.js 的全屏 3D 过渡与键盘导航交互！
+2. **100% 继承 Reveal.js 经典原版视觉样式 (`assets/deck-reveal.css`)**：
+   - 复用了原汁原味的淡青绿高品质 Theme，包含多列 Grid 卡片、原型证据展示、流动箭头及响应式适配。
 
 ---
 
@@ -53,7 +36,6 @@ Reveal.js 官方原生支持通过 `RevealMarkdown` 插件直接拉取并解析 
 npx http-server . -p 8080
 ```
 
-- 访问 Reveal.js + Markdown 官方版：`http://localhost:8080/reveal-markdown/`
-- 访问 Markdown 海报版：`http://localhost:8080/markdown/`
+- 访问 Markdown 驱动版：`http://localhost:8080/reveal-markdown/`
 - 访问 Bold Poster 版：`http://localhost:8080/bold-poster/`
 - 访问 Reveal 经典版：`http://localhost:8080/revealjs/`

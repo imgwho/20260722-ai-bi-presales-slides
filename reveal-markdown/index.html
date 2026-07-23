@@ -2,33 +2,25 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>郭文华｜业务型售前顾问 (Reveal.js + Markdown 驱动版)</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="郭文华｜业务型售前顾问 · BI / 数据智能方向 (Markdown 驱动 Reveal.js 版)">
+  <title>郭文华｜业务型售前顾问 · AI + BI (Markdown 驱动版)</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>">
+  <link rel="stylesheet" href="../assets/deck-reveal.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
-    .reveal {
-      font-family: system-ui, -apple-system, sans-serif;
-    }
-    .reveal h1, .reveal h2, .reveal h3 {
-      text-transform: none;
-    }
-    .reveal img {
-      max-height: 420px;
-      border-radius: 8px;
-    }
     .md-badge {
       position: fixed;
       top: 14px;
-      right: 20px;
+      left: 20px;
       z-index: 1000;
-      background: #e11d48;
+      background: #0f766e;
       color: #fff;
       padding: 6px 14px;
       border-radius: 20px;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 700;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 12px rgba(15, 118, 110, 0.25);
     }
     .md-badge a {
       color: #fff;
@@ -36,32 +28,118 @@
     }
   </style>
 </head>
-<body>
+<body data-deck-title="郭文华 · AI+BI 业务型售前 (Markdown 驱动版)">
   <div class="md-badge">
-    <span>🎬 Reveal.js + Markdown 官方插件</span>
+    <span>📄 Markdown 驱动版</span>
     <span>·</span>
-    <a href="./slides.md" target="_blank">slides.md 源码</a>
+    <a href="./slides.md" target="_blank">查看原文件 slides.md</a>
   </div>
 
-  <div class="reveal">
-    <div class="slides">
-      <section data-markdown="slides.md"
-               data-separator="^\r?\n---\r?\n$"
-               data-separator-vertical="^\r?\n--\r?\n$">
-      </section>
-    </div>
-  </div>
+  <main class="deck" id="deck"></main>
 
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+  <nav class="toolbar" aria-label="幻灯片导航">
+    <button id="prev" title="上一页">上一页</button>
+    <span id="counter">1 / 16</span>
+    <button id="next" title="下一页">下一页</button>
+  </nav>
+
   <script>
-    Reveal.initialize({
-      controls: true,
-      progress: true,
-      center: true,
-      hash: true,
-      plugins: [ RevealMarkdown ]
-    });
+    (function () {
+      const deck = document.getElementById("deck");
+      const title = document.body.dataset.deckTitle || "AI+BI";
+      const counter = document.getElementById("counter");
+
+      let slides = [];
+      let current = 0;
+
+      function parseMarkdown(mdText) {
+        const rawSlides = mdText.split(/\n---\n|\r\n---\r\n/);
+        return rawSlides.map((raw, idx) => {
+          let section = "主题";
+          let center = false;
+
+          const sectionMatch = raw.match(/<!--\s*section:\s*([^\r\n>]+)\s*-->/);
+          if (sectionMatch) section = sectionMatch[1].trim();
+
+          const centerMatch = raw.match(/<!--\s*center:\s*true\s*-->/);
+          if (centerMatch) center = true;
+
+          const cleanMd = raw.replace(/<!--[\s\S]*?-->/g, '').trim();
+          const htmlContent = marked.parse(cleanMd);
+
+          return {
+            index: idx,
+            section: section,
+            center: center,
+            html: htmlContent
+          };
+        });
+      }
+
+      function renderDeck(slideItems) {
+        deck.innerHTML = "";
+        slides = slideItems.map((item, index) => {
+          const section = document.createElement("section");
+          section.className = `slide${item.center ? " center" : ""}`;
+          section.innerHTML = `<div class="section-mark">${item.section}</div>${item.html}`;
+          section.setAttribute("aria-label", `${title} 第 ${index + 1} 页`);
+          deck.appendChild(section);
+          return section;
+        });
+
+        // 恢复 Hash
+        const hashMatch = window.location.hash.match(/#slide-(\d+)/);
+        if (hashMatch) {
+          const initial = parseInt(hashMatch[1], 10) - 1;
+          if (initial >= 0 && initial < slides.length) {
+            current = initial;
+          }
+        }
+        show(current);
+      }
+
+      function show(nextIndex) {
+        if (!slides.length) return;
+        current = Math.max(0, Math.min(slides.length - 1, nextIndex));
+        slides.forEach((slide, index) => slide.classList.toggle("active", index === current));
+        if (counter) counter.textContent = `${current + 1} / ${slides.length}`;
+        document.title = `${title} - ${current + 1}`;
+        history.replaceState(null, '', `#slide-${current + 1}`);
+      }
+
+      function next() {
+        if (current >= slides.length - 1) return;
+        show(current + 1);
+      }
+
+      function prev() {
+        if (current <= 0) return;
+        show(current - 1);
+      }
+
+      document.querySelector("#prev")?.addEventListener("click", prev);
+      document.querySelector("#next")?.addEventListener("click", next);
+      window.addEventListener("keydown", event => {
+        if (event.key === "ArrowRight" || event.key === "PageDown" || event.key === " ") next();
+        if (event.key === "ArrowLeft" || event.key === "PageUp") prev();
+        if (event.key === "Home") show(0);
+        if (event.key === "End") show(slides.length - 1);
+      });
+
+      // Fetch slides.md
+      fetch('./slides.md')
+        .then(res => {
+          if (!res.ok) throw new Error('网络请求失败');
+          return res.text();
+        })
+        .then(text => {
+          const slideItems = parseMarkdown(text);
+          renderDeck(slideItems);
+        })
+        .catch(err => {
+          deck.innerHTML = `<div style="color:#e11d48; text-align:center; padding-top:40vh; font-size:20px; font-weight:bold;">❌ 加载 slides.md 失败: ${err.message}</div>`;
+        });
+    })();
   </script>
 </body>
 </html>
