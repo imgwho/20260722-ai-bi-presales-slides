@@ -5,8 +5,8 @@ window.AIBIBoldSlides = [
     html: `
       <div class="hero-meta">BUSINESS · BI · AI</div>
       <div class="hero-title-group">
-        <div class="hero-title">把业务问题</div>
-        <div class="hero-title red">变成</div>
+        <div class="hero-title">把业务问题，变成</div>
+        <div class="hero-title red"> </div>
         <div class="hero-title bottom">可落地的数据智能方案</div>
       </div>
       <div class="hero-tagline">
@@ -151,22 +151,24 @@ window.AIBIBoldSlides = [
       </div>
       <div class="snippet-layout">
         <article class="conversation-card">
-          <small>破冰阶段真实案例：蔡莉（客户成交价值：¥96,000）</small>
-          <p>销售：“邹大哥，孩子接回来了吧，以后那个微信我就不用了，老是被封号，我们就用这个微信联系哈[调皮]”</p>
+          <small>产品介绍期案例：白酒品鉴与专家背书（销售：蔡莉）</small>
+          <p><strong>上下文背景：</strong>销售受邀作为代表参加专家发布会，借现场氛围建立稀缺性与品质认可。<br>
+          <strong>对话记录：</strong>销售：“哥，我现在作为优秀代表跟专家领导在现场吃饭，中科院发酵专业范鏖教授对我们这次白酒进行了高度评价，价格绝对匹配得上品质！[强]”<br>
+          <strong>客户反应：</strong>客户表示刚回家，并主动询问转账交付预订款。</p>
           <div class="followups">
-            <span>① 触发：通过验证后主动开启日常生活切入点</span>
-            <span>② 反应：客户回复放学时间，并主动提及之前购买的特产</span>
-            <span>③ 结果：开启高信任对话，后续达成 9.6万 订单成交</span>
+            <span>① 权威背书：引入中科院专家范鏖教授现场好评</span>
+            <span>② 稀缺塑造：现场上千人仅不到10人受邀用餐</span>
+            <span>③ 价值锚定：正面回应价格与品质匹配关切</span>
           </div>
         </article>
         <aside class="score-card">
-          <strong>82</strong>
+          <strong>85</strong>
           <span>脚本综合评分</span>
           <ul class="bullet-list" style="margin-top:10px;">
-            <li>全网排名 Rank 1</li>
-            <li>转化率 100%</li>
-            <li>成交价 ¥96,000</li>
-            <li>阶段：破冰期</li>
+            <li>阶段：产品介绍</li>
+            <li>触发：现场专家背书</li>
+            <li>效果：客户主动转账</li>
+            <li>客单：高价值资产</li>
           </ul>
         </aside>
       </div>
@@ -176,34 +178,46 @@ window.AIBIBoldSlides = [
     section: "AI产品",
     html: `
       <div class="kicker">SEED+P 话题裂变模型</div>
-      <div class="summary-header">真实聊天中可复制的高成交/高互动话术库</div>
-      <div class="rule-bar" style="margin-bottom: 16px;">
+      <div class="summary-header">真实聊天上下文与 AI 自动生成的聊点库</div>
+      <div class="rule-bar" style="margin-bottom: 14px;">
         <span style="background:var(--red); color:#fff; border-color:var(--dark);">S - 真实场景 (Situation)</span>
         <span style="background:var(--red); color:#fff; border-color:var(--dark);">E - 情绪共鸣 (Emotion)</span>
         <span style="background:var(--red); color:#fff; border-color:var(--dark);">E - 事实证据 (Evidence)</span>
         <span style="background:var(--red); color:#fff; border-color:var(--dark);">D - 话题走向 (Direction)</span>
         <span style="background:var(--red); color:#fff; border-color:var(--dark);">P - AI 提炼 (Prompt)</span>
       </div>
-      <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
-        <article>
-          <strong style="color:var(--red); font-size:17px;">01. 破冰期 · 生活关心 (成交: ¥96,000)</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“邹大哥，孩子接回来了吧，以后那个微信不用了，我们就用这个微信联系哈”</span>
-          <em style="font-size:12px; color:#64748b;">反应：回复接孩子，主动提及特产，建立高信任</em>
+      <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 14px;">
+        <article style="padding:14px; text-align:left;">
+          <strong style="color:var(--red); font-size:16px;">01. 破冰与信任建立（破冰期）</strong>
+          <p style="font-size:13px; color:#475569; margin: 6px 0; line-height:1.4;"><strong>[背景]</strong> 客户通过好友验证后，主动开启日常切入<br>
+          <strong>[对话]</strong> 销售：“邹大哥，孩子接回来了吧，以后那个微信不用了，用这个联系哈” ➜ 客户：“在接呢，你上次推荐的特产挺好，这次再加买两只烧鸡。”</p>
+          <div style="background:#fff5f5; border:1px dashed var(--red); padding:6px 10px; border-radius:4px; margin-top:6px; font-size:12px; color:#991b1b;">
+            <strong>💡 AI 生成聊点走向：</strong><br>
+            ① 关怀接娃生活日常 ➔ ② 关联历史特产偏好 ➔ ③ 引导复购与加购
+          </div>
         </article>
-        <article>
-          <strong style="color:var(--red); font-size:17px;">02. 产品介绍 · 专家背书 (成交: ¥96,000)</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“哥，我现在作为优秀员工代表在现场，中科院专家对我们品质高度评价，价格绝对匹配得上！”</span>
-          <em style="font-size:12px; color:#64748b;">反应：客户表示认可，并主动询问转账交付预订款</em>
+        <article style="padding:14px; text-align:left;">
+          <strong style="color:var(--red); font-size:16px;">02. 异议化解与真诚沟通（消除顾虑）</strong>
+          <p style="font-size:13px; color:#475569; margin: 6px 0; line-height:1.4;"><strong>[背景]</strong> 客户对品牌子公司归属产生怀疑“别是假的吧”<br>
+          <strong>[对话]</strong> 销售：“怎么会假呢，这是酒厂资质... 投入这么大，有顾虑完全理解，知无不言！” ➜ 客户：“行，了解清楚我就放心了，你帮我安排吧。”</p>
+          <div style="background:#fff5f5; border:1px dashed var(--red); padding:6px 10px; border-radius:4px; margin-top:6px; font-size:12px; color:#991b1b;">
+            <strong>💡 AI 生成聊点走向：</strong><br>
+            ① 共情资金安全顾虑 ➔ ② 出示官方资质凭证 ➔ ③ 引导开诚布公答疑
+          </div>
         </article>
-        <article>
-          <strong style="color:var(--red); font-size:17px;">03. 异议处理 · 诚意化解 (成交: ¥96,000)</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“怎么会假呢，非常理解您的顾虑，毕竟投入这么多肯定需要了解清楚，我知无不言！”</span>
-          <em style="font-size:12px; color:#64748b;">反应：客户解释误会，关系大为缓和，消除疑虑</em>
+        <article style="padding:14px; text-align:left;">
+          <strong style="color:var(--red); font-size:16px;">03. 促成方案与阶段付款（促成交易）</strong>
+          <p style="font-size:13px; color:#475569; margin: 6px 0; line-height:1.4;"><strong>[背景]</strong> 客户资金一时周转不开，面临观望停滞<br>
+          <strong>[对话]</strong> 销售：“先收您一万零两百定金，剩下付给快递，假一罚十，不能让你吃亏！” ➜ 客户：“我当放心你了，明天就把定金转过去。”</p>
+          <div style="background:#fff5f5; border:1px dashed var(--red); padding:6px 10px; border-radius:4px; margin-top:6px; font-size:12px; color:#991b1b;">
+            <strong>💡 AI 生成聊点走向：</strong><br>
+            ① 降低首付门槛压力 ➔ ② 定制货到付款担保 ➔ ③ 给予正品兜底承诺
+          </div>
         </article>
       </div>
-      <div class="ai-ribbon" style="margin-top: 16px;">
-        <strong>关联订单、员工与微信记录全量提炼</strong>
-        <span>数据引自 20251215-chat-analysis 核心资产库 (script_library.json)，服务于销售培训与话术复盘。</span>
+      <div class="ai-ribbon" style="margin-top: 14px;">
+        <strong>真实聊天上下文 ➔ AI 提取 SEED+P 关键证据 ➔ 自动导出高转化聊点库</strong>
+        <span>数据全量引自 20251215-chat-analysis 项目 script_library.json，助力销售团队快速复盘与培训。</span>
       </div>
     `
   },
