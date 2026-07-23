@@ -151,22 +151,22 @@ window.AIBIBoldSlides = [
       </div>
       <div class="snippet-layout">
         <article class="conversation-card">
-          <small>话题案例：地域美食与旅游邀约｜自嘲式求助</small>
-          <p>“最近看到好多人推荐您老家的特色美食，我兴冲冲去尝了，结果感觉被‘照骗’了。想请教您这位地道美食家，最正宗的味道和吃法应该是怎样的？”</p>
+          <small>真实互动案例：工作进度与日常关心（互动分：1206.5）</small>
+          <p>销售：“下午好呀，你的 PPT 改完了嘛？”<br>客户：“下午好呢，快了，还剩 1 页... 改完就休息，我也快受不了了”</p>
           <div class="followups">
-            <span>① 共情：果然少了灵魂</span>
-            <span>② 请教：还有哪些隐藏宝藏</span>
-            <span>③ 延展：像本地人一样怎么玩</span>
+            <span>① 共情：一个周末都在改 PPT</span>
+            <span>② 关怀：改完赶紧好好放松休息</span>
+            <span>③ 延展：聊聊项目进度与后续计划</span>
           </div>
         </article>
         <aside class="score-card">
-          <strong>92</strong>
+          <strong>94</strong>
           <span>AI 模拟评测</span>
           <ul class="bullet-list" style="margin-top:10px;">
-            <li>人设 19 / 20</li>
-            <li>情感 14 / 15</li>
-            <li>认同 19 / 20</li>
-            <li>驱动 14 / 15</li>
+            <li>真实性 20 / 20</li>
+            <li>共鸣度 15 / 15</li>
+            <li>回复率 19 / 20</li>
+            <li>延展性 20 / 25</li>
           </ul>
         </aside>
       </div>
@@ -186,24 +186,24 @@ window.AIBIBoldSlides = [
       </div>
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
         <article>
-          <strong style="color:var(--red); font-size:18px;">01. 地域美食与本地生活</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“最近看到好多人推荐您老家的特色美食，去尝了感觉被‘照骗’了。想请教您最正宗的味道应该是怎样的？”</span>
-          <em style="font-size:12px; color:#64748b;">追问：①共情少了灵魂 ｜ ②隐秘宝藏 ｜ ③像本地人一样玩</em>
+          <strong style="color:var(--red); font-size:17px;">01. 饮食生活 · 早餐习惯 (分值: 1588.5)</strong>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“早上好！在吃包子奶茶呢，你也别忘了先吃点再开始工作。”</span>
+          <em style="font-size:12px; color:#64748b;">追问：①晨间问候 ｜ ②早餐喜好 ｜ ③提醒工作保暖</em>
         </article>
         <article>
-          <strong style="color:var(--red); font-size:18px;">02. 育儿与亲子教育</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“您家孩子习惯养得真好！我们家现在动不动就拉扯，想向您取取经，平时是怎么引导孩子平衡的？”</span>
-          <em style="font-size:12px; color:#64748b;">追问：①倾听同款困扰 ｜ ②赞赏接地气方法 ｜ ③周末带娃好去处</em>
+          <strong style="color:var(--red); font-size:17px;">02. 工作事业 · 日常送发票 (分值: 1206.5)</strong>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“早呀，刚看完你发的到公司，等会要去别的公司送发票。”</span>
+          <em style="font-size:12px; color:#64748b;">追问：①共情外勤跑腿 ｜ ②询问发票频次 ｜ ③天冷出行提醒</em>
         </article>
         <article>
-          <strong style="color:var(--red); font-size:18px;">03. 职场与管理心得</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“看您朋友圈分享的管理心得特别受启发，想请教下在跨部门协作时，如何更好地对齐预期？”</span>
-          <em style="font-size:12px; color:#64748b;">追问：①视角极其透彻 ｜ ②突破僵局做法 ｜ ③实操价值高</em>
+          <strong style="color:var(--red); font-size:17px;">03. 地域天气 · 阳光问候 (分值: 798.5)</strong>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“难得几天出太阳，阳光明媚像你一样，心情美美哒！”</span>
+          <em style="font-size:12px; color:#64748b;">追问：①天气晒太阳 ｜ ②好心情与放松 ｜ ③周末户外计划</em>
         </article>
       </div>
       <div class="ai-ribbon" style="margin-top: 16px;">
-        <strong>SEED+P 核心判定：以客户回复、互动轮次和回复速度计算互动分</strong>
-        <span>AI 做轻度分类与整理，保留客户真实回复证据。案例取自 20251215-chat-analysis 开源项目。</span>
+        <strong>SEED+P 核心判定：只依单表互动流水线，以真实回复与轮次评分</strong>
+        <span>AI 做轻度分类与整理，保留原始对话与客户回复证据。案例全量取自 20251215-chat-analysis。</span>
       </div>
     `
   },
