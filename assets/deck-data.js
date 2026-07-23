@@ -7,7 +7,7 @@ window.AIBISlides = [
   },
   {
     section: "定位",
-    html: `<p class="kicker">我的定位与数字标签</p><h1>业务、数据与 AI 的连接者</h1><div class="stat-grid"><article><strong>8年+</strong><span>BI 售前 / 数据分析 / 数字化</span></article><article><strong>20+</strong><span>企业项目交流、方案与交付推进</span></article><article><strong>3个</strong><span>AI+BI 开源项目</span></article><article><strong>50条</strong><span>成交话术资产</span></article><article><strong>203条</strong><span>客户维系聊点</span></article></div><div class="oss-strip"><a href="https://github.com/aidatacooper/cwtwb" target="_blank" rel="noreferrer"><b>cwtwb</b><span>AI 生成 Tableau 工作簿</span></a><a href="https://github.com/aidatacooper/cwprep" target="_blank" rel="noreferrer"><b>cwprep</b><span>AI 生成 Tableau Prep 流程</span></a><a href="https://github.com/imgwho/tableauPushDing" target="_blank" rel="noreferrer"><b>tableauPushDing</b><span>看板截图、拼长图、定时推送钉钉</span></a></div><p class="quote">不从产品功能开始，而从客户要解决的经营问题开始。</p>`
+    html: `<p class="kicker">我的定位与个人标签</p><h1>业务、数据与 AI 的连接者</h1><div class="metric-grid five-tags"><article><strong>8年+</strong><span>BI与数据解决方案经验</span></article><article><strong>30+</strong><span>售前、POC及项目支持经历</span></article><article><strong>8大行业</strong><span>汽车、制造、地产、金融等</span></article><article><strong>3个开源项目</strong><span>AI × Tableau × 自动化</span></article><article><strong>端到端售前</strong><span>需求—方案—Demo—POC—落地</span></article></div><p class="quote">不从产品功能开始，而从客户要解决的经营问题开始。</p>`
   },
   {
     section: "AI+BI",
@@ -23,11 +23,11 @@ window.AIBISlides = [
   },
   {
     section: "AI产品",
-    html: `<p class="kicker">销售话术分析系统</p><h1>从销售聊天记录到可复用话术资产</h1><div class="data-flow"><article><small>ORDER</small><strong>订单表</strong><span>首单、金额、时间、客户</span></article><i>→</i><article><small>STAFF</small><strong>员工表</strong><span>销售、工号、团队、入职天数</span></article><i>→</i><article><small>BRIDGE</small><strong>微信映射</strong><span>会员 ID ↔ 客户微信 ID</span></article><i>→</i><article><small>CHAT</small><strong>聊天记录</strong><span>销售消息、客户回复、互动轮次</span></article><i>→</i><article class="red"><small>AI ASSET</small><strong>AI 话术库</strong><span>50 条成交话术 · 203 条维系聊点</span></article></div><div class="keyword-row"><span>Top 销售</span><span>首单成交</span><span>客户回复</span><span>话术提炼</span><span>可复用资产</span></div>`
+    html: `<p class="kicker">销售话术分析系统</p><h1>从销售聊天记录到可复用话术资产</h1><div class="pipeline"><article><small>ORDER</small><strong>订单表</strong><span>首单、金额、时间、客户</span></article><i>→</i><article class="cyan"><small>STAFF</small><strong>员工表</strong><span>销售、工号、团队</span></article><i>→</i><article class="blue"><small>BRIDGE</small><strong>微信映射</strong><span>会员 ID ↔ 客户微信 ID</span></article><i>→</i><article><small>CHAT</small><strong>聊天记录</strong><span>销售消息、客户回复、互动轮次</span></article><i>→</i><article class="green"><small>AI ASSET</small><strong>AI 话术库</strong><span>成交话术 · 客户维系聊点</span></article></div><div class="proof-row"><span>Top 销售</span><span>首单成交</span><span>客户回复</span><span>话术提炼</span><span>可复用资产</span></div>`
   },
   {
     section: "AI产品",
-    html: `<p class="kicker">可信机制</p><h1>让 AI 产出可追溯、可评分、可审核</h1><div class="trust-grid"><article><b>01</b><strong>业务结果绑定</strong><span>用首单、金额、Top 销售筛样本</span></article><article><b>02</b><strong>结构化数据链路</strong><span>订单 → 员工 → 微信 → 聊天</span></article><article><b>03</b><strong>话术评分去重</strong><span>SEED+P、互动分、风险项、相似话术合并</span></article><article><b>04</b><strong>人工审核闭环</strong><span>Excel / Markdown 输出，业务复核后入库</span></article></div><div class="trust-loop"><span>真实结果</span><i>→</i><span>AI 提炼</span><i>→</i><span>评分过滤</span><i>→</i><span>人工确认</span><i>→</i><span>培训复用</span></div><p class="quote">可信的关键不是模型更会写，而是每条话术都能回到数据、规则和业务判断。</p>`
+    html: `<p class="kicker">可信机制</p><h1>让 AI 产出可追溯、可评分、可审核</h1><div class="value-stack"><div><b>01</b><p><strong>业务结果绑定</strong><span>用首单、金额、Top 销售筛样本</span></p></div><div><b>02</b><p><strong>结构化数据链路</strong><span>订单 → 员工 → 微信 → 聊天，避免凭空生成</span></p></div><div><b>03</b><p><strong>话术评分去重</strong><span>SEED+P、互动分、风险项、相似话术合并</span></p></div><div><b>04</b><p><strong>人工审核闭环</strong><span>Excel / Markdown 输出，业务复核后入库</span></p></div></div><p class="quote">可信的关键不是模型更会写，而是每条话术都能回到数据、规则和业务判断。</p>`
   },
   {
     section: "华芝林",
