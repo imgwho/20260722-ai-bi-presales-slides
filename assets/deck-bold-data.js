@@ -173,19 +173,6 @@ window.AIBIBoldSlides = [
     `
   },
   {
-    section: "华芝林",
-    html: `
-      <div class="kicker">华芝林 · 个人售前项目</div>
-      <div class="summary-header">客户给我的，不是一份完整需求</div>
-      <div class="chaos-grid" style="margin-bottom: 20px;">
-        <span>管家婆发货数据</span><span>20+ 省区经营监控</span><span>70% 签约红线</span><span>合同与培训人数</span><span>应返 / 实返</span><span>省总 / 地总 / 业务</span><span>兼任与代收</span><span>一单多商品</span><span>企业微信入口</span>
-      </div>
-      <div class="quote" style="margin-top: 16px;">
-        “真正的售前工作，是把这些碎片重新组织成<span class="accent">客户能够确认、团队能够交付</span>的系统。”
-      </div>
-    `
-  },
-  {
     section: "AI产品",
     html: `
       <div class="kicker">SEED+P 话题裂变模型</div>
@@ -217,6 +204,19 @@ window.AIBIBoldSlides = [
       <div class="ai-ribbon" style="margin-top: 16px;">
         <strong>SEED+P 核心判定：以客户回复、互动轮次和回复速度计算互动分</strong>
         <span>AI 做轻度分类与整理，保留客户真实回复证据。案例取自 20251215-chat-analysis 开源项目。</span>
+      </div>
+    `
+  },
+  {
+    section: "华芝林",
+    html: `
+      <div class="kicker">华芝林 · 个人售前项目</div>
+      <div class="summary-header">客户给我的，不是一份完整需求</div>
+      <div class="chaos-grid" style="margin-bottom: 20px;">
+        <span>管家婆发货数据</span><span>20+ 省区经营监控</span><span>70% 签约红线</span><span>合同与培训人数</span><span>应返 / 实返</span><span>省总 / 地总 / 业务</span><span>兼任与代收</span><span>一单多商品</span><span>企业微信入口</span>
+      </div>
+      <div class="quote" style="margin-top: 16px;">
+        “真正的售前工作，是把这些碎片重新组织成<span class="accent">客户能够确认、团队能够交付</span>的系统。”
       </div>
     `
   },
