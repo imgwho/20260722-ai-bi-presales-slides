@@ -168,12 +168,12 @@ window.AIBISlides = [
       </div>
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 14px;">
         <article style="padding:14px; text-align:left;">
-          <strong style="color:#0f766e; font-size:16px;">01. 破冰与信任建立（破冰期）</strong>
-          <p style="font-size:13px; color:#475569; margin: 6px 0; line-height:1.4;"><strong>[背景]</strong> 客户通过好友验证后，主动开启日常切入<br>
-          <strong>[对话]</strong> 销售：“邹大哥，孩子接回来了吧，以后那个微信不用了，用这个联系哈” ➜ 客户：“在接呢，你上次推荐的特产挺好，这次再加买两只烧鸡。”</p>
+          <strong style="color:#0f766e; font-size:16px;">01. 地域美食与隐藏宝藏（生活切入）</strong>
+          <p style="font-size:13px; color:#475569; margin: 6px 0; line-height:1.4;"><strong>[背景]</strong> 客户到访/出差当地，销售以自嘲式请教美食避坑切入<br>
+          <strong>[对话]</strong> 销售：“看好多人推荐您老家特色美食，去尝了感觉被‘照骗’了，正宗味道是怎样的呀？” ➜ 客户：“那些都是网红店噱头！真正地道的都在老城区巷子里，下次带你去尝。”发了老字号小吃地图。</p>
           <div style="background:#f0fdf4; border:1px dashed #0f766e; padding:6px 10px; border-radius:4px; margin-top:6px; font-size:12px; color:#065f46;">
             <strong>💡 AI 生成聊点走向：</strong><br>
-            ① 关怀接娃生活日常 ➔ ② 关联历史特产偏好 ➔ ③ 引导复购与加购
+            ① 避坑共鸣（网红店 vs 老字号） ➔ ② 谦虚请教（本地专家视角） ➔ ③ 自然延伸（老城区隐藏宝藏）
           </div>
         </article>
         <article style="padding:14px; text-align:left;">
