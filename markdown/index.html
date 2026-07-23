@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>郭文华｜业务型售前顾问 · BI / 数据智能 (Markdown 驱动版)</title>
+  <link rel="stylesheet" href="../assets/deck-bold.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    .md-badge {
+      position: fixed;
+      top: 14px;
+      right: 20px;
+      z-index: 100;
+      background: var(--red);
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      box-shadow: 2px 2px 0 var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .md-badge a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="md-badge">
+    <span>📄 Markdown 驱动版</span>
+    <span>·</span>
+    <a href="./slides.md" target="_blank">查看原文件 slides.md</a>
+  </div>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <nav class="top-nav" id="topNav">
+    <div class="brand">
+      <span class="logo">AG</span>
+      <span class="title">数据智能售前方案</span>
+    </div>
+    <div class="section-tag" id="sectionTag">封面</div>
+  </nav>
+
+  <main class="deck-stage" id="deckStage">
+    <div class="loading-state" id="loadingState" style="color:var(--dark); font-size:18px; font-weight:700; text-align:center; margin-top:20vh;">
+      ⏳ 正在加载并动态渲染 slides.md 幻灯片...
+    </div>
+  </main>
+
+  <div class="controls">
+    <button class="nav-btn" id="prevBtn" aria-label="上一页">←</button>
+    <div class="counter" id="counter">1 / 16</div>
+    <button class="nav-btn" id="nextBtn" aria-label="下一页">→</button>
+  </div>
+
+  <script>
+    (function () {
+      let slides = [];
+      let currentIndex = 0;
+      const stage = document.getElementById('deckStage');
+      const counter = document.getElementById('counter');
+      const progressBar = document.getElementById('progressBar');
+      const sectionTag = document.getElementById('sectionTag');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+
+      function parseMarkdown(mdText) {
+        const rawSlides = mdText.split(/\n---\n|\r\n---\r\n/);
+        return rawSlides.map((raw, idx) => {
+          let section = "主题";
+          let center = false;
+
+          const sectionMatch = raw.match(/<!--\s*section:\s*([^\r\n>]+)\s*-->/);
+          if (sectionMatch) section = sectionMatch[1].trim();
+
+          const centerMatch = raw.match(/<!--\s*center:\s*true\s*-->/);
+          if (centerMatch) center = true;
+
+          // Strip HTML comments before marked processing
+          const cleanMd = raw.replace(/<!--[\s\S]*?-->/g, '').trim();
+          const htmlContent = marked.parse(cleanMd);
+
+          return {
+            index: idx,
+            section: section,
+            center: center,
+            html: htmlContent
+          };
+        });
+      }
+
+      function renderDeck() {
+        stage.innerHTML = '';
+        slides.forEach((slide, idx) => {
+          const article = document.createElement('article');
+          article.className = 'slide-card' + (idx === currentIndex ? ' active' : '') + (slide.center ? ' center' : '');
+          article.id = 'slide-' + (idx + 1);
+          article.innerHTML = `<div class="slide-inner">${slide.html}</div>`;
+          stage.appendChild(article);
+        });
+        updateUI();
+      }
+
+      function updateUI() {
+        const cards = stage.querySelectorAll('.slide-card');
+        cards.forEach((card, idx) => {
+          card.classList.toggle('active', idx === currentIndex);
+        });
+
+        const currentSlide = slides[currentIndex];
+        if (currentSlide) {
+          sectionTag.textContent = currentSlide.section || '主题';
+        }
+
+        counter.textContent = `${currentIndex + 1} / ${slides.length}`;
+        progressBar.style.width = `${((currentIndex + 1) / slides.length) * 100}%`;
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === slides.length - 1;
+
+        history.replaceState(null, '', `#slide-${currentIndex + 1}`);
+      }
+
+      function goTo(index) {
+        if (index < 0 || index >= slides.length) return;
+        currentIndex = index;
+        updateUI();
+      }
+
+      function next() { goTo(currentIndex + 1); }
+      function prev() { goTo(currentIndex - 1); }
+
+      prevBtn.addEventListener('click', prev);
+      nextBtn.addEventListener('click', next);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown' || e.key === ' ') {
+          e.preventDefault();
+          next();
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          prev();
+        } else if (e.key === 'Home') {
+          e.preventDefault();
+          goTo(0);
+        } else if (e.key === 'End') {
+          e.preventDefault();
+          goTo(slides.length - 1);
+        }
+      });
+
+      // Touch navigation
+      let touchStartX = 0;
+      document.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+      });
+      document.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 40) {
+          if (diff > 0) next();
+          else prev();
+        }
+      });
+
+      // Fetch slides.md
+      fetch('./slides.md')
+        .then(res => {
+          if (!res.ok) throw new Error('网络请求失败');
+          return res.text();
+        })
+        .then(text => {
+          slides = parseMarkdown(text);
+          const hashMatch = window.location.hash.match(/#slide-(\d+)/);
+          if (hashMatch) {
+            const initialSlide = parseInt(hashMatch[1], 10) - 1;
+            if (initialSlide >= 0 && initialSlide < slides.length) {
+              currentIndex = initialSlide;
+            }
+          }
+          renderDeck();
+        })
+        .catch(err => {
+          stage.innerHTML = `<div style="color:var(--red); text-align:center; margin-top:20vh;">❌ 加载 slides.md 失败: ${err.message}</div>`;
+        });
+    })();
+  </script>
+</body>
+</html>
