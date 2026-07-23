@@ -96,19 +96,20 @@ window.AIBISlides = [
     section: "第二部分 · 案例二",
     html: `
       <div class="kicker">案例二 · 华芝林售前咨询</div>
-      <h1>把零散的本地 Excel 数据<br>整理成日常可用的管理系统</h1>
+      <h1>把零散的本地 Excel 数据<br>整理成经营看板和返款管理系统</h1>
       <div class="problem-solution">
         <div>
           <h2>背景</h2>
           <ul>
             <li>医药 / 大健康销售管理场景</li>
-            <li>既要做经营看板，也要做返款查询和核销</li>
-            <li>数据来自管家婆、Excel 和业务口头规则</li>
+            <li>经营看板：销售、签约、培训等经营情况</li>
+            <li>返款管理：返款查询、到账核对和核销</li>
           </ul>
         </div>
         <div>
           <h2>问题</h2>
           <ul>
+            <li>数据来自管家婆、Excel 和业务口头规则</li>
             <li>“应返”和“实返”混在一起</li>
             <li>一单多商品、多身份、代收关系复杂</li>
             <li>管理层、财务、销售关注点不同</li>
