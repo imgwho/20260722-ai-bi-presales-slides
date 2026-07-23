@@ -29,23 +29,24 @@ window.AIBISlides = [
   {
     section: "第二部分 · 案例一",
     html: `
-      <div class="kicker">案例一 · AI 销售分析产品</div>
-      <h1>聊天话题生成：从销售聊天中整理可训练的经验</h1>
+      <div class="kicker">案例一 · AI 聊天话题生成</div>
+      <h1>AI 从聊天记录中生成<br>销售话题和成交建议</h1>
       <div class="problem-solution">
         <div>
           <h2>背景</h2>
           <ul>
-            <li>优秀销售经验散落在日常聊天记录里</li>
-            <li>主管很难人工查看大量对话</li>
-            <li>新人缺少真实案例和复盘材料</li>
+            <li>销售每天维护很多客户，很难持续找到合适的话题</li>
+            <li>优秀销售的聊天方法散落在大量聊天记录中</li>
+            <li>主管无法逐条复盘，新人也缺少真实参考</li>
           </ul>
         </div>
         <div>
-          <h2>问题</h2>
+          <h2>需要解决的问题</h2>
           <ul>
-            <li>聊天记录本身没有成交结果标记</li>
-            <li>话术、异议、客户话题缺少统一整理</li>
-            <li>AI 输出需要规则筛选和人工确认</li>
+            <li>哪些聊天真正帮助客户下单</li>
+            <li>客户在意什么、为什么犹豫</li>
+            <li>下一次可以继续和客户聊什么</li>
+            <li>AI 的建议是否和客户情况相符</li>
           </ul>
         </div>
       </div>
@@ -55,39 +56,39 @@ window.AIBISlides = [
     section: "第二部分 · 案例一",
     html: `
       <div class="kicker">解决方案</div>
-      <h1>先找真实成交，再整理有用的销售经验</h1>
+      <h1>先找到有效聊天，再让 AI 生成话题和成交建议</h1>
       <div class="solution-steps" style="margin-top: 28px;">
-        <article><b>01</b><strong>确认成交客户</strong><span>同一客户当天订单合并；首单满 99 元才进入分析，排除作废和自购订单。</span></article><i>→</i>
-        <article><b>02</b><strong>找到对应聊天</strong><span>把订单、销售和客户微信信息放在一起，优先查看首单前一天到当天的文字对话。</span></article><i>→</i>
-        <article><b>03</b><strong>整理成销售材料</strong><span>AI 区分聊天阶段和客户顾虑，再按成交效果评分；人工确认后用于培训和复盘。</span></article>
+        <article><b>01</b><strong>找到有效客户</strong><span>从订单中找到真实成交客户，排除作废、自购和无效订单。</span></article><i>→</i>
+        <article><b>02</b><strong>找到成交前的聊天</strong><span>把订单、销售和客户微信对应起来，分析成交前后的真实对话。</span></article><i>→</i>
+        <article><b>03</b><strong>生成销售建议</strong><span>AI 整理客户关注点、成交方法和可继续聊的话题，人工确认后给销售使用。</span></article>
       </div>
-      <div class="quote">如果首单附近没有足够对话，系统再把时间范围扩展到首单前 7 天，避免漏掉多轮沟通。</div>
+      <div class="micro">系统优先分析成交当天的聊天，信息不足时自动向前查找历史对话。</div>
     `
   },
   {
     section: "第二部分 · 案例一",
     html: `
       <div class="kicker">成果</div>
-      <h1>输出能进入培训和复盘的销售知识资产</h1>
+      <h1>最终告诉销售：聊什么、怎么回答、哪些方法有效</h1>
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
-        <article><strong>成交策略</strong><span>产品介绍、价格顾虑、信任建立、促成成交</span><em>适用阶段 / 客户顾虑 / 应对方式</em></article>
-        <article><strong>客户互动主题</strong><span>工作、生活、兴趣类话题，帮助销售维护关系</span><em>互动分 / 回复轮次 / 风险标签</em></article>
-        <article><strong>培训卡片</strong><span>把原始聊天整理成新人学习和主管复盘材料</span><em>案例 / 方法 / 注意事项</em></article>
+        <article><strong>下一步聊天话题</strong><span>根据客户聊过的工作、生活和兴趣，生成更自然的后续话题。</span><em>客户偏好 / 互动情况 / 风险提醒</em></article>
+        <article><strong>成交应对建议</strong><span>客户关注价格、效果或信任问题时，提供真实案例中的处理方法。</span><em>客户顾虑 / 应对方式 / 使用场景</em></article>
+        <article><strong>培训和复盘材料</strong><span>把优秀聊天整理成案例卡片，方便新人学习和主管复盘。</span><em>真实案例 / 做法说明 / 注意事项</em></article>
       </div>
       <div class="snippet-layout" style="margin-top: 18px;">
         <article class="conversation-card">
-          <small>示例：产品介绍期｜专家背书</small>
-          <p>系统识别出“权威背书、稀缺塑造、价值锚定”三类策略，并整理为包含适用阶段、客户顾虑、应对方式和风险提示的培训卡片。</p>
+          <small>示例：客户问“这个产品和其他产品有什么区别？”</small>
+          <p>系统从优秀成交聊天中整理出：先解释适合什么人，再用真实案例建立信任，最后说明价格对应的具体价值。</p>
           <div class="followups">
-            <span>50+ 真实成交案例</span>
-            <span>200+ 客户互动样本</span>
-            <span>支持培训、复盘和客户经营</span>
+            <span>真实订单筛选</span>
+            <span>聊天内容脱敏</span>
+            <span>AI 生成建议 + 人工确认</span>
           </div>
         </article>
         <aside class="score-card">
           <strong>3类</strong>
-          <span>业务资产</span>
-          <ul style="margin-top:10px;"><li>成交策略</li><li>互动主题</li><li>培训卡片</li></ul>
+          <span>销售帮助</span>
+          <ul style="margin-top:10px;"><li>下一步聊什么</li><li>客户犹豫怎么答</li><li>优秀案例怎么学</li></ul>
         </aside>
       </div>
     `
@@ -101,15 +102,14 @@ window.AIBISlides = [
         <div>
           <h2>背景</h2>
           <ul>
-            <li>医药 / 大健康销售管理场景</li>
-            <li>经营看板：销售、签约、培训等经营情况</li>
-            <li>返款管理：返款查询、到账核对和核销</li>
+            <li>一家医药销售企业，希望统一查看销售经营情况</li>
+            <li>同时解决返款查询和到账核对混乱的问题</li>
+            <li>数据主要来自管家婆和本地 Excel</li>
           </ul>
         </div>
         <div>
           <h2>问题</h2>
           <ul>
-            <li>数据来自管家婆、Excel 和业务口头规则</li>
             <li>“应返”和“实返”混在一起</li>
             <li>一单多商品、多身份、代收关系复杂</li>
             <li>管理层、财务、销售关注点不同</li>
@@ -122,20 +122,20 @@ window.AIBISlides = [
     section: "第二部分 · 案例二",
     html: `
       <div class="kicker">解决方案</div>
-      <h1>看板看经营，返款管明细；两类工作分开整理</h1>
+      <h1>一套看板看经营，一套流程管返款</h1>
       <div class="solution-dual">
         <article>
           <b>经营看板</b>
-          <strong>先把销售、合同、培训三类 Excel 做成固定表</strong>
-          <span>管理层可以看全国与省区销量、签约比例、团队变化和培训情况。</span>
+          <strong>汇总销售、合同和培训数据</strong>
+          <span>让管理层查看全国、省区和团队的经营情况。</span>
         </article>
         <article>
           <b>返款管理</b>
-          <strong>把“应返”和“实返”分成两件事处理</strong>
-          <span>应返说明订单该分给谁；实返按财务打款批次核对到账，销售可按自己的身份查看。</span>
+          <strong>分开计算“应返”和“实返”</strong>
+          <span>应返是按订单规则该返的钱；实返是财务实际打出去的钱。财务核对到账，销售查询自己的返款。</span>
         </article>
       </div>
-      <div class="quote">我先把数据来源、角色和计算方式确认下来，再用可点击原型和客户一起确认页面与操作方式。</div>
+      <div class="quote">我先和客户确认数据从哪里来、谁来使用、钱怎么计算，再做出可点击原型，一起确认页面和操作流程。</div>
     `
   },
   {
@@ -149,10 +149,10 @@ window.AIBISlides = [
         <figure><img src="../Images/evidence/refund-image5.png" alt="合并打款核销原型"><figcaption>合并打款：按批次核对订单明细</figcaption></figure>
       </div>
       <div class="case-notes horizontal">
-        <span>业务口径统一</span>
-        <span>财务核销规则清楚</span>
-        <span>不同角色责任分开</span>
-        <span>一期核销，二期直连</span>
+        <span>管理层看得清：经营情况集中展示</span>
+        <span>财务对得上：打款找到对应订单</span>
+        <span>销售查得到：只看与自己相关的数据</span>
+        <span>项目分步做：一期核对，二期连接系统</span>
       </div>
     `
   },
@@ -164,17 +164,17 @@ window.AIBISlides = [
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 18px;">
         <article>
           <strong>cwtwb</strong>
-          <span>AI 生成 Tableau 工作簿和仪表板，更快形成贴近客户场景的 BI 原型。</span>
+          <span>自动生成 Tableau 看板，快速把客户需求做成可以查看和演示的 BI 原型。</span>
           <em>分析展示</em>
         </article>
         <article>
           <strong>cwprep</strong>
-          <span>AI 生成 Tableau Prep 数据准备流程，更快验证清洗、关联和计算规则。</span>
+          <span>自动生成数据处理流程，快速验证客户的数据能不能用。</span>
           <em>数据准备</em>
         </article>
         <article>
           <strong>tableauPushDing</strong>
-          <span>自动获取 Tableau 报表并推送到钉钉，让报表进入业务人员日常工作。</span>
+          <span>定时获取报表、拼成长图并推送到钉钉，让业务人员直接看到结果。</span>
           <em>业务推送</em>
         </article>
       </div>
@@ -185,7 +185,7 @@ window.AIBISlides = [
       </div>
       <div class="metric-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 16px;">
         <article><strong>3个</strong><span>AI × Tableau × 自动化开源工具</span></article>
-        <article><strong>3万+</strong><span>相关项目累计下载</span></article>
+        <article><strong>3万+</strong><span>相关开源包累计下载</span></article>
         <article><strong>Tableau</strong><span>获得官方社区认可</span></article>
       </div>
     `
@@ -195,11 +195,11 @@ window.AIBISlides = [
     center: true,
     html: `
       <div class="kicker">SUMMARY</div>
-      <h1>连接客户经营问题<br><span class="accent">数据方案设计与价值落地</span></h1>
+      <h1>把客户的问题理清楚<br><span class="accent">把数据方案做出来，把项目推动落地</span></h1>
       <div class="case-notes horizontal" style="margin-top: 24px;">
-        <span>快速理解业务场景和指标口径</span>
-        <span>把分散需求整理成实施方案</span>
-        <span>用 AI 和工具提高验证效率</span>
+        <span>快速听懂客户真正要解决的问题</span>
+        <span>把分散的需求整理成清晰方案</span>
+        <span>用 AI 和 BI 工具更快完成演示和验证</span>
       </div>
       <p class="lead">郭文华｜成都｜业务型售前顾问 · BI / 数据智能</p>
       <div class="contact-row">
