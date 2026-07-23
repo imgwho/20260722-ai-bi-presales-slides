@@ -223,6 +223,59 @@ window.AIBIBoldSlides = [
     `
   },
   {
+    section: "AI产品",
+    html: `
+      <div class="kicker">20251215-chat-analysis 聊点资产全景</div>
+      <div class="summary-header">海量微信记录中自动提炼的 8 大高互动聊点库</div>
+      <div class="case-matrix" style="grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px;">
+        <article style="padding:10px; text-align:left;">
+          <strong style="color:var(--red); font-size:14px;">01. 早餐习惯 (1588.5)</strong>
+          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“在吃包子奶茶呢，你也别忘了先吃点在工作”</span>
+          <em style="font-size:11px; color:#64748b;">AI 开场：早上好，吃早餐了吗？</em>
+        </article>
+        <article style="padding:10px; text-align:left;">
+          <strong style="color:var(--red); font-size:14px;">02. 体育看球 (1384.5)</strong>
+          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“大叔看球赛吗？我不喜欢看中超！收拾下家里”</span>
+          <em style="font-size:11px; color:#64748b;">AI 开场：你平时喜欢看哪个联赛？</em>
+        </article>
+        <article style="padding:10px; text-align:left;">
+          <strong style="color:var(--red); font-size:14px;">03. 送发票外勤 (1206.5)</strong>
+          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“刚看完你发的文件到公司，等会去别的公司送发票”</span>
+          <em style="font-size:11px; color:#64748b;">AI 开场：早呀，今天要去送发票吗？</em>
+        </article>
+        <article style="padding:10px; text-align:left;">
+          <strong style="color:var(--red); font-size:14px;">04. 阳光与气温 (798.5)</strong>
+          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“难得几天出太阳[呲牙]，阳光明媚像你一样心情美美哒”</span>
+          <em style="font-size:11px; color:#64748b;">AI 开场：今天你们那边出太阳了吗？</em>
+        </article>
+        <article style="padding:10px; text-align:left;">
+          <strong style="color:var(--red); font-size:14px;">05. 流感提醒 (783.0)</strong>
+          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“公司好多同事流感了... 月初欠费很正常”</span>
+          <em style="font-size:11px; color:#64748b;">AI 开场：最近流感挺多的，防护做好没？</em>
+        </article>
+        <article style="padding:10px; text-align:left;">
+          <strong style="color:var(--red); font-size:14px;">06. 酒口味偏好 (704.5)</strong>
+          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“我知道你那都是酱香的，平时我只喝啤酒，白的辣[偷笑]”</span>
+          <em style="font-size:11px; color:#64748b;">AI 开场：平时喝啤酒多，白酒喝得少吧？</em>
+        </article>
+        <article style="padding:10px; text-align:left;">
+          <strong style="color:var(--red); font-size:14px;">07. 地方胡辣汤 (659.5)</strong>
+          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“贵州没正宗胡辣汤！去苏州站坐大巴到了报平安”</span>
+          <em style="font-size:11px; color:#64748b;">AI 开场：当地有什么特色早餐推荐吗？</em>
+        </article>
+        <article style="padding:10px; text-align:left;">
+          <strong style="color:var(--red); font-size:14px;">08. 周一加班 (646.5)</strong>
+          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“早上好勤劳的小蜜蜂，昨天加班到几点呀？”</span>
+          <em style="font-size:11px; color:#64748b;">AI 开场：昨天加班到几点？目标完成没？</em>
+        </article>
+      </div>
+      <div class="ai-ribbon" style="margin-top: 10px;">
+        <strong>只凭单表互动流水线（回复+轮次+速度），由 AI 聚类为 8 大稳态分类与推荐开场</strong>
+        <span>数据 100% 引自开源项目 20251215-chat-analysis（v2 聊点生成引擎），保留真实回复证据。</span>
+      </div>
+    `
+  },
+  {
     section: "华芝林",
     html: `
       <div class="kicker">华芝林 · 个人售前项目</div>
