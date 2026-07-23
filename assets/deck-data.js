@@ -170,8 +170,15 @@ window.AIBISlides = [
   {
     section: "AI产品",
     html: `
-      <div class="kicker">真实互动聊点案例库</div>
+      <div class="kicker">SEED+P 话题裂变模型</div>
       <h1>真实聊天中可复制的高互动话题案例</h1>
+      <div class="rule-bar" style="margin-bottom: 16px;">
+        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">S - 真实场景 (Situation)</span>
+        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">E - 情绪共鸣 (Emotion)</span>
+        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">E - 事实证据 (Evidence)</span>
+        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">D - 话题走向 (Direction)</span>
+        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">P - AI 提炼 (Prompt)</span>
+      </div>
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
         <article>
           <strong style="color:#0f766e; font-size:18px;">01. 地域美食与本地生活</strong>
@@ -190,7 +197,7 @@ window.AIBISlides = [
         </article>
       </div>
       <div class="ai-ribbon" style="margin-top: 18px;">
-        <strong>以客户回复、互动轮次和回复速度计算互动分</strong>
+        <strong>SEED+P 核心判定：以客户回复、互动轮次和回复速度计算互动分</strong>
         <span>AI 做轻度分类与整理，保留客户真实回复证据。案例取自 20251215-chat-analysis 开源项目。</span>
       </div>
     `
@@ -198,7 +205,7 @@ window.AIBISlides = [
   {
     section: "华芝林",
     html: `
-      <div class="kicker">流程、规范与 SEED+P</div>
+      <div class="kicker">流程与范围控制</div>
       <h1>把返款业务拆成两个可追溯工作流</h1>
       <div class="workflow-split">
         <article>
@@ -215,11 +222,11 @@ window.AIBISlides = [
         </article>
       </div>
       <div class="rule-bar" style="margin-top: 18px;">
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">S - 真实场景 (Situation)</span>
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">E - 情绪共鸣 (Emotion)</span>
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">E - 事实证据 (Evidence)</span>
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">D - 话题走向 (Direction)</span>
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">P - AI 提炼 (Prompt)</span>
+        <span>联合主键：单据编号 + 商品</span>
+        <span>已核销数据锁定</span>
+        <span>代收关系动态配置</span>
+        <span>多身份视角切换</span>
+        <span>一期锁定返款核销，二期规划直连与自动化</span>
       </div>
     `
   },

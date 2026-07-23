@@ -188,8 +188,15 @@ window.AIBIBoldSlides = [
   {
     section: "AI产品",
     html: `
-      <div class="kicker">真实互动聊点案例库</div>
+      <div class="kicker">SEED+P 话题裂变模型</div>
       <div class="summary-header">真实聊天中可复制的高互动话题案例</div>
+      <div class="rule-bar" style="margin-bottom: 16px;">
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">S - 真实场景 (Situation)</span>
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">E - 情绪共鸣 (Emotion)</span>
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">E - 事实证据 (Evidence)</span>
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">D - 话题走向 (Direction)</span>
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">P - AI 提炼 (Prompt)</span>
+      </div>
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
         <article>
           <strong style="color:var(--red); font-size:18px;">01. 地域美食与本地生活</strong>
@@ -198,7 +205,7 @@ window.AIBIBoldSlides = [
         </article>
         <article>
           <strong style="color:var(--red); font-size:18px;">02. 育儿与亲子教育</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“您家孩子习惯养得真好！我们家现在动不动就拉扯，想向您取取经，平时 me 是怎么引导孩子平衡的？”</span>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“您家孩子习惯养得真好！我们家现在动不动就拉扯，想向您取取经，平时是怎么引导孩子平衡的？”</span>
           <em style="font-size:12px; color:#64748b;">追问：①倾听同款困扰 ｜ ②赞赏接地气方法 ｜ ③周末带娃好去处</em>
         </article>
         <article>
@@ -207,8 +214,8 @@ window.AIBIBoldSlides = [
           <em style="font-size:12px; color:#64748b;">追问：①视角极其透彻 ｜ ②突破僵局做法 ｜ ③实操价值高</em>
         </article>
       </div>
-      <div class="ai-ribbon" style="margin-top: 18px;">
-        <strong>以客户回复、互动轮次和回复速度计算互动分</strong>
+      <div class="ai-ribbon" style="margin-top: 16px;">
+        <strong>SEED+P 核心判定：以客户回复、互动轮次和回复速度计算互动分</strong>
         <span>AI 做轻度分类与整理，保留客户真实回复证据。案例取自 20251215-chat-analysis 开源项目。</span>
       </div>
     `
@@ -216,7 +223,7 @@ window.AIBIBoldSlides = [
   {
     section: "华芝林",
     html: `
-      <div class="kicker">流程、规范与 SEED+P</div>
+      <div class="kicker">流程与范围控制</div>
       <div class="summary-header">把返款业务拆成两个可追溯工作流</div>
       <div class="workflow-split">
         <article>
@@ -233,11 +240,11 @@ window.AIBIBoldSlides = [
         </article>
       </div>
       <div class="rule-bar" style="margin-top: 18px;">
-        <span style="background:var(--red); color:#fff; border-color:var(--dark);">S - 真实场景 (Situation)</span>
-        <span style="background:var(--red); color:#fff; border-color:var(--dark);">E - 情绪共鸣 (Emotion)</span>
-        <span style="background:var(--red); color:#fff; border-color:var(--dark);">E - 事实证据 (Evidence)</span>
-        <span style="background:var(--red); color:#fff; border-color:var(--dark);">D - 话题走向 (Direction)</span>
-        <span style="background:var(--red); color:#fff; border-color:var(--dark);">P - AI 提炼 (Prompt)</span>
+        <span>联合主键：单据编号 + 商品</span>
+        <span>已核销数据锁定</span>
+        <span>代收关系动态配置</span>
+        <span>多身份视角切换</span>
+        <span>一期锁定返款核销，二期规划直连与自动化</span>
       </div>
     `
   },
