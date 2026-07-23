@@ -1,50 +1,29 @@
 window.AIBISlides = [
   {
-    section: "封面",
-    center: true,
+    section: "第一部分",
     html: `
-      <div class="kicker">BUSINESS · BI · AI</div>
-      <h1>把业务问题整理成<br><span class="accent">客户能理解、团队能实施的数据方案</span></h1>
-      <p class="lead">郭文华｜业务型售前顾问 · BI / 数据智能方向</p>
-      <div class="hero-tags">
-        <span>8年+ BI与数据解决方案</span>
-        <span>30+ 售前 / POC / 项目支持</span>
-        <span>AI 原生工作方式</span>
+      <div class="kicker">岗位理解</div>
+      <h1>售前的工作，是把客户的问题<br><span class="accent">变成能讨论、能验证的解决方案</span></h1>
+      <div class="flow compact" style="margin-top: 34px;">
+        <div><b>01</b><strong>听懂问题</strong><span>目标、现状、关键人</span></div><i>→</i>
+        <div><b>02</b><strong>理清业务</strong><span>流程、数据、规则</span></div><i>→</i>
+        <div><b>03</b><strong>做出验证</strong><span>原型、Demo、POC</span></div><i>→</i>
+        <div><b>04</b><strong>推动实施</strong><span>范围、节奏、协同</span></div>
       </div>
     `
   },
   {
     section: "第一部分",
     html: `
-      <div class="kicker">岗位理解与自我介绍</div>
-      <h1>我做售前时，先把业务问题讲清楚</h1>
-      <div class="metric-grid" style="grid-template-columns: repeat(4, 1fr);">
+      <div class="kicker">个人介绍</div>
+      <h1>郭文华｜8年+ BI 与数据解决方案经验</h1>
+      <div class="metric-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 920px;">
         <article><strong>8年+</strong><span>BI 与数据解决方案经验</span></article>
         <article><strong>30+</strong><span>售前、POC 及项目支持</span></article>
         <article><strong>多行业</strong><span>制造、消费、金融保险、地产物业</span></article>
         <article><strong>AI+BI</strong><span>用工具提高 Demo 与 POC 效率</span></article>
       </div>
-      <div class="quote">“先听懂客户的经营问题，再整理成客户能理解、技术能验证、团队能实施的数据方案。”</div>
-    `
-  },
-  {
-    section: "第一部分",
-    html: `
-      <div class="kicker">我的售前工作方法</div>
-      <h1>从业务目标到方案验证</h1>
-      <div class="flow compact">
-        <div><b>01</b><strong>业务目标</strong><span>客户想解决什么管理问题</span></div><i>→</i>
-        <div><b>02</b><strong>流程角色</strong><span>谁参与、谁使用、谁确认</span></div><i>→</i>
-        <div><b>03</b><strong>指标规则</strong><span>口径、权限、计算方式</span></div><i>→</i>
-        <div><b>04</b><strong>原型验证</strong><span>Demo、POC、样例数据</span></div><i>→</i>
-        <div><b>05</b><strong>实施范围</strong><span>一期重点、协同与交付物</span></div>
-      </div>
-      <div class="case-notes horizontal">
-        <span>业务理解</span>
-        <span>数据方案</span>
-        <span>原型沟通</span>
-        <span>项目推进</span>
-      </div>
+      <div class="quote">“我擅长在客户现场把模糊需求理清楚，再用原型和数据方案推动项目。”</div>
     `
   },
   {
@@ -76,19 +55,13 @@ window.AIBISlides = [
     section: "第二部分 · 案例一",
     html: `
       <div class="kicker">解决方案</div>
-      <h1>先用业务结果筛选样本，再让 AI 分析对话</h1>
-      <div class="flow" style="margin-bottom: 18px;">
-        <div><b>ORDER</b><strong>订单数据</strong><span>真实成交客户、首单时间</span></div><i>→</i>
-        <div><b>STAFF</b><strong>销售关系</strong><span>员工、团队、客户归属</span></div><i>→</i>
-        <div><b>WECHAT</b><strong>微信映射</strong><span>客户 ID 与微信 ID 对应</span></div><i>→</i>
-        <div><b>CHAT</b><strong>聊天记录</strong><span>销售表达、客户回复</span></div><i>→</i>
-        <div><b>AI</b><strong>分析输出</strong><span>策略、主题、培训卡片</span></div>
+      <h1>从成交客户出发，整理真实有效的销售经验</h1>
+      <div class="pipeline" style="margin-top: 32px;">
+        <div><b>01</b><strong>确认成交客户</strong><span>订单、员工和客户微信信息对应起来</span></div><i>→</i>
+        <div><b>02</b><strong>查看关键聊天</strong><span>关注成交前后的销售表达和客户回复</span></div><i>→</i>
+        <div><b>03</b><strong>整理成销售材料</strong><span>成交策略、互动主题、培训卡片</span></div>
       </div>
-      <div class="value-stack">
-        <div><b>01</b><p><strong>样本选择</strong><span>先找到真实成交客户，再看成交前后的关键对话</span></p></div>
-        <div><b>02</b><p><strong>评分判断</strong><span>结合互动分、回复轮次、适用阶段和风险标签</span></p></div>
-        <div><b>03</b><p><strong>人工确认</strong><span>AI 做整理和归类，最终内容由人确认后再使用</span></p></div>
-      </div>
+      <div class="quote">评分筛选 + 人工确认：内容符合实际业务情况后，再用于培训和复盘。</div>
     `
   },
   {
@@ -123,7 +96,7 @@ window.AIBISlides = [
     section: "第二部分 · 案例二",
     html: `
       <div class="kicker">案例二 · 华芝林售前咨询</div>
-      <h1>面对碎片化需求，先还原客户的真实业务</h1>
+      <h1>把零散的本地 Excel 数据<br>整理成日常可用的管理系统</h1>
       <div class="problem-solution">
         <div>
           <h2>背景</h2>
@@ -141,9 +114,6 @@ window.AIBISlides = [
             <li>管理层、财务、销售关注点不同</li>
           </ul>
         </div>
-      </div>
-      <div class="chaos-grid" style="margin-top: 18px;">
-        <span>管家婆发货数据</span><span>70% 签约红线</span><span>培训人数</span><span>应返 / 实返</span><span>省总 / 地总 / 业务</span><span>企业微信入口</span>
       </div>
     `
   },
@@ -215,20 +185,12 @@ window.AIBISlides = [
           <em>业务推送</em>
         </article>
       </div>
-      <div class="quote">“这些工具不是为了炫技，而是为了让售前验证更快、更具体。”</div>
-    `
-  },
-  {
-    section: "第三部分",
-    html: `
-      <div class="kicker">开源影响力</div>
-      <h1>三个工具共同服务 AI + BI 应用场景</h1>
       <div class="pipeline">
         <div><b>01</b><strong>数据准备</strong><span>cwprep：整理、清洗、关联、计算</span></div><i>→</i>
         <div><b>02</b><strong>分析展示</strong><span>cwtwb：工作簿、图表、仪表板</span></div><i>→</i>
         <div><b>03</b><strong>业务推送</strong><span>tableauPushDing：截图、拼接、钉钉通知</span></div>
       </div>
-      <div class="metric-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 22px;">
+      <div class="metric-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 16px;">
         <article><strong>3个</strong><span>AI × Tableau × 自动化开源工具</span></article>
         <article><strong>3万+</strong><span>相关项目累计下载</span></article>
         <article><strong>Tableau</strong><span>获得官方社区认可</span></article>
