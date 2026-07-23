@@ -71,20 +71,18 @@ window.AIBISlides = [
   {
     section: "AI+BI",
     html: `
-      <div class="kicker">开源与自动化生态</div>
-      <h1>AI 生成 BI 资产 ＋ tableauPushDing 智能定时推送</h1>
-      <div class="pipeline">
-        <article><small>CWTWB</small><strong>工作簿工程</strong><span>AI 生成 .twb 资产</span></article><i>→</i>
-        <article class="cyan"><small>CWPREP</small><strong>数据流程工程</strong><span>AI 构建 .tfl 清洗</span></article><i>→</i>
-        <article class="blue"><small>PUSH DING</small><strong>Tableau REST API</strong><span>自动抓取 + sharp 拼接</span></article><i>→</i>
-        <article class="green"><small>DELIVERY</small><strong>钉钉/微信推送</strong><span>定时发送高清报表长图</span></article>
+      <div class="kicker">开源项目 03</div>
+      <h1>tableauPushDing：BI 报表定时拼接与钉钉推送系统</h1>
+      <div class="case-layout">
+        <figure><img src="../Images/evidence/tableaupushding.png" alt="tableauPushDing 系统架构图" style="background:#fff; padding:10px; border-radius:8px;"><figcaption>系统架构：React+Vite 前端 ｜ Bun+Elysia 后端 ｜ sharp 图片拼接 ｜ 钉钉 API</figcaption></figure>
+        <div class="case-notes">
+          <p class="product-lead">打通 Tableau Server 与企业钉钉生态，实现高清报表自动拉取、长图拼接与定时无感推送。</p>
+          <div class="feature-grid">
+            <span>Bun + Elysia</span><span>React + Vite</span><span>Tableau REST API</span><span>sharp 图片拼接</span><span>Croner 调度</span><span>钉钉工作通知</span>
+          </div>
+          <a class="repo-link" href="https://github.com/imgwho/tableauPushDing" target="_blank" rel="noreferrer">查看开源项目 ↗</a>
+        </div>
       </div>
-      <div class="proof-row" style="margin-top: 18px;">
-        <span>cwtwb / cwprep 开源工具</span>
-        <span>tableauPushDing 自动化系统</span>
-        <span>30,000+ 社区下载验证</span>
-      </div>
-      <p class="micro">结合开源项目 https://github.com/imgwho/tableauPushDing 实现从 BI 资产生成到钉钉自动化的全闭环链路。</p>
     `
   },
   {
