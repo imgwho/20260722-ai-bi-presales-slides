@@ -133,22 +133,22 @@ window.AIBISlides = [
       </div>
       <div class="snippet-layout">
         <article class="conversation-card">
-          <small>真实互动案例：工作进度与日常关心（互动分：1206.5）</small>
-          <p>销售：“下午好呀，你的 PPT 改完了嘛？”<br>客户：“下午好呢，快了，还剩 1 页... 改完就休息，我也快受不了了”</p>
+          <small>破冰阶段真实案例：蔡莉（客户成交价值：¥96,000）</small>
+          <p>销售：“邹大哥，孩子接回来了吧，以后那个微信我就不用了，老是被封号，我们就用这个微信联系哈[调皮]”</p>
           <div class="followups">
-            <span>① 共情：一个周末都在改 PPT</span>
-            <span>② 关怀：改完赶紧好好放松休息</span>
-            <span>③ 延展：聊聊项目进度与后续计划</span>
+            <span>① 触发：通过验证后主动开启日常生活切入点</span>
+            <span>② 反应：客户回复放学时间，并主动提及之前购买的特产</span>
+            <span>③ 结果：开启高信任对话，后续达成 9.6万 订单成交</span>
           </div>
         </article>
         <aside class="score-card">
-          <strong>94</strong>
-          <span>AI 模拟评测</span>
+          <strong>82</strong>
+          <span>脚本综合评分</span>
           <ul style="margin-top:10px;">
-            <li>真实性 20 / 20</li>
-            <li>共鸣度 15 / 15</li>
-            <li>回复率 19 / 20</li>
-            <li>延展性 20 / 25</li>
+            <li>全网排名 Rank 1</li>
+            <li>转化率 100%</li>
+            <li>成交价 ¥96,000</li>
+            <li>阶段：破冰期</li>
           </ul>
         </aside>
       </div>
@@ -158,7 +158,7 @@ window.AIBISlides = [
     section: "AI产品",
     html: `
       <div class="kicker">SEED+P 话题裂变模型</div>
-      <h1>真实聊天中可复制的高互动话题案例</h1>
+      <h1>真实聊天中可复制的高成交/高互动话术库</h1>
       <div class="rule-bar" style="margin-bottom: 16px;">
         <span style="background:#0f766e; color:#fff; border-color:#0f172a;">S - 真实场景 (Situation)</span>
         <span style="background:#0f766e; color:#fff; border-color:#0f172a;">E - 情绪共鸣 (Emotion)</span>
@@ -168,24 +168,24 @@ window.AIBISlides = [
       </div>
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
         <article>
-          <strong style="color:#0f766e; font-size:17px;">01. 饮食生活 · 早餐习惯 (分值: 1588.5)</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“早上好！在吃包子奶茶呢，你也别忘了先吃点再开始工作。”</span>
-          <em style="font-size:12px; color:#64748b;">追问：①晨间问候 ｜ ②早餐喜好 ｜ ③提醒工作保暖</em>
+          <strong style="color:#0f766e; font-size:17px;">01. 破冰期 · 生活关心 (成交: ¥96,000)</strong>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“邹大哥，孩子接回来了吧，以后那个微信不用了，我们就用这个微信联系哈”</span>
+          <em style="font-size:12px; color:#64748b;">反应：回复接孩子，主动提及特产，建立高信任</em>
         </article>
         <article>
-          <strong style="color:#0f766e; font-size:17px;">02. 工作事业 · 日常送发票 (分值: 1206.5)</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“早呀，刚看完你发的到公司，等会要去别的公司送发票。”</span>
-          <em style="font-size:12px; color:#64748b;">追问：①共情外勤跑腿 ｜ ②询问发票频次 ｜ ③天冷出行提醒</em>
+          <strong style="color:#0f766e; font-size:17px;">02. 产品介绍 · 专家背书 (成交: ¥96,000)</strong>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“哥，我现在作为优秀员工代表在现场，中科院专家对我们品质高度评价，价格绝对匹配得上！”</span>
+          <em style="font-size:12px; color:#64748b;">反应：客户表示认可，并主动询问转账交付预订款</em>
         </article>
         <article>
-          <strong style="color:#0f766e; font-size:17px;">03. 地域天气 · 阳光问候 (分值: 798.5)</strong>
-          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“难得几天出太阳，阳光明媚像你一样，心情美美哒！”</span>
-          <em style="font-size:12px; color:#64748b;">追问：①天气晒太阳 ｜ ②好心情与放松 ｜ ③周末户外计划</em>
+          <strong style="color:#0f766e; font-size:17px;">03. 异议处理 · 诚意化解 (成交: ¥96,000)</strong>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“怎么会假呢，非常理解您的顾虑，毕竟投入这么多肯定需要了解清楚，我知无不言！”</span>
+          <em style="font-size:12px; color:#64748b;">反应：客户解释误会，关系大为缓和，消除疑虑</em>
         </article>
       </div>
       <div class="ai-ribbon" style="margin-top: 18px;">
-        <strong>SEED+P 核心判定：只依单表互动流水线，以真实回复与轮次评分</strong>
-        <span>AI 做轻度分类与整理，保留原始对话与客户回复证据。案例全量取自 20251215-chat-analysis。</span>
+        <strong>关联订单、员工与微信记录全量提炼</strong>
+        <span>数据引自 20251215-chat-analysis 核心资产库 (script_library.json)，服务于销售培训与话术复盘。</span>
       </div>
     `
   },
