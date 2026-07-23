@@ -18,12 +18,12 @@ window.AIBISlides = [
     html: `
       <div class="kicker">个人标签与定位</div>
       <h1>业务、数据与 AI 的连接者</h1>
-      <div class="metric-grid" style="grid-template-columns: repeat(5, 1fr); gap: 10px;">
-        <article style="padding: 12px 8px;"><strong style="font-size: 24px; color: #0f766e;">8年+</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">BI与数据解决方案经验</span></article>
-        <article style="padding: 12px 8px;"><strong style="font-size: 24px; color: #0f766e;">30+</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">售前、POC及项目支持经历</span></article>
-        <article style="padding: 12px 8px;"><strong style="font-size: 24px; color: #0f766e;">8大</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">行业覆盖（汽车/制造/金融等）</span></article>
-        <article style="padding: 12px 8px;"><strong style="font-size: 24px; color: #0f766e;">3个</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">开源项目（AI × Tableau × 自动化）</span></article>
-        <article style="padding: 12px 8px;"><strong style="font-size: 24px; color: #0f766e;">5步</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">端到端售前（需求—方案—POC—落地）</span></article>
+      <div class="metric-grid" style="grid-template-columns: repeat(5, 1fr); gap: 14px; margin: 20px 0 16px;">
+        <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">8年+</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">BI与数据解决方案经验</span></article>
+        <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">30+</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">售前、POC及项目支持经历</span></article>
+        <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">8大</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">行业覆盖<br><small style="font-size:12px; color:#64748b; font-weight:normal;">(汽车/制造/金融等)</small></span></article>
+        <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">3个</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">开源项目<br><small style="font-size:12px; color:#64748b; font-weight:normal;">(AI × Tableau × 自动化)</small></span></article>
+        <article style="padding: 18px 12px; border: 2px solid #0f766e; border-radius: 8px; background: rgba(255,255,255,0.95);"><strong style="font-size: 36px; color: #0f766e; font-weight: 800; display:block; margin-bottom: 4px;">5步</strong><span style="font-size: 14px; font-weight: 700; color: #0f172a; line-height: 1.35; display:block;">端到端售前<br><small style="font-size:12px; color:#64748b; font-weight:normal;">(需求—方案—POC—落地)</small></span></article>
       </div>
       <div class="flow compact" style="margin-top: 20px;">
         <div><b>01</b><strong>经营问题</strong><span>目标、流程、角色、痛点</span></div><i>→</i>

@@ -25,26 +25,26 @@ window.AIBIBoldSlides = [
     html: `
       <div class="kicker">个人标签与定位</div>
       <div class="summary-header">业务、数据与 AI 的连接者</div>
-      <div class="fin-grid" style="grid-template-columns: repeat(5, 1fr); gap: 10px;">
-        <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 26px;">8年+</div>
-          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">BI与数据解决方案经验</div>
+      <div class="fin-grid" style="grid-template-columns: repeat(5, 1fr); gap: 14px; margin: 20px 0 16px;">
+        <div class="fin-cell" style="padding: 20px 12px; background: rgba(255,255,255,0.95); border: 2px solid var(--dark); border-radius: 8px; box-shadow: 3px 3px 0 var(--dark);">
+          <div class="fc-num" style="font-size: 38px; font-weight: 900; color: var(--red); margin-bottom: 6px;">8年+</div>
+          <div class="fc-body" style="font-weight: 700; color: var(--dark); font-size: 14px; line-height: 1.35;">BI与数据解决方案经验</div>
         </div>
-        <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 26px;">30+</div>
-          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">售前、POC及项目支持经历</div>
+        <div class="fin-cell" style="padding: 20px 12px; background: rgba(255,255,255,0.95); border: 2px solid var(--dark); border-radius: 8px; box-shadow: 3px 3px 0 var(--dark);">
+          <div class="fc-num" style="font-size: 38px; font-weight: 900; color: var(--red); margin-bottom: 6px;">30+</div>
+          <div class="fc-body" style="font-weight: 700; color: var(--dark); font-size: 14px; line-height: 1.35;">售前、POC及项目支持经历</div>
         </div>
-        <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 26px;">8大</div>
-          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">行业覆盖（汽车/制造/金融等）</div>
+        <div class="fin-cell" style="padding: 20px 12px; background: rgba(255,255,255,0.95); border: 2px solid var(--dark); border-radius: 8px; box-shadow: 3px 3px 0 var(--dark);">
+          <div class="fc-num" style="font-size: 38px; font-weight: 900; color: var(--red); margin-bottom: 6px;">8大</div>
+          <div class="fc-body" style="font-weight: 700; color: var(--dark); font-size: 14px; line-height: 1.35;">行业覆盖<br><small style="font-size:12px; color:#64748b; font-weight:normal;">(汽车/制造/金融等)</small></div>
         </div>
-        <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 26px;">3个</div>
-          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">开源项目（AI × Tableau × 自动化）</div>
+        <div class="fin-cell" style="padding: 20px 12px; background: rgba(255,255,255,0.95); border: 2px solid var(--dark); border-radius: 8px; box-shadow: 3px 3px 0 var(--dark);">
+          <div class="fc-num" style="font-size: 38px; font-weight: 900; color: var(--red); margin-bottom: 6px;">3个</div>
+          <div class="fc-body" style="font-weight: 700; color: var(--dark); font-size: 14px; line-height: 1.35;">开源项目<br><small style="font-size:12px; color:#64748b; font-weight:normal;">(AI × Tableau × 自动化)</small></div>
         </div>
-        <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 26px;">5步</div>
-          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">端到端售前（需求—方案—POC—落地）</div>
+        <div class="fin-cell" style="padding: 20px 12px; background: rgba(255,255,255,0.95); border: 2px solid var(--dark); border-radius: 8px; box-shadow: 3px 3px 0 var(--dark);">
+          <div class="fc-num" style="font-size: 38px; font-weight: 900; color: var(--red); margin-bottom: 6px;">5步</div>
+          <div class="fc-body" style="font-weight: 700; color: var(--dark); font-size: 14px; line-height: 1.35;">端到端售前<br><small style="font-size:12px; color:#64748b; font-weight:normal;">(需求—方案—POC—落地)</small></div>
         </div>
       </div>
       <div class="flow compact" style="margin-top: 20px;">
