@@ -529,3 +529,53 @@ button:hover {
   .conversation-card p { font-size: 16px; }.score-card > strong { font-size: 48px; }
   .tech-chips { flex-wrap: wrap; }.tech-chips span { font-size: 12px; }
 }
+
+/* ==========================================================================
+   图片点击放大 Lightbox 模态框样式
+   ========================================================================== */
+.slide img {
+  cursor: zoom-in;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.015);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
+}
+
+.img-lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: zoom-out;
+}
+
+.img-lightbox-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.img-lightbox-img {
+  max-width: 92vw;
+  max-height: 92vh;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  transform: scale(0.92);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  background: #fff;
+}
+
+.img-lightbox-overlay.active .img-lightbox-img {
+  transform: scale(1);
+}
+

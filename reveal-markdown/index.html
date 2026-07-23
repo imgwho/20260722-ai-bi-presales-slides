@@ -172,6 +172,43 @@
         .catch(err => {
           deck.innerHTML = `<div style="color:#e11d48; text-align:center; padding-top:40vh; font-size:20px; font-weight:bold;">❌ 加载 slides.md 失败: ${err.message}</div>`;
         });
+
+      // ==========================================================================
+      // 图片点击放大与点击遮罩还原
+      // ==========================================================================
+      const overlay = document.createElement("div");
+      overlay.className = "img-lightbox-overlay";
+      overlay.innerHTML = '<img class="img-lightbox-img" src="" alt="预览放大">';
+      document.body.appendChild(overlay);
+
+      const lightboxImg = overlay.querySelector(".img-lightbox-img");
+
+      function openLightbox(src, alt) {
+        lightboxImg.src = src;
+        lightboxImg.alt = alt || "预览放大";
+        overlay.classList.add("active");
+      }
+
+      function closeLightbox() {
+        overlay.classList.remove("active");
+      }
+
+      document.addEventListener("click", event => {
+        const img = event.target.closest(".slide img");
+        if (img) {
+          event.preventDefault();
+          event.stopPropagation();
+          openLightbox(img.src, img.alt);
+        } else if (overlay.classList.contains("active")) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener("keydown", event => {
+        if (event.key === "Escape" && overlay.classList.contains("active")) {
+          closeLightbox();
+        }
+      });
     })();
   </script>
 </body>
