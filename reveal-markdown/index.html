@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>郭文华｜业务型售前顾问 (Reveal.js + Markdown 驱动版)</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
+  <style>
+    .reveal {
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .reveal h1, .reveal h2, .reveal h3 {
+      text-transform: none;
+    }
+    .reveal img {
+      max-height: 420px;
+      border-radius: 8px;
+    }
+    .md-badge {
+      position: fixed;
+      top: 14px;
+      right: 20px;
+      z-index: 1000;
+      background: #e11d48;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .md-badge a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="md-badge">
+    <span>🎬 Reveal.js + Markdown 官方插件</span>
+    <span>·</span>
+    <a href="./slides.md" target="_blank">slides.md 源码</a>
+  </div>
+
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="slides.md"
+               data-separator="^\r?\n---\r?\n$"
+               data-separator-vertical="^\r?\n--\r?\n$">
+      </section>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      center: true,
+      hash: true,
+      plugins: [ RevealMarkdown ]
+    });
+  </script>
+</body>
+</html>
