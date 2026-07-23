@@ -424,6 +424,34 @@ code {
   font-size: 19px;
 }
 
+.pipeline.five-step {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pipeline.five-step > i {
+  display: none;
+}
+
+.pipeline.five-step article {
+  min-height: 165px;
+}
+
+.pipeline.five-step article:not(:last-of-type)::after {
+  content: "→";
+  position: absolute;
+  right: -18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--red);
+  font-family: var(--font-sans);
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.pipeline.five-step article {
+  position: relative;
+}
 
 .problem-solution, .workflow-split, .scope-grid {
   display: grid;
@@ -568,6 +596,24 @@ code {
   color: #64748b;
   font-size: 13px;
   font-style: normal;
+}
+
+.case-matrix.design-matrix {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.case-matrix.design-matrix article {
+  padding: 16px 18px;
+}
+
+.case-matrix.design-matrix strong {
+  font-size: 19px;
+}
+
+.case-matrix.design-matrix span {
+  font-size: 15px;
+  line-height: 1.42;
 }
 
 .value-stack {
@@ -839,7 +885,7 @@ button:hover {
     font-size: 32px;
   }
 
-  .metric-grid, .metric-grid.five-tags, .feature-grid, .question-grid, .question-grid.mini, .case-matrix, .problem-solution, .workflow-split, .scope-grid, .two-mode, .evidence-layout, .snippet-layout, .prototype-grid, .dual-shot {
+  .metric-grid, .metric-grid.five-tags, .feature-grid, .question-grid, .question-grid.mini, .case-matrix, .case-matrix.design-matrix, .problem-solution, .workflow-split, .scope-grid, .two-mode, .evidence-layout, .snippet-layout, .prototype-grid, .dual-shot {
     grid-template-columns: 1fr;
   }
 
@@ -850,5 +896,9 @@ button:hover {
 
   .flow > i, .pipeline > i, .architecture > i, .system-map i {
     transform: rotate(90deg);
+  }
+
+  .pipeline.five-step article:not(:last-of-type)::after {
+    display: none;
   }
 }

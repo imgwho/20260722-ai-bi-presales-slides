@@ -19,15 +19,27 @@ window.AIBISlides = [
   },
   {
     section: "AI+BI",
-    html: `<p class="kicker">开源价值证明</p><h1>AI 从“回答问题”，走向“生成真实 BI 资产”</h1><div class="pipeline"><article><small>PROOF</small><strong>30,000+ 下载</strong><span>cwtwb + cwprep 合计口径</span></article><i>→</i><article class="cyan"><small>CWPREP</small><strong>数据流程工程</strong><span>清洗 · 关联 · 计算 · 输出</span></article><i>→</i><article class="blue"><small>CWTWB</small><strong>工作簿工程</strong><span>图表 · 布局 · 交互 · 校验</span></article><i>→</i><article class="green"><small>DELIVERY</small><strong>可交付 BI 资产</strong><span>可检查 · 可复现 · 可发布</span></article></div><div class="proof-row"><span>Tableau 工程化</span><span>社区真实使用</span><span>Tableau 官方生态认可</span></div><p class="micro">下载量以公开统计页面实时数据为准；面试表达重点是“AI 能生成可验证的数据资产”。</p>`
+    html: `<p class="kicker">开源项目 03</p><h1>tableauPushDing：让看板自动触达业务现场</h1><div class="problem-solution"><div><h2>解决的问题</h2><ul><li>管理层不一定每天主动打开 BI 系统</li><li>移动端查看大屏看板不方便</li><li>日报、周报截图和转发依赖人工</li></ul></div><div><h2>自动化链路</h2><ul><li>Tableau 看板自动截图</li><li>多视图拼接成长图</li><li>定时推送到钉钉群</li><li>让 BI 结果进入业务沟通流</li></ul><a class="repo-link" href="https://github.com/imgwho/tableauPushDing" target="_blank" rel="noreferrer">查看开源项目 ↗</a></div></div><div class="proof-row"><span>Tableau 自动化</span><span>长图拼接</span><span>定时任务</span><span>钉钉触达</span></div>`
+  },
+  {
+    section: "AI+BI",
+    html: `<p class="kicker">开源价值证明</p><h1>AI 从“回答问题”，走向“生成真实 BI 资产”</h1><div class="pipeline"><article><small>PROOF</small><strong>30,000+ 下载</strong><span>cwtwb + cwprep 合计口径</span></article><i>→</i><article class="cyan"><small>CWPREP</small><strong>数据流程工程</strong><span>清洗 · 关联 · 计算 · 输出</span></article><i>→</i><article class="blue"><small>CWTWB</small><strong>工作簿工程</strong><span>图表 · 布局 · 交互 · 校验</span></article><i>→</i><article class="green"><small>PUSHDING</small><strong>自动触达业务</strong><span>截图 · 拼图 · 定时推送</span></article></div><div class="proof-row"><span>Tableau 工程化</span><span>社区真实使用</span><span>Tableau 官方生态认可</span></div><p class="micro">下载量以公开统计页面实时数据为准；面试表达重点是“AI 能生成、校验并推动业务使用数据资产”。</p>`
   },
   {
     section: "AI产品",
-    html: `<p class="kicker">销售话术分析系统</p><h1>从销售聊天记录到可复用话术资产</h1><div class="pipeline"><article><small>ORDER</small><strong>订单表</strong><span>首单、金额、时间、客户</span></article><i>→</i><article class="cyan"><small>STAFF</small><strong>员工表</strong><span>销售、工号、团队</span></article><i>→</i><article class="blue"><small>BRIDGE</small><strong>微信映射</strong><span>会员 ID ↔ 客户微信 ID</span></article><i>→</i><article><small>CHAT</small><strong>聊天记录</strong><span>销售消息、客户回复、互动轮次</span></article><i>→</i><article class="green"><small>AI ASSET</small><strong>AI 话术库</strong><span>成交话术 · 客户维系聊点</span></article></div><div class="proof-row"><span>Top 销售</span><span>首单成交</span><span>客户回复</span><span>话术提炼</span><span>可复用资产</span></div>`
+    html: `<p class="kicker">销售话术分析系统</p><h1>从销售聊天记录到可复用话术资产</h1><div class="pipeline five-step"><article><small>ORDER</small><strong>订单表</strong><span>首单、金额、时间、客户</span></article><i>→</i><article class="cyan"><small>STAFF</small><strong>员工表</strong><span>销售、工号、团队</span></article><i>→</i><article class="blue"><small>BRIDGE</small><strong>微信映射</strong><span>会员 ID ↔ 客户微信 ID</span></article><i>→</i><article><small>CHAT</small><strong>聊天记录</strong><span>销售消息、客户回复、互动轮次</span></article><i>→</i><article class="green"><small>AI ASSET</small><strong>AI 话术库</strong><span>成交话术 · 客户维系聊点</span></article></div><div class="proof-row"><span>Top 销售</span><span>首单成交</span><span>客户回复</span><span>话术提炼</span><span>可复用资产</span></div>`
   },
   {
     section: "AI产品",
     html: `<p class="kicker">可信机制</p><h1>让 AI 产出可追溯、可评分、可审核</h1><div class="value-stack"><div><b>01</b><p><strong>业务结果绑定</strong><span>用首单、金额、Top 销售筛样本</span></p></div><div><b>02</b><p><strong>结构化数据链路</strong><span>订单 → 员工 → 微信 → 聊天，避免凭空生成</span></p></div><div><b>03</b><p><strong>话术评分去重</strong><span>SEED+P、互动分、风险项、相似话术合并</span></p></div><div><b>04</b><p><strong>人工审核闭环</strong><span>Excel / Markdown 输出，业务复核后入库</span></p></div></div><p class="quote">可信的关键不是模型更会写，而是每条话术都能回到数据、规则和业务判断。</p>`
+  },
+  {
+    section: "AI产品",
+    html: `<p class="kicker">真实话题案例</p><h1>客户维系聊点：从真实回复里找可复制入口</h1><div class="snippet-layout"><article class="conversation-card"><small>早餐与工作节奏｜互动分 1588.5</small><p>销售：“哥哥早上好呀”<br>客户：“早上好美女。在吃，你也别忘了先吃点，在工作。包子奶茶。”</p><div class="followups"><span>推荐开场：早上好，吃早餐了吗？</span><span>后续追问：你平时早餐喜欢吃什么？</span><span>判断：日常、低风险、容易自然延续</span></div></article><aside class="score-card"><strong>203</strong><span>客户维系聊点</span><ul><li>真实客户回复</li><li>互动轮次评分</li><li>低风险优先</li><li>可持续复用</li></ul></aside></div><p class="source-note">来自项目真实输出：output_202511/v2/topics.md｜AI 仅做分类和轻度整理，互动分来自真实回复与轮次</p>`
+  },
+  {
+    section: "AI产品",
+    html: `<p class="kicker">聊点设计判断</p><h1>不是“会聊天”，而是设计可验证的互动策略</h1><div class="case-matrix design-matrix"><article><strong>P 人设</strong><span>晚辈、学生、请教姿态，降低客户防备</span><em>建立关系</em></article><article><strong>S 场景</strong><span>早餐、天气、工作压力、公园、家乡美食等真实生活入口</span><em>降低距离</em></article><article><strong>E 情绪</strong><span>自嘲、共情、关怀、怀旧，触发客户表达</span><em>制造回应</em></article><article><strong>E 认同</strong><span>让客户成为过来人、美食家、职场前辈、生活家</span><em>给对方价值</em></article><article><strong>D 驱动</strong><span>每个聊点配 1 个开场和 1-3 个追问，保证能接下去</span><em>延续互动</em></article><article><strong>风险控制</strong><span>过滤敏感、越界、暧昧化话题，人工复核后再使用</span><em>保护业务</em></article></div>`
   },
   {
     section: "华芝林",
