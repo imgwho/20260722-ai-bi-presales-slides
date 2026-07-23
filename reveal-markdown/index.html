@@ -26,6 +26,34 @@
       color: #fff;
       text-decoration: underline;
     }
+    /* 图片与容器全自适应与防溢出保障 */
+    .slide img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+    figure {
+      margin: 0;
+      width: 100%;
+    }
+    figure img {
+      display: block;
+      width: 100%;
+      max-height: 54vh;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .prototype-grid figure img {
+      height: 46vh !important;
+      max-height: 46vh !important;
+      object-fit: cover !important;
+      object-position: top !important;
+    }
+    .dual-shot figure img {
+      height: 44vh !important;
+      max-height: 44vh !important;
+      object-fit: contain !important;
+    }
   </style>
 </head>
 <body data-deck-title="郭文华 · AI+BI 业务型售前 (Markdown 驱动版)">
@@ -65,7 +93,12 @@
           if (centerMatch) center = true;
 
           const cleanMd = raw.replace(/<!--[\s\S]*?-->/g, '').trim();
-          const htmlContent = marked.parse(cleanMd);
+          let htmlContent = marked.parse(cleanMd);
+
+          // 清洗与解包被 <p> 错误包裹的块级 HTML 元素，防止破坏 flex/grid DOM 选择器
+          htmlContent = htmlContent
+            .replace(/<p>\s*(<(?:div|figure|article|aside|section|ul|ol|table)[^>]*>[\s\S]*?<\/(?:div|figure|article|aside|section|ul|ol|table)>)\s*<\/p>/gi, '$1')
+            .replace(/<p>\s*(<figure>[\s\S]*?<\/figure>)\s*<\/p>/gi, '$1');
 
           return {
             index: idx,
