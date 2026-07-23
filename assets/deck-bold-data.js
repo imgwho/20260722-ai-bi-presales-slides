@@ -89,16 +89,20 @@ window.AIBIBoldSlides = [
   {
     section: "AI+BI",
     html: `
-      <div class="kicker">开源价值证明</div>
-      <div class="summary-header">AI 从“回答问题”，走向“生成真实 BI 资产”</div>
+      <div class="kicker">开源与自动化生态</div>
+      <div class="summary-header">AI 生成 BI 资产 ＋ tableauPushDing 智能定时推送</div>
       <div class="pipeline">
-        <article><small>PROOF</small><strong>30,000+ 下载</strong><span>cwtwb + cwprep 合计口径</span></article><i>→</i>
-        <article class="cyan"><small>CWPREP</small><strong>数据流程工程</strong><span>清洗 · 关联 · 计算 · 输出</span></article><i>→</i>
-        <article class="blue"><small>CWTWB</small><strong>工作簿工程</strong><span>图表 · 布局 · 交互 · 校验</span></article><i>→</i>
-        <article class="green"><small>DELIVERY</small><strong>可交付 BI 资产</strong><span>可检查 · 可复现 · 可发布</span></article>
+        <article><small>CWTWB</small><strong>工作簿工程</strong><span>AI 生成 .twb 资产</span></article><i>→</i>
+        <article class="cyan"><small>CWPREP</small><strong>数据流程工程</strong><span>AI 构建 .tfl 清洗</span></article><i>→</i>
+        <article class="blue"><small>PUSH DING</small><strong>Tableau REST API</strong><span>自动抓取 + sharp 拼接</span></article><i>→</i>
+        <article class="green"><small>DELIVERY</small><strong>钉钉/微信推送</strong><span>定时发送高清报表长图</span></article>
       </div>
-      <div class="proof-row"><span>Tableau 工程化</span><span>社区真实使用</span><span>Tableau 官方生态认可</span></div>
-      <p class="micro">下载量以公开统计页面实时数据为准；面试表达重点是“AI 能生成可验证的数据资产”。</p>
+      <div class="proof-row" style="margin-top: 18px;">
+        <span>cwtwb / cwprep 开源工具</span>
+        <span>tableauPushDing 自动化系统</span>
+        <span>30,000+ 社区下载验证</span>
+      </div>
+      <p class="micro">结合开源项目 https://github.com/imgwho/tableauPushDing 实现从 BI 资产生成到钉钉自动化的全闭环链路。</p>
     `
   },
   {
@@ -133,11 +137,21 @@ window.AIBIBoldSlides = [
   {
     section: "AI产品",
     html: `
-      <div class="kicker">真实产出与系统架构</div>
-      <div class="summary-header">聊点不是一句文案，而是一套可评测策略</div>
+      <div class="kicker">数据流转与系统架构</div>
+      <div class="summary-header">从销售聊天记录到可复用话术资产</div>
+      <div class="flow" style="margin-bottom: 16px;">
+        <div><b>ORDER</b><strong>订单表</strong><span>首单、金额、时间、客户</span></div><i>→</i>
+        <div><b>STAFF</b><strong>员工表</strong><span>销售、工号、团队</span></div><i>→</i>
+        <div><b>BRIDGE</b><strong>微信映射</strong><span>会员 ID ↔ 客户微信 ID</span></div><i>→</i>
+        <div><b>CHAT</b><strong>聊天记录</strong><span>销售消息、客户回复、轮次</span></div><i>→</i>
+        <div><b>AI ASSET</b><strong>AI 话术库</strong><span>成交话术 · 维系聊点</span></div>
+      </div>
+      <div class="proof-row" style="margin-bottom: 18px;">
+        <span>Top 销售</span><span>首单成交</span><span>客户回复</span><span>话术提炼</span><span>可复用资产</span>
+      </div>
       <div class="snippet-layout">
         <article class="conversation-card">
-          <small>话题：地域美食与旅游邀约｜自嘲式求助</small>
+          <small>话题案例：地域美食与旅游邀约｜自嘲式求助</small>
           <p>“最近看到好多人推荐您老家的特色美食，我兴冲冲去尝了，结果感觉被‘照骗’了。想请教您这位地道美食家，最正宗的味道和吃法应该是怎样的？”</p>
           <div class="followups">
             <span>① 共情：果然少了灵魂</span>
@@ -156,14 +170,6 @@ window.AIBIBoldSlides = [
           </ul>
         </aside>
       </div>
-      <div class="system-map thin">
-        <div><small>DATA</small><strong>4.4GB+ CSV</strong></div><i>→</i>
-        <div><small>DUCKDB</small><strong>业务筛选</strong></div><i>→</i>
-        <div><small>DEEPSEEK</small><strong>多阶段分析</strong></div><i>→</i>
-        <div><small>QUALITY</small><strong>自动评测</strong></div><i>→</i>
-        <div><small>ASSETS</small><strong>JSON · Excel · Markdown</strong></div>
-      </div>
-      <p class="source-note">来自项目真实输出：final_divergent_topics.md｜基于真实互动素材提炼后再进行话题裂变</p>
     `
   },
   {
@@ -180,33 +186,37 @@ window.AIBIBoldSlides = [
     `
   },
   {
-    section: "华芝林",
+    section: "AI产品",
     html: `
-      <div class="kicker">AI 原生售前方法</div>
-      <div class="summary-header">快速进入陌生业务，并找到没说出口的问题</div>
-      <div class="flow compact">
-        <div><b>01</b><strong>材料输入</strong><span>访谈、Excel、流程、截图</span></div><i>→</i>
-        <div><b>02</b><strong>AI 结构化</strong><span>角色、对象、流程、规则</span></div><i>→</i>
-        <div><b>03</b><strong>冲突识别</strong><span>口径、例外、权限、状态</span></div><i>→</i>
-        <div><b>04</b><strong>原型验证</strong><span>页面、交互、数据路径</span></div><i>→</i>
-        <div><b>05</b><strong>方案收敛</strong><span>范围、计划、报价、验收</span></div>
+      <div class="kicker">真实互动聊点案例库</div>
+      <div class="summary-header">真实聊天中可复制的高互动话题案例</div>
+      <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
+        <article>
+          <strong style="color:var(--red); font-size:18px;">01. 地域美食与本地生活</strong>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“最近看到好多人推荐您老家的特色美食，去尝了感觉被‘照骗’了。想请教您最正宗的味道应该是怎样的？”</span>
+          <em style="font-size:12px; color:#64748b;">追问：①共情少了灵魂 ｜ ②隐秘宝藏 ｜ ③像本地人一样玩</em>
+        </article>
+        <article>
+          <strong style="color:var(--red); font-size:18px;">02. 育儿与亲子教育</strong>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“您家孩子习惯养得真好！我们家现在动不动就拉扯，想向您取取经，平时 me 是怎么引导孩子平衡的？”</span>
+          <em style="font-size:12px; color:#64748b;">追问：①倾听同款困扰 ｜ ②赞赏接地气方法 ｜ ③周末带娃好去处</em>
+        </article>
+        <article>
+          <strong style="color:var(--red); font-size:18px;">03. 职场与管理心得</strong>
+          <span style="font-size:14px; margin: 8px 0; line-height: 1.45;">“看您朋友圈分享的管理心得特别受启发，想请教下在跨部门协作时，如何更好地对齐预期？”</span>
+          <em style="font-size:12px; color:#64748b;">追问：①视角极其透彻 ｜ ②突破僵局做法 ｜ ③实操价值高</em>
+        </article>
       </div>
-      <div class="question-grid mini">
-        <article><b>身份</b><span>一人兼任省总、地总、业务，数据如何展示？</span></article>
-        <article><b>核销</b><span>实返按订单逐笔，还是按打款批次汇总？</span></article>
-        <article><b>代收</b><span>口头约定且随时变化，关系如何动态配置？</span></article>
-        <article><b>边界</b><span>哪些必须一期交付，哪些属于二期升级？</span></article>
-      </div>
-      <div class="ai-ribbon">
-        <strong>我的判断仍然是核心</strong>
-        <span>AI 提高速度；业务访谈、取舍、边界与承诺由我负责。</span>
+      <div class="ai-ribbon" style="margin-top: 18px;">
+        <strong>以客户回复、互动轮次和回复速度计算互动分</strong>
+        <span>AI 做轻度分类与整理，保留客户真实回复证据。案例取自 20251215-chat-analysis 开源项目。</span>
       </div>
     `
   },
   {
     section: "华芝林",
     html: `
-      <div class="kicker">流程与范围控制</div>
+      <div class="kicker">流程、规范与 SEED+P</div>
       <div class="summary-header">把返款业务拆成两个可追溯工作流</div>
       <div class="workflow-split">
         <article>
@@ -222,12 +232,12 @@ window.AIBIBoldSlides = [
           <span>回答：这次到账包含哪些订单？</span>
         </article>
       </div>
-      <div class="rule-bar">
-        <span>联合主键：单据编号 + 商品</span>
-        <span>已核销数据锁定</span>
-        <span>代收关系动态配置</span>
-        <span>多身份视角切换</span>
-        <span>一期锁定返款核销，二期规划直连与自动化</span>
+      <div class="rule-bar" style="margin-top: 18px;">
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">S - 真实场景 (Situation)</span>
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">E - 情绪共鸣 (Emotion)</span>
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">E - 事实证据 (Evidence)</span>
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">D - 话题走向 (Direction)</span>
+        <span style="background:var(--red); color:#fff; border-color:var(--dark);">P - AI 提炼 (Prompt)</span>
       </div>
     `
   },
