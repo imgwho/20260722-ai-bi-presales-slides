@@ -27,24 +27,24 @@ window.AIBIBoldSlides = [
       <div class="summary-header">业务、数据与 AI 的连接者</div>
       <div class="fin-grid" style="grid-template-columns: repeat(5, 1fr); gap: 10px;">
         <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 24px;">8年+</div>
+          <div class="fc-num" style="font-size: 26px;">8年+</div>
           <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">BI与数据解决方案经验</div>
         </div>
         <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 24px;">30+</div>
+          <div class="fc-num" style="font-size: 26px;">30+</div>
           <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">售前、POC及项目支持经历</div>
         </div>
         <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 24px;">8大行业</div>
-          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">汽车、制造、地产、金融等</div>
+          <div class="fc-num" style="font-size: 26px;">8大</div>
+          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">行业覆盖（汽车/制造/金融等）</div>
         </div>
         <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 24px;">3个开源项目</div>
-          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">AI × Tableau × 自动化</div>
+          <div class="fc-num" style="font-size: 26px;">3个</div>
+          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">开源项目（AI × Tableau × 自动化）</div>
         </div>
         <div class="fin-cell" style="padding: 12px 8px;">
-          <div class="fc-num" style="font-size: 22px;">端到端售前</div>
-          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">需求—方案—Demo—POC—落地</div>
+          <div class="fc-num" style="font-size: 26px;">5步</div>
+          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">端到端售前（需求—方案—POC—落地）</div>
         </div>
       </div>
       <div class="flow compact" style="margin-top: 20px;">
