@@ -16,13 +16,14 @@ window.AIBISlides = [
   {
     section: "定位",
     html: `
-      <div class="kicker">我的定位与方法</div>
+      <div class="kicker">个人标签与定位</div>
       <h1>业务、数据与 AI 的连接者</h1>
-      <div class="metric-grid">
-        <article><strong>8 年</strong><span>BI、数据分析与企业数字化</span></article>
-        <article><strong>端到端</strong><span>交流、澄清、方案、PoC、汇报、推进</span></article>
-        <article><strong>多行业</strong><span>制造、消费、保险、地产与金融</span></article>
-        <article><strong>AI 原生</strong><span>把新能力转成可验证业务场景</span></article>
+      <div class="metric-grid" style="grid-template-columns: repeat(5, 1fr); gap: 10px;">
+        <article style="padding: 12px 8px;"><strong style="font-size: 22px; color: #0f766e;">8年+</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">BI与数据解决方案经验</span></article>
+        <article style="padding: 12px 8px;"><strong style="font-size: 22px; color: #0f766e;">30+</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">售前、POC及项目支持经历</span></article>
+        <article style="padding: 12px 8px;"><strong style="font-size: 22px; color: #0f766e;">8大行业</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">汽车、制造、地产、金融等</span></article>
+        <article style="padding: 12px 8px;"><strong style="font-size: 22px; color: #0f766e;">3个开源项目</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">AI × Tableau × 自动化</span></article>
+        <article style="padding: 12px 8px;"><strong style="font-size: 20px; color: #0f766e;">端到端售前</strong><span style="font-size: 13px; font-weight: 600; color: #0f172a;">需求—方案—Demo—POC—落地</span></article>
       </div>
       <div class="flow compact" style="margin-top: 20px;">
         <div><b>01</b><strong>经营问题</strong><span>目标、流程、角色、痛点</span></div><i>→</i>

@@ -23,23 +23,28 @@ window.AIBIBoldSlides = [
   {
     section: "定位",
     html: `
-      <div class="kicker">我的定位与方法</div>
+      <div class="kicker">个人标签与定位</div>
       <div class="summary-header">业务、数据与 AI 的连接者</div>
-      <div class="fin-grid">
-        <div class="fin-cell">
-          <div class="fc-num">8年</div>
-          <div class="fc-label">行业沉淀</div>
-          <div class="fc-body">BI、数据分析与企业数字化</div>
+      <div class="fin-grid" style="grid-template-columns: repeat(5, 1fr); gap: 10px;">
+        <div class="fin-cell" style="padding: 12px 8px;">
+          <div class="fc-num" style="font-size: 24px;">8年+</div>
+          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">BI与数据解决方案经验</div>
         </div>
-        <div class="fin-cell">
-          <div class="fc-num">端到端</div>
-          <div class="fc-label">售前闭环</div>
-          <div class="fc-body">交流、澄清、方案、PoC、汇报、推进</div>
+        <div class="fin-cell" style="padding: 12px 8px;">
+          <div class="fc-num" style="font-size: 24px;">30+</div>
+          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">售前、POC及项目支持经历</div>
         </div>
-        <div class="fin-cell">
-          <div class="fc-num">多行业</div>
-          <div class="fc-label">业务场景</div>
-          <div class="fc-body">制造、消费、保险、地产与金融</div>
+        <div class="fin-cell" style="padding: 12px 8px;">
+          <div class="fc-num" style="font-size: 24px;">8大行业</div>
+          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">汽车、制造、地产、金融等</div>
+        </div>
+        <div class="fin-cell" style="padding: 12px 8px;">
+          <div class="fc-num" style="font-size: 24px;">3个开源项目</div>
+          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">AI × Tableau × 自动化</div>
+        </div>
+        <div class="fin-cell" style="padding: 12px 8px;">
+          <div class="fc-num" style="font-size: 22px;">端到端售前</div>
+          <div class="fc-body" style="font-weight: 600; color: var(--dark); font-size: 13px;">需求—方案—Demo—POC—落地</div>
         </div>
       </div>
       <div class="flow compact" style="margin-top: 20px;">
