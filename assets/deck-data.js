@@ -7,9 +7,9 @@ window.AIBISlides = [
       <h1>把业务问题，变成<br><span class="accent">可落地的数据智能方案</span></h1>
       <p class="lead">郭文华｜业务型售前顾问 · BI / 数据智能方向</p>
       <div class="hero-tags">
-        <span>8 年数据与数字化</span>
-        <span>制造 / 消费 / 保险</span>
-        <span>AI 原生工作方式</span>
+        <span>8年+ BI与数据解决方案</span>
+        <span>制造 / 消费 / 金融保险</span>
+        <span>AI原生售前</span>
       </div>
     `
   },
@@ -29,7 +29,7 @@ window.AIBISlides = [
         <div><b>01</b><strong>经营问题</strong><span>目标、流程、角色、痛点</span></div><i>→</i>
         <div><b>02</b><strong>需求澄清</strong><span>场景、规则、边界</span></div><i>→</i>
         <div><b>03</b><strong>方案设计</strong><span>指标、数据、原型</span></div><i>→</i>
-        <div><b>04</b><strong>价值呈现</strong><span>演示、验证、共识</span></div><i>→</i>
+        <div><b>04</b><strong>价值验证</strong><span>原型、Demo、POC、客户共识</span></div><i>→</i>
         <div><b>05</b><strong>推进落地</strong><span>计划、协同、验收</span></div>
       </div>
       <div class="quote">“不从产品功能开始，而从客户要解决的经营问题开始。”</div>
@@ -85,6 +85,7 @@ window.AIBISlides = [
             <span>Bun + Elysia</span><span>React + Vite</span><span>Tableau REST API</span><span>sharp 图片拼接</span><span>Croner 调度</span><span>钉钉工作通知</span>
           </div>
           <div class="presales-value"><strong>对售前的价值</strong><span>把 BI 从“登录查看”延伸到“主动触达业务”</span></div>
+          <p class="micro">三个项目覆盖从数据准备、分析构建到业务触达的完整 BI 链路。</p>
           <a class="repo-link" href="https://github.com/imgwho/tableauPushDing" target="_blank" rel="noreferrer">查看开源项目 ↗</a>
         </div>
       </div>
@@ -152,11 +153,11 @@ window.AIBISlides = [
       <div class="snippet-layout" style="margin-top: 18px;">
         <article class="conversation-card">
           <small>保留一个真实案例：产品介绍期｜专家背书</small>
-          <p>销售借现场专家评价和稀缺场景，回应客户对价格与品质的关注；AI 提炼出“权威背书、稀缺塑造、价值锚定”三个可复用要点。</p>
+          <p>销售借现场专家评价和稀缺场景，回应客户对价格与品质的关注；AI 提炼出“权威背书、稀缺塑造、价值锚定”三个可复用要点，并转化为标准培训卡片。</p>
           <div class="followups">
             <span>适用阶段：产品介绍</span>
             <span>解决问题：客户对价格和真实性的顾虑</span>
-            <span>应用方式：培训案例 + 话术复盘 + 风险审核</span>
+            <span>应用方式：适用阶段—客户顾虑—应对策略—风险提示</span>
           </div>
         </article>
         <aside class="score-card">
