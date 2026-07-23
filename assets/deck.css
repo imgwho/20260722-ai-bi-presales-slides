@@ -145,6 +145,31 @@ a {
   margin-top: 10px;
 }
 
+.presales-value {
+  display: grid;
+  gap: 6px;
+  margin: 14px 0 4px;
+  padding: 12px 14px;
+  background: var(--light);
+  border: 2px solid var(--dark);
+  border-left: 8px solid var(--red);
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 var(--dark);
+}
+
+.presales-value strong {
+  font-family: var(--font-sans);
+  color: var(--red);
+  font-size: 14px;
+}
+
+.presales-value span {
+  font-family: var(--font-sans);
+  color: var(--dark);
+  font-size: 15px;
+  font-weight: 700;
+}
+
 ul,
 ol {
   margin: 0;
@@ -614,6 +639,18 @@ code {
 .case-matrix.design-matrix span {
   font-size: 15px;
   line-height: 1.42;
+}
+
+.case-matrix.problem-matrix strong {
+  color: var(--dark);
+}
+
+.case-matrix.problem-matrix article {
+  border-top: 6px solid var(--red);
+}
+
+.case-matrix.problem-matrix article:nth-child(2n) {
+  border-top-color: var(--dark);
 }
 
 .value-stack {

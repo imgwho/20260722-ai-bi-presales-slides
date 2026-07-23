@@ -33,6 +33,7 @@ window.AIBISlides = [
         <div><b>05</b><strong>推进落地</strong><span>计划、协同、验收</span></div>
       </div>
       <div class="quote">“不从产品功能开始，而从客户要解决的经营问题开始。”</div>
+      <p class="micro">曾参与一汽、一汽大众、蒙牛、立白、友邦、安盛天平等项目支持，覆盖汽车制造、消费零售、金融保险、地产物业、教育等行业。</p>
     `
   },
   {
@@ -47,6 +48,7 @@ window.AIBISlides = [
           <div class="feature-grid">
             <span>Python SDK</span><span>MCP Server</span><span>图表与仪表板</span><span>XSD 校验</span><span>Cloud 验证</span><span>可复现交付</span>
           </div>
+          <div class="presales-value"><strong>对售前的价值</strong><span>快速生成可演示、可验证的定制化 BI 原型</span></div>
           <a class="repo-link" href="https://github.com/aidatacooper/cwtwb" target="_blank" rel="noreferrer">查看开源项目 ↗</a>
         </div>
       </div>
@@ -64,6 +66,7 @@ window.AIBISlides = [
           <div class="feature-grid">
             <span>多数据源</span><span>Join / Union</span><span>清洗与计算</span><span>Pivot</span><span>打包交付</span><span>SQL Translation</span>
           </div>
+          <div class="presales-value"><strong>对售前的价值</strong><span>现场证明复杂数据准备方案可以真正落地</span></div>
           <a class="repo-link" href="https://github.com/aidatacooper/cwprep" target="_blank" rel="noreferrer">查看开源项目 ↗</a>
         </div>
       </div>
@@ -81,6 +84,7 @@ window.AIBISlides = [
           <div class="feature-grid">
             <span>Bun + Elysia</span><span>React + Vite</span><span>Tableau REST API</span><span>sharp 图片拼接</span><span>Croner 调度</span><span>钉钉工作通知</span>
           </div>
+          <div class="presales-value"><strong>对售前的价值</strong><span>把 BI 从“登录查看”延伸到“主动触达业务”</span></div>
           <a class="repo-link" href="https://github.com/imgwho/tableauPushDing" target="_blank" rel="noreferrer">查看开源项目 ↗</a>
         </div>
       </div>
@@ -110,148 +114,56 @@ window.AIBISlides = [
         </div>
       </div>
       <div class="two-mode">
-        <article><strong>HUNTING</strong><span>新客开发：首单成交路径、高转化话术</span></article>
-        <article><strong>FARMING</strong><span>客户维系：高互动聊点、SEED+P 话题裂变</span></article>
+        <article><strong>HUNTING</strong><span>新客开发：首单成交路径、客户异议、促成话术</span></article>
+        <article><strong>FARMING</strong><span>客户维系：高回复话题、互动信号、复盘素材</span></article>
       </div>
     `
   },
   {
     section: "AI产品",
     html: `
-      <div class="kicker">数据流转与系统架构</div>
-      <h1>从销售聊天记录到可复用话术资产</h1>
-      <div class="flow" style="margin-bottom: 16px;">
+      <div class="kicker">可信的数据链路</div>
+      <h1>不是让 AI 直接总结聊天，而是先绑定业务结果</h1>
+      <div class="flow" style="margin-bottom: 18px;">
         <div><b>ORDER</b><strong>订单表</strong><span>首单、金额、时间、客户</span></div><i>→</i>
         <div><b>STAFF</b><strong>员工表</strong><span>销售、工号、团队</span></div><i>→</i>
         <div><b>BRIDGE</b><strong>微信映射</strong><span>会员 ID ↔ 客户微信 ID</span></div><i>→</i>
         <div><b>CHAT</b><strong>聊天记录</strong><span>销售消息、客户回复、轮次</span></div><i>→</i>
         <div><b>AI ASSET</b><strong>AI 话术库</strong><span>成交话术 · 维系聊点</span></div>
       </div>
-      <div class="proof-row" style="margin-bottom: 18px;">
-        <span>Top 销售</span><span>首单成交</span><span>客户回复</span><span>话术提炼</span><span>可复用资产</span>
+      <div class="value-stack">
+        <div><b>01</b><p><strong>业务结果绑定</strong><span>先通过订单结果筛选真实成交样本，再回溯对话上下文</span></p></div>
+        <div><b>02</b><p><strong>结构化样本追溯</strong><span>订单、员工、微信 ID、聊天记录形成可解释的数据链路</span></p></div>
+        <div><b>03</b><p><strong>AI 提炼与人工确认</strong><span>AI 负责提炼和归类，业务规则负责筛选，最终由人工审核</span></p></div>
       </div>
-      <div class="snippet-layout">
+      <div class="proof-row"><span>隐私脱敏</span><span>结果可追溯</span><span>人工审核</span><span>风险可控</span></div>
+    `
+  },
+  {
+    section: "AI产品",
+    html: `
+      <div class="kicker">输出资产与业务应用</div>
+      <h1>输出的不是文案，而是可复盘的销售知识资产</h1>
+      <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
+        <article><strong>成交话术</strong><span>适合什么阶段、什么客户、解决什么异议</span><em>破冰 / 产品介绍 / 异议处理 / 促成交易</em></article>
+        <article><strong>客户维系聊点</strong><span>哪些生活、工作、兴趣话题更容易获得回复</span><em>互动分 / 回复轮次 / 风险等级</em></article>
+        <article><strong>培训与复盘</strong><span>沉淀优秀案例，支持新人培训和主管复盘</span><em>Excel / Markdown / JSON</em></article>
+      </div>
+      <div class="snippet-layout" style="margin-top: 18px;">
         <article class="conversation-card">
-          <small>产品介绍期案例：白酒品鉴与专家背书（销售：蔡莉）</small>
-          <p><strong>上下文背景：</strong>销售受邀作为代表参加专家发布会，借现场氛围建立稀缺性与品质认可。<br>
-          <strong>对话记录：</strong>销售：“哥，我现在作为优秀代表跟专家领导在现场吃饭，中科院发酵专业范鏖教授对我们这次白酒进行了高度评价，价格绝对匹配得上品质！[强]”<br>
-          <strong>客户反应：</strong>客户表示刚回家，并主动询问转账交付预订款。</p>
+          <small>保留一个真实案例：产品介绍期｜专家背书</small>
+          <p>销售借现场专家评价和稀缺场景，回应客户对价格与品质的关注；AI 提炼出“权威背书、稀缺塑造、价值锚定”三个可复用要点。</p>
           <div class="followups">
-            <span>① 权威背书：引入中科院专家范鏖教授现场好评</span>
-            <span>② 稀缺塑造：现场上千人仅不到10人受邀用餐</span>
-            <span>③ 价值锚定：正面回应价格与品质匹配关切</span>
+            <span>适用阶段：产品介绍</span>
+            <span>解决问题：客户对价格和真实性的顾虑</span>
+            <span>应用方式：培训案例 + 话术复盘 + 风险审核</span>
           </div>
         </article>
         <aside class="score-card">
-          <strong>85</strong>
-          <span>脚本综合评分</span>
-          <ul style="margin-top:10px;">
-            <li>阶段：产品介绍</li>
-            <li>触发：现场专家背书</li>
-            <li>效果：客户主动转账</li>
-            <li>客单：高价值资产</li>
-          </ul>
+          <strong>50</strong>
+          <span>成交话术</span>
+          <ul style="margin-top:10px;"><li>203 条维系聊点</li><li>SEED+P 评测</li><li>人工审核闭环</li></ul>
         </aside>
-      </div>
-    `
-  },
-  {
-    section: "AI产品",
-    html: `
-      <div class="kicker">SEED+P 话题裂变模型</div>
-      <h1>真实聊天上下文与 AI 自动生成的聊点库</h1>
-      <div class="rule-bar" style="margin-bottom: 14px;">
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">S - 真实场景 (Situation)</span>
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">E - 情绪共鸣 (Emotion)</span>
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">E - 事实证据 (Evidence)</span>
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">D - 话题走向 (Direction)</span>
-        <span style="background:#0f766e; color:#fff; border-color:#0f172a;">P - AI 提炼 (Prompt)</span>
-      </div>
-      <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 14px;">
-        <article style="padding:14px; text-align:left;">
-          <strong style="color:#0f766e; font-size:16px;">01. 地域美食与隐藏宝藏（生活切入）</strong>
-          <p style="font-size:13px; color:#475569; margin: 6px 0; line-height:1.4;"><strong>[背景]</strong> 客户到访/出差当地，销售以自嘲式请教美食避坑切入<br>
-          <strong>[对话]</strong> 销售：“看好多人推荐您老家特色美食，去尝了感觉被‘照骗’了，正宗味道是怎样的呀？” ➜ 客户：“那些都是网红店噱头！真正地道的都在老城区巷子里，下次带你去尝。”发了老字号小吃地图。</p>
-          <div style="background:#f0fdf4; border:1px dashed #0f766e; padding:6px 10px; border-radius:4px; margin-top:6px; font-size:12px; color:#065f46;">
-            <strong>💡 AI 生成聊点走向：</strong><br>
-            ① 避坑共鸣（网红店 vs 老字号） ➔ ② 谦虚请教（本地专家视角） ➔ ③ 自然延伸（老城区隐藏宝藏）
-          </div>
-        </article>
-        <article style="padding:14px; text-align:left;">
-          <strong style="color:#0f766e; font-size:16px;">02. 异议化解与真诚沟通（消除顾虑）</strong>
-          <p style="font-size:13px; color:#475569; margin: 6px 0; line-height:1.4;"><strong>[背景]</strong> 客户对品牌子公司归属产生怀疑“别是假的吧”<br>
-          <strong>[对话]</strong> 销售：“怎么会假呢，这是酒厂资质... 投入这么大，有顾虑完全理解，知无不言！” ➜ 客户：“行，了解清楚我就放心了，你帮我安排吧。”</p>
-          <div style="background:#f0fdf4; border:1px dashed #0f766e; padding:6px 10px; border-radius:4px; margin-top:6px; font-size:12px; color:#065f46;">
-            <strong>💡 AI 生成聊点走向：</strong><br>
-            ① 共情资金安全顾虑 ➔ ② 出示官方资质凭证 ➔ ③ 引导开诚布公答疑
-          </div>
-        </article>
-        <article style="padding:14px; text-align:left;">
-          <strong style="color:#0f766e; font-size:16px;">03. 促成方案与阶段付款（促成交易）</strong>
-          <p style="font-size:13px; color:#475569; margin: 6px 0; line-height:1.4;"><strong>[背景]</strong> 客户资金一时周转不开，面临观望停滞<br>
-          <strong>[对话]</strong> 销售：“先收您一万零两百定金，剩下付给快递，假一罚十，不能让你吃亏！” ➜ 客户：“我当放心你了，明天就把定金转过去。”</p>
-          <div style="background:#f0fdf4; border:1px dashed #0f766e; padding:6px 10px; border-radius:4px; margin-top:6px; font-size:12px; color:#065f46;">
-            <strong>💡 AI 生成聊点走向：</strong><br>
-            ① 降低首付门槛压力 ➔ ② 定制货到付款担保 ➔ ③ 给予正品兜底承诺
-          </div>
-        </article>
-      </div>
-      <div class="ai-ribbon" style="margin-top: 18px;">
-        <strong>真实聊天上下文 ➔ AI 提取 SEED+P 关键证据 ➔ 自动导出高转化聊点库</strong>
-        <span>数据全量引自 20251215-chat-analysis 项目 script_library.json，助力销售团队快速复盘与培训。</span>
-      </div>
-    `
-  },
-  {
-    section: "AI产品",
-    html: `
-      <div class="kicker">20251215-chat-analysis 聊点资产全景</div>
-      <h1>海量微信记录中自动提炼的 8 大高互动聊点库</h1>
-      <div class="case-matrix" style="grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px;">
-        <article style="padding:10px; text-align:left;">
-          <strong style="color:#0f766e; font-size:14px;">01. 早餐习惯 (1588.5)</strong>
-          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“在吃包子奶茶呢，你也别忘了先吃点在工作”</span>
-          <em style="font-size:11px; color:#64748b;">AI 开场：早上好，吃早餐了吗？</em>
-        </article>
-        <article style="padding:10px; text-align:left;">
-          <strong style="color:#0f766e; font-size:14px;">02. 体育看球 (1384.5)</strong>
-          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“大叔看球赛吗？我不喜欢看中超！收拾下家里”</span>
-          <em style="font-size:11px; color:#64748b;">AI 开场：你平时喜欢看哪个联赛？</em>
-        </article>
-        <article style="padding:10px; text-align:left;">
-          <strong style="color:#0f766e; font-size:14px;">03. 送发票外勤 (1206.5)</strong>
-          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“刚看完你发的文件到公司，等会去别的公司送发票”</span>
-          <em style="font-size:11px; color:#64748b;">AI 开场：早呀，今天要去送发票吗？</em>
-        </article>
-        <article style="padding:10px; text-align:left;">
-          <strong style="color:#0f766e; font-size:14px;">04. 阳光与气温 (798.5)</strong>
-          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“难得几天出太阳[呲牙]，阳光明媚像你一样心情美美哒”</span>
-          <em style="font-size:11px; color:#64748b;">AI 开场：今天你们那边出太阳了吗？</em>
-        </article>
-        <article style="padding:10px; text-align:left;">
-          <strong style="color:#0f766e; font-size:14px;">05. 流感提醒 (783.0)</strong>
-          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“公司好多同事流感了... 月初欠费很正常”</span>
-          <em style="font-size:11px; color:#64748b;">AI 开场：最近流感挺多的，防护做好没？</em>
-        </article>
-        <article style="padding:10px; text-align:left;">
-          <strong style="color:#0f766e; font-size:14px;">06. 酒口味偏好 (704.5)</strong>
-          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“我知道你那都是酱香的，平时我只喝啤酒，白的辣[偷笑]”</span>
-          <em style="font-size:11px; color:#64748b;">AI 开场：平时喝啤酒多，白酒喝得少吧？</em>
-        </article>
-        <article style="padding:10px; text-align:left;">
-          <strong style="color:#0f766e; font-size:14px;">07. 地方胡辣汤 (659.5)</strong>
-          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“贵州没正宗胡辣汤！去苏州站坐大巴到了报平安”</span>
-          <em style="font-size:11px; color:#64748b;">AI 开场：当地有什么特色早餐推荐吗？</em>
-        </article>
-        <article style="padding:10px; text-align:left;">
-          <strong style="color:#0f766e; font-size:14px;">08. 周一加班 (646.5)</strong>
-          <span style="font-size:12px; color:#475569; display:block; margin:4px 0;">“早上好勤劳的小蜜蜂，昨天加班到几点呀？”</span>
-          <em style="font-size:11px; color:#64748b;">AI 开场：昨天加班到几点？目标完成没？</em>
-        </article>
-      </div>
-      <div class="ai-ribbon" style="margin-top: 10px;">
-        <strong>只凭单表互动流水线（回复+轮次+速度），由 AI 聚类为 8 大稳态分类与推荐开场</strong>
-        <span>数据 100% 引自开源项目 20251215-chat-analysis（v2 聊点生成引擎），保留真实回复证据。</span>
       </div>
     `
   },
@@ -323,33 +235,39 @@ window.AIBISlides = [
         <span>用 70% 红线识别经营偏差</span>
         <span>企业微信免密入口服务管理层</span>
       </div>
+      <div class="case-notes horizontal">
+        <span>规则清晰：应返与实返口径分开</span>
+        <span>过程可追溯：订单、批次、到账相互核对</span>
+        <span>责任明确：按角色查看与操作</span>
+        <span>方案可实施：一期核销闭环，二期系统直连</span>
+      </div>
     `
   },
   {
     section: "行业案例",
     html: `
       <div class="kicker">案例组合</div>
-      <h1>制造为主，消费与保险补充</h1>
-      <div class="case-matrix">
+      <h1>我处理过的复杂问题，而不只是项目名单</h1>
+      <div class="case-matrix problem-matrix">
         <article>
-          <strong>一汽 / 一汽大众</strong>
-          <span>产销存、供应链、财务经营、HR、管理层会议 BI</span>
-          <em>制造 · 复杂业务</em>
+          <strong>复杂制造经营分析</strong>
+          <span>一汽、一汽大众：指标体系、跨部门数据、管理驾驶舱</span>
+          <em>制造 · 管理层 BI</em>
         </article>
         <article>
-          <strong>立白 / 蒙牛 / 华芝林</strong>
-          <span>电商全链路、财务 PoC、销售与返款数智化</span>
-          <em>消费 · 零售</em>
+          <strong>消费与销售分析</strong>
+          <span>蒙牛、立白、华芝林：销售过程、渠道、返款与经营分析</span>
+          <em>消费零售 · 业务链路</em>
         </article>
         <article>
-          <strong>友邦 / 安盛天平</strong>
-          <span>销售业绩、佣金、保费、经营监控与异常识别</span>
-          <em>保险 · 经营分析</em>
+          <strong>金融保险分析</strong>
+          <span>友邦、安盛天平：业绩、佣金、保费、经营监控与异常识别</span>
+          <em>金融保险 · 指标口径</em>
         </article>
         <article>
-          <strong>金科 / 广汽研究院</strong>
-          <span>招投标、产品边界、平台升级、多端与权限方案</span>
-          <em>复杂售前 · 推进</em>
+          <strong>复杂售前推进</strong>
+          <span>金科、广汽研究院：招投标、方案边界、权限与平台规划</span>
+          <em>售前推进 · 方案协同</em>
         </article>
       </div>
     `
