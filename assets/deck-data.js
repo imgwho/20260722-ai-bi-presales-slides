@@ -2,19 +2,6 @@ window.AIBISlides = [
   {
     section: "第一部分",
     html: `
-      <div class="kicker">岗位理解</div>
-      <h1>售前的工作，是把客户的问题<br><span class="accent">变成能讨论、能验证的解决方案</span></h1>
-      <div class="flow compact" style="margin-top: 34px;">
-        <div><b>01</b><strong>听懂问题</strong><span>目标、现状、关键人</span></div><i>→</i>
-        <div><b>02</b><strong>理清业务</strong><span>流程、数据、规则</span></div><i>→</i>
-        <div><b>03</b><strong>做出验证</strong><span>原型、Demo、POC</span></div><i>→</i>
-        <div><b>04</b><strong>推动实施</strong><span>范围、节奏、协同</span></div>
-      </div>
-    `
-  },
-  {
-    section: "第一部分",
-    html: `
       <div class="kicker">个人介绍</div>
       <h1>郭文华｜8年+ BI 与数据解决方案经验</h1>
       <div class="metric-grid" style="grid-template-columns: repeat(2, 1fr); max-width: 920px;">
@@ -24,6 +11,19 @@ window.AIBISlides = [
         <article><strong>AI+BI</strong><span>用工具提高 Demo 与 POC 效率</span></article>
       </div>
       <div class="quote">“我擅长在客户现场把模糊需求理清楚，再用原型和数据方案推动项目。”</div>
+    `
+  },
+  {
+    section: "第一部分",
+    html: `
+      <div class="kicker">岗位理解</div>
+      <h1>售前的工作，是把客户的问题<br><span class="accent">变成能讨论、能验证的解决方案</span></h1>
+      <div class="flow compact" style="margin-top: 34px;">
+        <div><b>01</b><strong>听懂问题</strong><span>目标、现状、关键人</span></div><i>→</i>
+        <div><b>02</b><strong>理清业务</strong><span>流程、数据、规则</span></div><i>→</i>
+        <div><b>03</b><strong>做出验证</strong><span>原型、Demo、POC</span></div><i>→</i>
+        <div><b>04</b><strong>推动实施</strong><span>范围、节奏、协同</span></div>
+      </div>
     `
   },
   {
@@ -55,13 +55,13 @@ window.AIBISlides = [
     section: "第二部分 · 案例一",
     html: `
       <div class="kicker">解决方案</div>
-      <h1>从成交客户出发，整理真实有效的销售经验</h1>
-      <div class="pipeline" style="margin-top: 32px;">
-        <div><b>01</b><strong>确认成交客户</strong><span>订单、员工和客户微信信息对应起来</span></div><i>→</i>
-        <div><b>02</b><strong>查看关键聊天</strong><span>关注成交前后的销售表达和客户回复</span></div><i>→</i>
-        <div><b>03</b><strong>整理成销售材料</strong><span>成交策略、互动主题、培训卡片</span></div>
+      <h1>先找真实成交，再整理有用的销售经验</h1>
+      <div class="solution-steps" style="margin-top: 28px;">
+        <article><b>01</b><strong>确认成交客户</strong><span>同一客户当天订单合并；首单满 99 元才进入分析，排除作废和自购订单。</span></article><i>→</i>
+        <article><b>02</b><strong>找到对应聊天</strong><span>把订单、销售和客户微信信息放在一起，优先查看首单前一天到当天的文字对话。</span></article><i>→</i>
+        <article><b>03</b><strong>整理成销售材料</strong><span>AI 区分聊天阶段和客户顾虑，再按成交效果评分；人工确认后用于培训和复盘。</span></article>
       </div>
-      <div class="quote">评分筛选 + 人工确认：内容符合实际业务情况后，再用于培训和复盘。</div>
+      <div class="quote">如果首单附近没有足够对话，系统再把时间范围扩展到首单前 7 天，避免漏掉多轮沟通。</div>
     `
   },
   {
@@ -122,39 +122,31 @@ window.AIBISlides = [
     section: "第二部分 · 案例二",
     html: `
       <div class="kicker">解决方案</div>
-      <h1>先拆流程，再整理规则，最后用原型确认</h1>
-      <div class="workflow-split">
+      <h1>看板看经营，返款管明细；两类工作分开整理</h1>
+      <div class="solution-dual">
         <article>
-          <small>WORKFLOW A</small>
-          <h2>应返</h2>
-          <p>订单明细 → 角色分配 → 应返金额 → 销售查询</p>
-          <span>这笔钱按什么规则计算，归属于谁？</span>
+          <b>经营看板</b>
+          <strong>先把销售、合同、培训三类 Excel 做成固定表</strong>
+          <span>管理层可以看全国与省区销量、签约比例、团队变化和培训情况。</span>
         </article>
         <article>
-          <small>WORKFLOW B</small>
-          <h2>实返</h2>
-          <p>财务打款 → 实返 Excel → 批次核销 → 到账核对</p>
-          <span>这次到账对应哪些订单，是否已经核销？</span>
+          <b>返款管理</b>
+          <strong>把“应返”和“实返”分成两件事处理</strong>
+          <span>应返说明订单该分给谁；实返按财务打款批次核对到账，销售可按自己的身份查看。</span>
         </article>
       </div>
-      <div class="rule-bar" style="margin-top: 18px;">
-        <span>单据编号 + 商品</span>
-        <span>自动判重</span>
-        <span>已核销锁定</span>
-        <span>代收关系配置</span>
-        <span>多身份视角</span>
-      </div>
+      <div class="quote">我先把数据来源、角色和计算方式确认下来，再用可点击原型和客户一起确认页面与操作方式。</div>
     `
   },
   {
     section: "第二部分 · 案例二",
     html: `
       <div class="kicker">方案与成果</div>
-      <h1>用原型把客户、售前和实施团队的理解对齐</h1>
+      <h1>用原型把看板和返款规则讲清楚</h1>
       <div class="prototype-grid">
-        <figure><img src="../Images/evidence/refund-image4.png" alt="财务数据核销工作台原型"><figcaption>财务核销工作台：应返、实返、状态与代收</figcaption></figure>
-        <figure><img src="../Images/evidence/refund-image5.png" alt="合并打款核销原型"><figcaption>合并打款：按批次核销，并上传凭证</figcaption></figure>
-        <figure><img src="../Images/evidence/refund-image6.png" alt="账户审批与角色管理原型"><figcaption>账号审批：多角色与代收绑定</figcaption></figure>
+        <figure><img src="../Images/evidence/dashboard-image1.png" alt="全国销售与团队管理看板原型"><figcaption>经营看板：销量、签约、省区、团队与培训</figcaption></figure>
+        <figure><img src="../Images/evidence/refund-image4.png" alt="财务数据核销工作台原型"><figcaption>财务核销：应返、实返与到账状态</figcaption></figure>
+        <figure><img src="../Images/evidence/refund-image5.png" alt="合并打款核销原型"><figcaption>合并打款：按批次核对订单明细</figcaption></figure>
       </div>
       <div class="case-notes horizontal">
         <span>业务口径统一</span>
@@ -186,10 +178,10 @@ window.AIBISlides = [
           <em>业务推送</em>
         </article>
       </div>
-      <div class="pipeline">
-        <div><b>01</b><strong>数据准备</strong><span>cwprep：整理、清洗、关联、计算</span></div><i>→</i>
-        <div><b>02</b><strong>分析展示</strong><span>cwtwb：工作簿、图表、仪表板</span></div><i>→</i>
-        <div><b>03</b><strong>业务推送</strong><span>tableauPushDing：截图、拼接、钉钉通知</span></div>
+      <div class="tool-chain">
+        <article><b>01</b><strong>数据准备</strong><span>cwprep：整理、清洗、关联、计算</span></article><i>→</i>
+        <article><b>02</b><strong>分析展示</strong><span>cwtwb：工作簿、图表、仪表板</span></article><i>→</i>
+        <article><b>03</b><strong>业务推送</strong><span>tableauPushDing：截图、拼接、钉钉通知</span></article>
       </div>
       <div class="metric-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 16px;">
         <article><strong>3个</strong><span>AI × Tableau × 自动化开源工具</span></article>
