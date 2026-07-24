@@ -128,7 +128,7 @@ window.AIBISlides = [
     section: "第二部分 · 案例二",
     html: `
       <div class="kicker">解决方案</div>
-      <h1>一套看板看经营，一套流程管返款</h1>
+      <h1>一套流程管返款，一套看板看经营</h1>
       <div class="solution-dual">
         <article>
           <b>返款管理</b>
