@@ -340,6 +340,9 @@ figcaption {
 .solution-dual article:first-child { border-top: 6px solid #0f766e; }.solution-dual article:last-child { border-top: 6px solid #0369a1; }
 .solution-dual b { color: #0f766e; font-size: 18px; }.solution-dual article:last-child b { color: #0369a1; }
 .solution-dual strong { color: #0f172a; font-size: 26px; line-height: 1.26; }.solution-dual span { color: #475569; font-size: 19px; line-height: 1.55; }
+.solution-dual ul { display: grid; gap: 7px; margin: 2px 0 0; padding: 0; list-style: none; }
+.solution-dual li { padding-left: 18px; color: #475569; font-size: 16px; line-height: 1.35; position: relative; }
+.solution-dual li::before { content: "•"; position: absolute; left: 0; color: #0891b2; font-weight: 800; }
 .tool-chain { margin-top: 18px; }.tool-chain article { gap: 8px; padding: 16px 18px; }.tool-chain strong { color: #0f172a; font-size: 21px; }.tool-chain span { color: #475569; font-size: 15px; line-height: 1.4; }
 .problem-solution, .workflow-split, .scope-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
 .problem-solution > div, .workflow-split article, .scope-grid article { padding: 24px 28px; border-radius: 14px; background: #fff; border: 1px solid #cbd5e1; }

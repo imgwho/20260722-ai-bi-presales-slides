@@ -58,9 +58,9 @@ window.AIBISlides = [
       <div class="kicker">解决方案</div>
       <h1>从有效聊天中生成<br>销售下一步可聊的话题</h1>
       <div class="solution-steps" style="margin-top: 28px;">
-        <article><b>01</b><strong>找到有效客户</strong><span>从订单中找到真实成交客户，排除作废、自购和无效订单。</span></article><i>→</i>
-        <article><b>02</b><strong>找到成交前的聊天</strong><span>把订单、销售和客户微信对应起来，分析成交前后的真实对话。</span></article><i>→</i>
-        <article><b>03</b><strong>生成聊天话题</strong><span>AI 根据客户此前聊过的内容，生成销售下一步可继续聊的话题；人工确认后给销售使用。</span></article>
+        <article><b>01</b><strong>筛选有效聊天</strong><span>从订单中找到真实成交客户，排除作废、自购、无互动和内容太少的聊天。</span></article><i>→</i>
+        <article><b>02</b><strong>匹配真实对话</strong><span>把订单、销售和客户微信对应起来，分析成交前后的真实对话。</span></article><i>→</i>
+        <article><b>03</b><strong>生成聊天话题</strong><span>AI 根据客户聊过的内容，生成销售可以使用的聊天话题；人工确认后再使用。</span></article>
       </div>
       <div class="micro">系统优先分析成交当天的聊天，信息不足时自动向前查找历史对话。</div>
     `
@@ -71,7 +71,7 @@ window.AIBISlides = [
       <div class="kicker">成果</div>
       <h1>最终告诉销售：聊什么、怎么回答、哪些方法有效</h1>
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 16px;">
-        <article><strong>下一步聊天话题</strong><span>根据客户聊过的工作、生活和兴趣，生成更自然的后续话题。</span><em>客户偏好 / 互动情况 / 风险提醒</em></article>
+        <article><strong>聊天话题</strong><span>根据客户聊过的工作、生活和兴趣，生成更自然的聊天话题。</span><em>客户偏好 / 互动情况 / 风险提醒</em></article>
         <article><strong>成交应对建议</strong><span>客户关注价格、效果或信任问题时，提供真实案例中的处理方法。</span><em>客户顾虑 / 应对方式 / 使用场景</em></article>
         <article><strong>培训和复盘材料</strong><span>把优秀聊天整理成案例卡片，方便新人学习和主管复盘。</span><em>真实案例 / 做法说明 / 注意事项</em></article>
       </div>
@@ -88,7 +88,7 @@ window.AIBISlides = [
         <aside class="score-card">
           <strong>3类</strong>
           <span>销售帮助</span>
-          <ul style="margin-top:10px;"><li>下一步聊什么</li><li>客户犹豫怎么答</li><li>优秀案例怎么学</li></ul>
+          <ul style="margin-top:10px;"><li>和客户聊什么</li><li>客户犹豫怎么答</li><li>优秀案例怎么学</li></ul>
         </aside>
       </div>
     `
@@ -97,20 +97,20 @@ window.AIBISlides = [
     section: "第二部分 · 案例二",
     html: `
       <div class="kicker">案例二 · 华芝林售前咨询</div>
-      <h1>提成管理系统：把零散的 Excel 数据<br>整理成返款查询和经营看板</h1>
+      <h1>把零散的 Excel 数据整理成<br><span class="accent">提成管理系统和经营分析看板</span></h1>
       <div class="problem-solution">
         <div>
           <h2>背景</h2>
           <ul>
             <li>一家医药销售企业，希望统一查看销售经营情况</li>
             <li>返款就是按订单规则计算和发放的销售提成</li>
-            <li>客户还希望解决返款查询和到账核对混乱的问题</li>
-            <li>数据主要来自管家婆和本地 Excel</li>
+            <li>客户希望同时解决提成查询、到账核对和经营分析</li>
           </ul>
         </div>
         <div>
           <h2>问题</h2>
           <ul>
+            <li>销售、合同和培训数据分散在不同 Excel 中</li>
             <li>“应返”和“实返”混在一起</li>
             <li>一单多商品、多身份、代收关系复杂</li>
             <li>管理层、财务、销售关注点不同</li>
@@ -129,11 +129,21 @@ window.AIBISlides = [
           <b>经营看板</b>
           <strong>汇总销售、合同和培训数据</strong>
           <span>让管理层查看全国、省区和团队的经营情况。</span>
+          <ul>
+            <li>销售：销量、签约比例和省区排名</li>
+            <li>团队：人员变化和各省培训情况</li>
+            <li>数据：用固定 Excel 表持续更新</li>
+          </ul>
         </article>
         <article>
           <b>返款管理</b>
           <strong>分开计算“应返”和“实返”</strong>
           <span>应返是按订单规则该返的钱；实返是财务实际打出去的钱。财务核对到账，销售查询自己的返款。</span>
+          <ul>
+            <li>应返：按订单、商品和身份计算提成</li>
+            <li>实返：按财务打款批次核对到账</li>
+            <li>角色：销售、地总、省总分别查看</li>
+          </ul>
         </article>
       </div>
       <div class="quote">我先和客户确认数据从哪里来、谁来使用、钱怎么计算，再做出可点击原型，一起确认页面和操作流程。</div>
