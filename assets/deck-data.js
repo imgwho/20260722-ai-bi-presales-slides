@@ -56,7 +56,7 @@ window.AIBISlides = [
     section: "第二部分 · 案例一",
     html: `
       <div class="kicker">解决方案</div>
-      <h1>从有效聊天中生成<br>销售下一步可聊的话题</h1>
+      <h1>从有效聊天中生成销售聊天话题</h1>
       <div class="solution-steps" style="margin-top: 28px;">
         <article><b>01</b><strong>筛选有效聊天</strong><span>从订单中找到真实成交客户，排除作废、自购、无互动和内容太少的聊天。</span></article><i>→</i>
         <article><b>02</b><strong>匹配真实对话</strong><span>把订单、销售和客户微信对应起来，分析成交前后的真实对话。</span></article><i>→</i>
@@ -97,7 +97,7 @@ window.AIBISlides = [
     section: "第二部分 · 案例二",
     html: `
       <div class="kicker">案例二 · 华芝林售前咨询</div>
-      <h1>把零散的 Excel 数据整理成<br><span class="accent">提成管理系统和经营分析看板</span></h1>
+      <h1>把零散的 Excel 数据整理成<br>提成管理系统和经营分析看板</h1>
       <div class="problem-solution">
         <div>
           <h2>背景</h2>
@@ -108,9 +108,9 @@ window.AIBISlides = [
           </ul>
         </div>
         <div>
-          <h2>问题</h2>
+          <h2>需要解决的问题</h2>
           <ul>
-            <li>销售、合同和培训数据分散在不同 Excel 中</li>
+            <li>销售、合同和培训等经营数据分散，难以分析和管理</li>
             <li>“应返”和“实返”混在一起</li>
             <li>一单多商品、多身份、代收关系复杂</li>
             <li>管理层、财务、销售关注点不同</li>
@@ -176,17 +176,17 @@ window.AIBISlides = [
         <article>
           <strong>cwtwb</strong>
           <span>AI 理解看板指标和业务规则，快速生成 Tableau 看板和 BI 原型。</span>
-          <em>分析展示</em>
+          <em><a href="https://github.com/aidatacooper/cwtwb" target="_blank" rel="noreferrer">GitHub 仓库 ↗</a></em>
         </article>
         <article>
           <strong>cwprep</strong>
           <span>AI 理解字段关系和计算规则，快速生成数据处理流程，验证数据能不能用。</span>
-          <em>数据准备</em>
+          <em><a href="https://github.com/aidatacooper/cwprep" target="_blank" rel="noreferrer">GitHub 仓库 ↗</a></em>
         </article>
         <article>
           <strong>tableauPushDing</strong>
           <span>用 AI Coding 做成整套自动化系统：定时获取报表、拼成长图并推送到钉钉。</span>
-          <em>业务推送</em>
+          <em><a href="https://github.com/imgwho/tableauPushDing" target="_blank" rel="noreferrer">GitHub 仓库 ↗</a></em>
         </article>
       </div>
       <div class="tool-chain">
