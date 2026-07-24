@@ -43,10 +43,10 @@ window.AIBISlides = [
         <div>
           <h2>需要解决的问题</h2>
           <ul>
-            <li>哪些聊天真正帮助客户下单</li>
-            <li>客户在意什么、为什么犹豫</li>
-            <li>下一次可以继续和客户聊什么</li>
-            <li>AI 的建议是否和客户情况相符</li>
+            <li>怎样筛选真正帮助客户下单的聊天</li>
+            <li>怎样把订单、销售和客户微信信息对应起来</li>
+            <li>怎样排除无互动、内容太少或无关的聊天</li>
+            <li>怎样让 AI 的分析结果符合真实业务情况</li>
           </ul>
         </div>
       </div>
@@ -56,11 +56,11 @@ window.AIBISlides = [
     section: "第二部分 · 案例一",
     html: `
       <div class="kicker">解决方案</div>
-      <h1>先找到有效聊天，再让 AI 生成话题和成交建议</h1>
+      <h1>从有效聊天中生成<br>销售下一步可聊的话题</h1>
       <div class="solution-steps" style="margin-top: 28px;">
         <article><b>01</b><strong>找到有效客户</strong><span>从订单中找到真实成交客户，排除作废、自购和无效订单。</span></article><i>→</i>
         <article><b>02</b><strong>找到成交前的聊天</strong><span>把订单、销售和客户微信对应起来，分析成交前后的真实对话。</span></article><i>→</i>
-        <article><b>03</b><strong>生成销售建议</strong><span>AI 整理客户关注点、成交方法和可继续聊的话题，人工确认后给销售使用。</span></article>
+        <article><b>03</b><strong>生成聊天话题</strong><span>AI 根据客户此前聊过的内容，生成销售下一步可继续聊的话题；人工确认后给销售使用。</span></article>
       </div>
       <div class="micro">系统优先分析成交当天的聊天，信息不足时自动向前查找历史对话。</div>
     `
@@ -97,13 +97,14 @@ window.AIBISlides = [
     section: "第二部分 · 案例二",
     html: `
       <div class="kicker">案例二 · 华芝林售前咨询</div>
-      <h1>把零散的本地 Excel 数据<br>整理成经营看板和返款管理系统</h1>
+      <h1>提成管理系统：把零散的 Excel 数据<br>整理成返款查询和经营看板</h1>
       <div class="problem-solution">
         <div>
           <h2>背景</h2>
           <ul>
             <li>一家医药销售企业，希望统一查看销售经营情况</li>
-            <li>同时解决返款查询和到账核对混乱的问题</li>
+            <li>返款就是按订单规则计算和发放的销售提成</li>
+            <li>客户还希望解决返款查询和到账核对混乱的问题</li>
             <li>数据主要来自管家婆和本地 Excel</li>
           </ul>
         </div>
@@ -164,24 +165,24 @@ window.AIBISlides = [
       <div class="case-matrix" style="grid-template-columns: repeat(3, 1fr); gap: 18px;">
         <article>
           <strong>cwtwb</strong>
-          <span>自动生成 Tableau 看板，快速把客户需求做成可以查看和演示的 BI 原型。</span>
+          <span>AI 理解看板指标和业务规则，快速生成 Tableau 看板和 BI 原型。</span>
           <em>分析展示</em>
         </article>
         <article>
           <strong>cwprep</strong>
-          <span>自动生成数据处理流程，快速验证客户的数据能不能用。</span>
+          <span>AI 理解字段关系和计算规则，快速生成数据处理流程，验证数据能不能用。</span>
           <em>数据准备</em>
         </article>
         <article>
           <strong>tableauPushDing</strong>
-          <span>定时获取报表、拼成长图并推送到钉钉，让业务人员直接看到结果。</span>
+          <span>用 AI Coding 做成整套自动化系统：定时获取报表、拼成长图并推送到钉钉。</span>
           <em>业务推送</em>
         </article>
       </div>
       <div class="tool-chain">
-        <article><b>01</b><strong>数据准备</strong><span>cwprep：整理、清洗、关联、计算</span></article><i>→</i>
-        <article><b>02</b><strong>分析展示</strong><span>cwtwb：工作簿、图表、仪表板</span></article><i>→</i>
-        <article><b>03</b><strong>业务推送</strong><span>tableauPushDing：截图、拼接、钉钉通知</span></article>
+        <article><b>01</b><strong>AI 理解规则</strong><span>cwprep：整理字段、计算和数据处理规则</span></article><i>→</i>
+        <article><b>02</b><strong>AI 生成原型</strong><span>cwtwb：生成工作簿、图表和仪表板</span></article><i>→</i>
+        <article><b>03</b><strong>AI Coding 自动化</strong><span>tableauPushDing：取图、拼接和钉钉推送</span></article>
       </div>
       <div class="metric-grid" style="grid-template-columns: repeat(3, 1fr); margin-top: 16px;">
         <article><strong>3个</strong><span>AI × Tableau × 自动化开源工具</span></article>
