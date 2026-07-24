@@ -43,10 +43,10 @@ window.AIBISlides = [
         <div>
           <h2>需要解决的问题</h2>
           <ul>
-            <li>怎样筛选真正帮助客户下单的聊天</li>
-            <li>怎样把订单、销售和客户微信信息对应起来</li>
-            <li>怎样排除无互动、内容太少或无关的聊天</li>
-            <li>怎样让 AI 的分析结果符合真实业务情况</li>
+            <li>怎样从大量聊天中筛出客户真实回复、持续互动的片段</li>
+            <li>怎样排除自动消息、群发消息和销售单向发送</li>
+            <li>怎样判断一个话题是否真的能引发客户继续交流</li>
+            <li>怎样避免 AI 编造故事或生成不合适的话题</li>
           </ul>
         </div>
       </div>
@@ -58,15 +58,14 @@ window.AIBISlides = [
       <div class="kicker">解决方案</div>
       <h1>从有效聊天中生成销售聊天话题</h1>
       <div class="solution-steps" style="margin-top: 28px;">
-        <article><b>01</b><strong>筛选有效聊天</strong><span>从订单中找到真实成交客户，排除作废、自购、无互动和内容太少的聊天。</span></article><i>→</i>
-        <article><b>02</b><strong>匹配真实对话</strong><span>把订单、销售和客户微信对应起来，分析成交前后的真实对话。</span></article><i>→</i>
-        <article><b>03</b><strong>生成聊天话题</strong><span>AI 根据客户聊过的内容，生成销售可以使用的聊天话题；人工确认后再使用。</span></article>
+        <article><b>01</b><strong>清洗聊天记录</strong><span>保留有效文字消息，去掉自动消息、群发消息和状态异常的数据。</span></article><i>→</i>
+        <article><b>02</b><strong>找出高互动聊天</strong><span>按销售与客户分组；相隔 6 小时切成一段，只保留双方真实来回交流的对话。</span></article><i>→</i>
+        <article><b>03</b><strong>提炼聊天话题</strong><span>AI 只做分类和轻度整理，生成开场和追问；人工确认后给销售使用。</span></article>
       </div>
-      <div class="method-detail">
-        <article><strong>有效订单</strong><span>同一客户当天订单合并；首单满 99 元；排除作废和自购。</span></article>
-        <article><strong>客户对应</strong><span>订单会员 ID → 微信映射表 → 企业微信聊天记录。</span></article>
-        <article><strong>对话筛选</strong><span>只分析文本消息；双方都有回复；至少 2 条消息。</span></article>
-        <article><strong>时间范围</strong><span>优先首单前 1 天到当天；不足时扩展到前 7 天。</span></article>
+      <div class="method-notes">
+        <p><strong>互动判断：</strong>客户回复次数、对话轮次、客户文字长度、首次回复速度共同计算互动分；短回复过多或销售单向发送过多会降分。</p>
+        <p><strong>AI 边界：</strong>只在家庭、工作、健康、饮食、天气、兴趣、节日、经历八类中提炼；不虚构人设，不引入交易或推销内容。</p>
+        <p><strong>输出控制：</strong>同一话题最多保留两种真实表达，并标注真实回复、互动分和风险等级，方便人工审核。</p>
       </div>
     `
   },
