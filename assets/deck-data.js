@@ -62,7 +62,12 @@ window.AIBISlides = [
         <article><b>02</b><strong>匹配真实对话</strong><span>把订单、销售和客户微信对应起来，分析成交前后的真实对话。</span></article><i>→</i>
         <article><b>03</b><strong>生成聊天话题</strong><span>AI 根据客户聊过的内容，生成销售可以使用的聊天话题；人工确认后再使用。</span></article>
       </div>
-      <div class="micro">系统优先分析成交当天的聊天，信息不足时自动向前查找历史对话。</div>
+      <div class="method-detail">
+        <article><strong>有效订单</strong><span>同一客户当天订单合并；首单满 99 元；排除作废和自购。</span></article>
+        <article><strong>客户对应</strong><span>订单会员 ID → 微信映射表 → 企业微信聊天记录。</span></article>
+        <article><strong>对话筛选</strong><span>只分析文本消息；双方都有回复；至少 2 条消息。</span></article>
+        <article><strong>时间范围</strong><span>优先首单前 1 天到当天；不足时扩展到前 7 天。</span></article>
+      </div>
     `
   },
   {

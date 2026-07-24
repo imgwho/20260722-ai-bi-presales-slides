@@ -335,6 +335,9 @@ figcaption {
 .solution-steps strong { color: #0f172a; font-size: 28px; line-height: 1.16; }
 .solution-steps span { color: #475569; font-size: 18px; line-height: 1.52; }
 .solution-steps > i, .tool-chain > i { align-self: center; color: #0891b2; font-size: 34px; font-style: normal; }
+.method-detail { position: relative; z-index: 1; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 16px; }
+.method-detail article { padding: 14px 16px; border-radius: 10px; background: #f8fafc; border: 1px solid #cbd5e1; }
+.method-detail strong { display: block; color: #0f766e; font-size: 16px; }.method-detail span { display: block; margin-top: 5px; color: #475569; font-size: 14px; line-height: 1.4; }
 .solution-dual { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .solution-dual article { display: flex; flex-direction: column; gap: 14px; padding: 28px; border: 1px solid #cbd5e1; border-radius: 14px; background: #fff; }
 .solution-dual article:first-child { border-top: 6px solid #0f766e; }.solution-dual article:last-child { border-top: 6px solid #0369a1; }
@@ -532,7 +535,7 @@ button:hover {
     font-size: 14px;
   }
 
-  .metric-grid, .feature-grid, .question-grid, .question-grid.mini, .case-matrix, .product-layout, .problem-solution, .workflow-split, .scope-grid, .two-mode, .solution-dual, .evidence-layout, .snippet-layout, .prototype-grid, .dual-shot { grid-template-columns: 1fr; }
+  .metric-grid, .feature-grid, .question-grid, .question-grid.mini, .case-matrix, .product-layout, .problem-solution, .workflow-split, .scope-grid, .two-mode, .solution-dual, .evidence-layout, .snippet-layout, .prototype-grid, .dual-shot, .method-detail { grid-template-columns: 1fr; }
   .flow, .flow.compact, .pipeline, .architecture, .system-map, .solution-steps, .tool-chain { display: flex; flex-direction: column; }
   .flow > i, .pipeline > i, .architecture > i, .system-map > i, .solution-steps > i, .tool-chain > i { transform: rotate(90deg); margin: 2px auto; }
   .ai-ribbon { flex-direction: column; }
