@@ -131,16 +131,6 @@ window.AIBISlides = [
       <h1>一套看板看经营，一套流程管返款</h1>
       <div class="solution-dual">
         <article>
-          <b>经营看板</b>
-          <strong>汇总销售、合同和培训数据</strong>
-          <span>让管理层查看全国、省区和团队的经营情况。</span>
-          <ul>
-            <li>销售：销量、签约比例和省区排名</li>
-            <li>团队：人员变化和各省培训情况</li>
-            <li>数据：用固定 Excel 表持续更新</li>
-          </ul>
-        </article>
-        <article>
           <b>返款管理</b>
           <strong>分开计算“应返”和“实返”</strong>
           <span>应返是按订单规则该返的钱；实返是财务实际打出去的钱。财务核对到账，销售查询自己的返款。</span>
@@ -148,6 +138,16 @@ window.AIBISlides = [
             <li>应返：按订单、商品和身份计算提成</li>
             <li>实返：按财务打款批次核对到账</li>
             <li>角色：销售、地总、省总分别查看</li>
+          </ul>
+        </article>
+        <article>
+          <b>经营看板</b>
+          <strong>汇总销售、合同和培训数据</strong>
+          <span>让管理层查看全国、省区和团队的经营情况。</span>
+          <ul>
+            <li>销售：销量、签约比例和省区排名</li>
+            <li>团队：人员变化和各省培训情况</li>
+            <li>数据：用固定 Excel 表持续更新</li>
           </ul>
         </article>
       </div>
